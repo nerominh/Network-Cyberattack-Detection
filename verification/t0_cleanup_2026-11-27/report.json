@@ -1,0 +1,440 @@
+{
+  "overall": "Core successful-run functionality, all six training results and core plots preserved after minimal LR corrections.",
+  "comparisons": {
+    "lr": {
+      "baseline_run": "lr_baseline",
+      "cleaned_run": "lr_cleaned_final",
+      "all_array_comparisons_exact": true,
+      "array_comparisons": {
+        "y_train": true,
+        "y_val": true,
+        "train_index": true,
+        "val_index": true,
+        "train_ids": true,
+        "val_ids": true,
+        "train_features": true,
+        "val_features": true,
+        "c0_coef": true,
+        "c0_intercept": true,
+        "c0_classes": true,
+        "c0_iterations": true,
+        "c0_train_predictions": true,
+        "c0_train_scores": true,
+        "c0_train_probabilities": true,
+        "c0_val_predictions": true,
+        "c0_val_scores": true,
+        "c0_val_probabilities": true,
+        "c1_coef": true,
+        "c1_intercept": true,
+        "c1_classes": true,
+        "c1_iterations": true,
+        "c1_train_predictions": true,
+        "c1_train_scores": true,
+        "c1_train_probabilities": true,
+        "c1_val_predictions": true,
+        "c1_val_scores": true,
+        "c1_val_probabilities": true,
+        "c2_coef": true,
+        "c2_intercept": true,
+        "c2_classes": true,
+        "c2_iterations": true,
+        "c2_train_predictions": true,
+        "c2_train_scores": true,
+        "c2_train_probabilities": true,
+        "c2_val_predictions": true,
+        "c2_val_scores": true,
+        "c2_val_probabilities": true,
+        "c3_coef": true,
+        "c3_intercept": true,
+        "c3_classes": true,
+        "c3_iterations": true,
+        "c3_train_predictions": true,
+        "c3_train_scores": true,
+        "c3_train_probabilities": true,
+        "c3_val_predictions": true,
+        "c3_val_scores": true,
+        "c3_val_probabilities": true,
+        "c4_coef": true,
+        "c4_intercept": true,
+        "c4_classes": true,
+        "c4_iterations": true,
+        "c4_train_predictions": true,
+        "c4_train_scores": true,
+        "c4_train_probabilities": true,
+        "c4_val_predictions": true,
+        "c4_val_scores": true,
+        "c4_val_probabilities": true,
+        "c5_coef": true,
+        "c5_intercept": true,
+        "c5_classes": true,
+        "c5_iterations": true,
+        "c5_train_predictions": true,
+        "c5_train_scores": true,
+        "c5_train_probabilities": true,
+        "c5_val_predictions": true,
+        "c5_val_scores": true,
+        "c5_val_probabilities": true
+      },
+      "raw_inputs_exact": true,
+      "preprocessed_features_exact": true,
+      "all_model_parameters_scalers_categories_feature_names_and_metrics_exact": true,
+      "all_reported_training_validation_metrics_exact": true,
+      "independent_metric_max_absolute_error": 0.0,
+      "historical_csv_metric_max_absolute_error": 0.0,
+      "historical_png_comparisons": {
+        "curve_lr_t0.png": {
+          "same_shape": true,
+          "pixels_equal": true,
+          "sha256_equal": true
+        },
+        "confusion_lr_t0.png": {
+          "same_shape": true,
+          "pixels_equal": true,
+          "sha256_equal": true
+        }
+      },
+      "plots": {
+        "curve_lr_t0.png": {
+          "data_axes_labels_legends_styles_exact": true,
+          "same_shape": true,
+          "pixels_equal": true,
+          "sha256_equal": true
+        },
+        "confusion_lr_t0.png": {
+          "data_axes_labels_legends_styles_exact": true,
+          "same_shape": true,
+          "pixels_equal": true,
+          "sha256_equal": true
+        }
+      },
+      "best_C": 100.0,
+      "best_validation_metrics": {
+        "val_precision": 0.8830935251798561,
+        "val_recall": 0.9472668810289389,
+        "val_f1": 0.9140552280484021,
+        "val_fpr": 0.13494809688581316
+      },
+      "best_validation_confusion": [
+        [
+          2500,
+          390
+        ],
+        [
+          164,
+          2946
+        ]
+      ],
+      "predictions_compared": 180000,
+      "fit_events_baseline": 28,
+      "fit_events_cleaned": 24,
+      "every_fit_uses_24000_training_rows": true,
+      "load_split_names": [
+        "train",
+        "val"
+      ],
+      "removed_optional_plots": [],
+      "execution_status": "PASS"
+    },
+    "svm": {
+      "baseline_run": "svm_baseline",
+      "cleaned_run": "svm_cleaned",
+      "all_array_comparisons_exact": true,
+      "array_comparisons": {
+        "y_train": true,
+        "y_val": true,
+        "train_index": true,
+        "val_index": true,
+        "train_ids": true,
+        "val_ids": true,
+        "train_features": true,
+        "val_features": true,
+        "c0_coef": true,
+        "c0_intercept": true,
+        "c0_classes": true,
+        "c0_iterations": true,
+        "c0_train_predictions": true,
+        "c0_train_scores": true,
+        "c0_val_predictions": true,
+        "c0_val_scores": true,
+        "c1_coef": true,
+        "c1_intercept": true,
+        "c1_classes": true,
+        "c1_iterations": true,
+        "c1_train_predictions": true,
+        "c1_train_scores": true,
+        "c1_val_predictions": true,
+        "c1_val_scores": true,
+        "c2_coef": true,
+        "c2_intercept": true,
+        "c2_classes": true,
+        "c2_iterations": true,
+        "c2_train_predictions": true,
+        "c2_train_scores": true,
+        "c2_val_predictions": true,
+        "c2_val_scores": true,
+        "c3_coef": true,
+        "c3_intercept": true,
+        "c3_classes": true,
+        "c3_iterations": true,
+        "c3_train_predictions": true,
+        "c3_train_scores": true,
+        "c3_val_predictions": true,
+        "c3_val_scores": true,
+        "c4_coef": true,
+        "c4_intercept": true,
+        "c4_classes": true,
+        "c4_iterations": true,
+        "c4_train_predictions": true,
+        "c4_train_scores": true,
+        "c4_val_predictions": true,
+        "c4_val_scores": true,
+        "c5_coef": true,
+        "c5_intercept": true,
+        "c5_classes": true,
+        "c5_iterations": true,
+        "c5_train_predictions": true,
+        "c5_train_scores": true,
+        "c5_val_predictions": true,
+        "c5_val_scores": true
+      },
+      "raw_inputs_exact": true,
+      "preprocessed_features_exact": true,
+      "all_model_parameters_scalers_categories_feature_names_and_metrics_exact": true,
+      "all_reported_training_validation_metrics_exact": true,
+      "independent_metric_max_absolute_error": 0.0,
+      "historical_csv_metric_max_absolute_error": 0.0,
+      "historical_png_comparisons": {
+        "curve_svm_t0.png": {
+          "same_shape": true,
+          "pixels_equal": true,
+          "sha256_equal": true
+        },
+        "confusion_svm_t0.png": {
+          "same_shape": true,
+          "pixels_equal": true,
+          "sha256_equal": true
+        }
+      },
+      "plots": {
+        "curve_svm_t0.png": {
+          "data_axes_labels_legends_styles_exact": true,
+          "same_shape": true,
+          "pixels_equal": true,
+          "sha256_equal": true
+        },
+        "confusion_svm_t0.png": {
+          "data_axes_labels_legends_styles_exact": true,
+          "same_shape": true,
+          "pixels_equal": true,
+          "sha256_equal": true
+        }
+      },
+      "best_C": 0.1,
+      "best_validation_metrics": {
+        "val_precision": 0.8733547821000293,
+        "val_recall": 0.9601286173633441,
+        "val_f1": 0.9146883136774391,
+        "val_fpr": 0.14982698961937715
+      },
+      "best_validation_confusion": [
+        [
+          2457,
+          433
+        ],
+        [
+          124,
+          2986
+        ]
+      ],
+      "predictions_compared": 180000,
+      "fit_events_baseline": 28,
+      "fit_events_cleaned": 24,
+      "every_fit_uses_24000_training_rows": true,
+      "load_split_names": [
+        "train",
+        "val"
+      ],
+      "removed_optional_plots": [
+        "margins_svm_t0.png"
+      ],
+      "execution_status": "PASS"
+    }
+  },
+  "checks": [
+    {
+      "notebook": "lr_t0.ipynb",
+      "check": "Splits and preprocessed features",
+      "baseline": "24,000 train / 6,000 val; 73 features",
+      "cleaned": "Exact values, IDs, order and labels match",
+      "status": "PASS"
+    },
+    {
+      "notebook": "lr_t0.ipynb",
+      "check": "Settings and six-C sweep",
+      "baseline": "C=0.001,0.01,0.1,1,10,100; all converged",
+      "cleaned": "Identical parameters, grid and convergence",
+      "status": "PASS"
+    },
+    {
+      "notebook": "lr_t0.ipynb",
+      "check": "Predictions and numerical model outputs",
+      "baseline": "180,000 train+val predictions over six fits",
+      "cleaned": "0 differences; scores, coefficients and scalers exact",
+      "status": "PASS"
+    },
+    {
+      "notebook": "lr_t0.ipynb",
+      "check": "Selected C and validation F1",
+      "baseline": "C=100; F1=0.914055228048",
+      "cleaned": "C=100; F1=0.914055228048",
+      "status": "PASS"
+    },
+    {
+      "notebook": "lr_t0.ipynb",
+      "check": "Independent metric calculation",
+      "baseline": "Binary attack-positive precision/recall/F1; normal-class FPR",
+      "cleaned": "Matches predictions and labels; max error 0",
+      "status": "PASS"
+    },
+    {
+      "notebook": "lr_t0.ipynb",
+      "check": "Core validation plots",
+      "baseline": "Validation curve and confusion matrix",
+      "cleaned": "Data, axes, labels, legends, styles and PNG pixels exact",
+      "status": "PASS"
+    },
+    {
+      "notebook": "svm_t0.ipynb",
+      "check": "Splits and preprocessed features",
+      "baseline": "24,000 train / 6,000 val; 73 features",
+      "cleaned": "Exact values, IDs, order and labels match",
+      "status": "PASS"
+    },
+    {
+      "notebook": "svm_t0.ipynb",
+      "check": "Settings and six-C sweep",
+      "baseline": "C=0.001,0.01,0.1,1,10,100; all converged",
+      "cleaned": "Identical parameters, grid and convergence",
+      "status": "PASS"
+    },
+    {
+      "notebook": "svm_t0.ipynb",
+      "check": "Predictions and numerical model outputs",
+      "baseline": "180,000 train+val predictions over six fits",
+      "cleaned": "0 differences; scores, coefficients and scalers exact",
+      "status": "PASS"
+    },
+    {
+      "notebook": "svm_t0.ipynb",
+      "check": "Selected C and validation F1",
+      "baseline": "C=0.1; F1=0.914688313677",
+      "cleaned": "C=0.1; F1=0.914688313677",
+      "status": "PASS"
+    },
+    {
+      "notebook": "svm_t0.ipynb",
+      "check": "Independent metric calculation",
+      "baseline": "Binary attack-positive precision/recall/F1; normal-class FPR",
+      "cleaned": "Matches predictions and labels; max error 0",
+      "status": "PASS"
+    },
+    {
+      "notebook": "svm_t0.ipynb",
+      "check": "Core validation plots",
+      "baseline": "Validation curve and confusion matrix",
+      "cleaned": "Data, axes, labels, legends, styles and PNG pixels exact",
+      "status": "PASS"
+    }
+  ],
+  "baseline_provenance": {
+    "lr": "Pre-cleanup backup; computational AST also compared with Git HEAD snapshot.",
+    "lr_git_computational_ast_matches_backup": true,
+    "svm": "Preserved pre-cleanup backup with recorded outputs; notebook was not tracked in Git."
+  },
+  "fixes": {
+    "file": "notebook/lr_t0.ipynb",
+    "change": "Restore imported RANDOM_STATE and LogisticRegression(random_state=RANDOM_STATE).",
+    "reason": "The pre-cleanup model explicitly used random_state=42; cleanup removed that explicit setting.",
+    "expected_effect": "lbfgs does not use random_state, so this restores parameter fidelity without tuning or changing the intended model.",
+    "preserved_before_fix": "inputs/lr_cleaned.ipynb",
+    "fixed_input_sha256": "05a40d74ea3e367110d62646db405cd39fc704e7f587c0c40f0bb4cef9b2a4d7",
+    "additional_change": "Restore the baseline requirement that all six LR fits converge before model selection, using RuntimeError instead of assert.",
+    "additional_reason": "The cleaned notebook had changed failure handling to select among only converged settings. Successful-run results were already identical, but the original failure policy should be retained.",
+    "final_input_sha256": "5d5ce4bd05b2cfc8708cbfbe4a3958db2bc6165eb838c1f8bb0be2de5c49db7c"
+  },
+  "pre_fix_lr_parameter_differences": {
+    "random_state": {
+      "baseline": 42,
+      "pre_fix": null
+    }
+  },
+  "pre_fix_lr_predictions_scores_coefficients_and_features_already_exact": true,
+  "restored_lr_nonconvergence_guard_exercised_without_training": true,
+  "data_audit": {
+    "raw_training_rows": 175341,
+    "deduplicated_rows": 107740,
+    "sample_rows": 30000,
+    "training_rows": 24000,
+    "validation_rows": 6000,
+    "stratification": "attack_cat for both sample selection and train/validation split",
+    "random_state": 42,
+    "regenerated_train_ids_and_order_match": true,
+    "regenerated_val_ids_and_order_match": true,
+    "source_id_overlap": 0,
+    "model_input_features": 41,
+    "attack_label_mapping_consistent": true,
+    "shared_unique_feature_vectors": 286,
+    "validation_rows_with_a_training_feature_match": 321,
+    "validation_rows_with_same_feature_and_same_label_match": 312,
+    "validation_rows_with_same_feature_and_conflicting_label_match": 9,
+    "test_data_used": false,
+    "preexisting_methodological_limitations": [
+      "Full-training-file EDA informed fixed feature/category choices before validation was held out.",
+      "Deduplication uses all columns except id, not model inputs alone; feature-vector overlap can remain across splits.",
+      "Validation selects C and is therefore a model-selection score, not an untouched final-test estimate."
+    ]
+  },
+  "execution_failures": [],
+  "execution_environment": {
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:04:32) [Clang 20.1.8 ]",
+    "executable": "/Users/victoriajiang/Documents/GitHub/Network-Cyberattack-Detection/.venv/bin/python",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "packages": {
+      "numpy": "2.5.5",
+      "pandas": "3.1.1",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "ipykernel": "7.4.0",
+      "nbformat": "5.11.1",
+      "nbclient": "0.11.0"
+    }
+  },
+  "comparison_policy": {
+    "deterministic_comparisons": "Require exact equality for raw/preprocessed data, predictions, decision scores, probabilities, fitted coefficients, model metrics, and plot data/properties.",
+    "independent_metric_tolerance": 1e-15,
+    "independent_metric_reason": "Equivalent integer-count formulas can differ from sklearn or CSV parsing by floating-point rounding; this tolerance does not permit prediction or model-result differences.",
+    "timing": "fit_time_s is measured wall time and is not expected to match; excluded from numerical-result equivalence.",
+    "threads": "All kernels use one BLAS/OpenMP thread to control reduction-order variability.",
+    "historical_outputs": "Previously saved CSV/text values may undergo decimal parsing; compare within 1e-15, separately from exact newly executed baseline/cleaned comparisons."
+  },
+  "scope": {
+    "changed_original_files": [
+      "notebook/lr_t0.ipynb"
+    ],
+    "original_csvs_figures_data_and_baseline_snapshots_unchanged": true,
+    "verification_outputs_saved_separately": true,
+    "test_data_not_available_in_run_workspaces": true,
+    "dependencies_installed_or_upgraded": false,
+    "execution_host": "Local macOS; not an HPC login node"
+  },
+  "limitations": [
+    "Equality on the successful fixed split does not prove unbiased evaluation or deployment generalization.",
+    "Full-file EDA informed fixed categories and feature choices before validation isolation.",
+    "321 validation rows have exact model-input matches in training: 312 same-label and 9 conflicting-label matches; splits were preserved, not redesigned.",
+    "Validation selects hyperparameters, so a final untouched test is still required.",
+    "The optional SVM margin histogram and other nonessential diagnostics were intentionally removed during cleanup; only the retained core plots are claimed preserved.",
+    "Measured fit times differ with runtime conditions and instrumentation; not treated as model-result differences.",
+    "SVM retry branches beyond 5,000 iterations were not needed by actual runs; their budgets and parameters were preserved. The LR failure guard was separately exercised without training."
+  ]
+}

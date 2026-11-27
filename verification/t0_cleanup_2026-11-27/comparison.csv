@@ -1,0 +1,13 @@
+notebook,check,baseline,cleaned,status
+lr_t0.ipynb,Splits and preprocessed features,"24,000 train / 6,000 val; 73 features","Exact values, IDs, order and labels match",PASS
+lr_t0.ipynb,Settings and six-C sweep,"C=0.001,0.01,0.1,1,10,100; all converged","Identical parameters, grid and convergence",PASS
+lr_t0.ipynb,Predictions and numerical model outputs,"180,000 train+val predictions over six fits","0 differences; scores, coefficients and scalers exact",PASS
+lr_t0.ipynb,Selected C and validation F1,C=100; F1=0.914055228048,C=100; F1=0.914055228048,PASS
+lr_t0.ipynb,Independent metric calculation,Binary attack-positive precision/recall/F1; normal-class FPR,Matches predictions and labels; max error 0,PASS
+lr_t0.ipynb,Core validation plots,Validation curve and confusion matrix,"Data, axes, labels, legends, styles and PNG pixels exact",PASS
+svm_t0.ipynb,Splits and preprocessed features,"24,000 train / 6,000 val; 73 features","Exact values, IDs, order and labels match",PASS
+svm_t0.ipynb,Settings and six-C sweep,"C=0.001,0.01,0.1,1,10,100; all converged","Identical parameters, grid and convergence",PASS
+svm_t0.ipynb,Predictions and numerical model outputs,"180,000 train+val predictions over six fits","0 differences; scores, coefficients and scalers exact",PASS
+svm_t0.ipynb,Selected C and validation F1,C=0.1; F1=0.914688313677,C=0.1; F1=0.914688313677,PASS
+svm_t0.ipynb,Independent metric calculation,Binary attack-positive precision/recall/F1; normal-class FPR,Matches predictions and labels; max error 0,PASS
+svm_t0.ipynb,Core validation plots,Validation curve and confusion matrix,"Data, axes, labels, legends, styles and PNG pixels exact",PASS

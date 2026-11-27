@@ -1,0 +1,9 @@
+check,baseline,cleaned,status
+Split membership and labels,"24,000 train / 6,000 validation, attack_cat stratification, seed 42","Exact IDs, row order, labels and values",PASS
+Preprocessing and degree-2 transformation,"41 raw -> 73 preprocessed -> 2,774 polynomial features","Same settings, fitted statistics and all transformed-value hashes",PASS
+Six-C sweep and model selection,"0.001, 0.01, 0.1, 1, 10, 100; retries 2000/4000/8000; converged-only F1","Same parameters, retries, convergence and selection",PASS
+Predictions and training/validation metrics,"180,000 predictions across six fits",Zero differences; metrics independently verified,PASS
+Selected C and validation F1,C=0.01; F1=0.917419756934,C=0.01; F1=0.917419756934,PASS
+Required tables and core graphs,"Metric, term-count and attack-recall tables; curve and confusion matrix",Same non-timing table data; plot data/axes/labels/legends and pixels identical,PASS
+Historical saved metrics and plots,Original pre-cleanup CSV and PNG files,Reproduced under project default numerical runtime,PASS
+Scope,"lr_t0.ipynb, original CSVs/figures/data and unrelated work",Unchanged; only target notebook and verification artifacts edited,PASS

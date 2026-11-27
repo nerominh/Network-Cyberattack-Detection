@@ -1,0 +1,47 @@
+{
+  "train": {
+    "rows": 24000,
+    "class_counts": {
+      "1": 12441,
+      "0": 11559
+    },
+    "attack_category_counts": {
+      "Normal": 11559,
+      "Exploits": 4421,
+      "Fuzzers": 3598,
+      "Reconnaissance": 1675,
+      "Generic": 931,
+      "DoS": 848,
+      "Analysis": 355,
+      "Backdoor": 342,
+      "Shellcode": 243,
+      "Worms": 28
+    },
+    "exact_split_reproduction": true
+  },
+  "val": {
+    "rows": 6000,
+    "class_counts": {
+      "1": 3110,
+      "0": 2890
+    },
+    "attack_category_counts": {
+      "Normal": 2890,
+      "Exploits": 1105,
+      "Fuzzers": 899,
+      "Reconnaissance": 419,
+      "Generic": 233,
+      "DoS": 212,
+      "Analysis": 89,
+      "Backdoor": 85,
+      "Shellcode": 61,
+      "Worms": 7
+    },
+    "exact_split_reproduction": true
+  },
+  "raw_training_rows": 175341,
+  "deduplicated_rows": 107740,
+  "sample_rows": 30000,
+  "stratification": "attack_cat",
+  "random_state": 42
+}

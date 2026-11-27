@@ -1,0 +1,3352 @@
+{
+  "selection_C": 0.01,
+  "results": [
+    {
+      "model": "SVM",
+      "estimator": "LinearSVC",
+      "transformation": "T1",
+      "param": "C",
+      "value": 0.001,
+      "C": 0.001,
+      "fit_time_s": 10.45,
+      "total_fit_time_s": 10.45,
+      "fit_attempts": 1,
+      "max_iter_used": 5000,
+      "n_iter": 27,
+      "converged": true,
+      "warning_messages": "",
+      "train_precision": 0.8897409172126266,
+      "train_recall": 0.960614098545133,
+      "train_f1": 0.9238201986626986,
+      "train_fpr": 0.12812527035210658,
+      "train_tn": 10078,
+      "train_fp": 1481,
+      "train_fn": 490,
+      "train_tp": 11951,
+      "val_precision": 0.8841445207524634,
+      "val_recall": 0.9520900321543408,
+      "val_f1": 0.9168601950766373,
+      "val_fpr": 0.1342560553633218,
+      "val_tn": 2502,
+      "val_fp": 388,
+      "val_fn": 149,
+      "val_tp": 2961,
+      "f1_gap": 0.006960003586061303,
+      "selected": false,
+      "polynomial_degree": 2,
+      "polynomial_include_bias": false,
+      "polynomial_interaction_only": false,
+      "polynomial_order": "C",
+      "post_poly_scaler": "StandardScaler",
+      "post_poly_with_mean": true,
+      "post_poly_with_std": true,
+      "preprocessing_order": "shared_preprocessing -> PolynomialFeatures -> StandardScaler -> LinearSVC",
+      "random_state": 42,
+      "penalty": "l2",
+      "loss": "squared_hinge",
+      "dual": "auto",
+      "tol": 0.0001,
+      "class_weight": "unweighted",
+      "fit_intercept": true,
+      "intercept_scaling": 1.0,
+      "decision_threshold": 0.0,
+      "raw_features": 41,
+      "base_features": 73,
+      "transformed_features": 2774,
+      "train_size": 24000,
+      "validation_size": 6000,
+      "positive_label": 1,
+      "metric_average": "binary",
+      "selection_metric": "val_f1",
+      "train_val_feature_overlap_rows": 321,
+      "train_split_sha256": "2194ca9b82c1c4413212d6a50a7a0f249df11c46a0463f1c6588505c66495458",
+      "validation_split_sha256": "4200f755ce76db4fe6a75e223d0e127813a8ef927bb1ddfb078d0afee43f86b8",
+      "preprocessor_sha256": "0db95871a824ff57478ccfb45402193399debff70a40652634f58303e34d8df7",
+      "sklearn_version": "1.9.1",
+      "numpy_version": "2.5.5"
+    },
+    {
+      "model": "SVM",
+      "estimator": "LinearSVC",
+      "transformation": "T1",
+      "param": "C",
+      "value": 0.01,
+      "C": 0.01,
+      "fit_time_s": 28.747,
+      "total_fit_time_s": 28.747,
+      "fit_attempts": 1,
+      "max_iter_used": 5000,
+      "n_iter": 95,
+      "converged": true,
+      "warning_messages": "",
+      "train_precision": 0.902552380952381,
+      "train_recall": 0.9521742625190901,
+      "train_f1": 0.9266995228037237,
+      "train_fpr": 0.11064971018254174,
+      "train_tn": 10280,
+      "train_fp": 1279,
+      "train_fn": 595,
+      "train_tp": 11846,
+      "val_precision": 0.8970048899755502,
+      "val_recall": 0.9437299035369775,
+      "val_f1": 0.9197743654026951,
+      "val_fpr": 0.11660899653979238,
+      "val_tn": 2553,
+      "val_fp": 337,
+      "val_fn": 175,
+      "val_tp": 2935,
+      "f1_gap": 0.006925157401028614,
+      "selected": true,
+      "polynomial_degree": 2,
+      "polynomial_include_bias": false,
+      "polynomial_interaction_only": false,
+      "polynomial_order": "C",
+      "post_poly_scaler": "StandardScaler",
+      "post_poly_with_mean": true,
+      "post_poly_with_std": true,
+      "preprocessing_order": "shared_preprocessing -> PolynomialFeatures -> StandardScaler -> LinearSVC",
+      "random_state": 42,
+      "penalty": "l2",
+      "loss": "squared_hinge",
+      "dual": "auto",
+      "tol": 0.0001,
+      "class_weight": "unweighted",
+      "fit_intercept": true,
+      "intercept_scaling": 1.0,
+      "decision_threshold": 0.0,
+      "raw_features": 41,
+      "base_features": 73,
+      "transformed_features": 2774,
+      "train_size": 24000,
+      "validation_size": 6000,
+      "positive_label": 1,
+      "metric_average": "binary",
+      "selection_metric": "val_f1",
+      "train_val_feature_overlap_rows": 321,
+      "train_split_sha256": "2194ca9b82c1c4413212d6a50a7a0f249df11c46a0463f1c6588505c66495458",
+      "validation_split_sha256": "4200f755ce76db4fe6a75e223d0e127813a8ef927bb1ddfb078d0afee43f86b8",
+      "preprocessor_sha256": "0db95871a824ff57478ccfb45402193399debff70a40652634f58303e34d8df7",
+      "sklearn_version": "1.9.1",
+      "numpy_version": "2.5.5"
+    },
+    {
+      "model": "SVM",
+      "estimator": "LinearSVC",
+      "transformation": "T1",
+      "param": "C",
+      "value": 0.1,
+      "C": 0.1,
+      "fit_time_s": 126.946,
+      "total_fit_time_s": 126.946,
+      "fit_attempts": 1,
+      "max_iter_used": 5000,
+      "n_iter": 470,
+      "converged": true,
+      "warning_messages": "",
+      "train_precision": 0.908951091971701,
+      "train_recall": 0.9500843983602604,
+      "train_f1": 0.9290626842208686,
+      "train_fpr": 0.10243100614239986,
+      "train_tn": 10375,
+      "train_fp": 1184,
+      "train_fn": 621,
+      "train_tp": 11820,
+      "val_precision": 0.8997834828332818,
+      "val_recall": 0.9353697749196141,
+      "val_f1": 0.9172315938830207,
+      "val_fpr": 0.11211072664359861,
+      "val_tn": 2566,
+      "val_fp": 324,
+      "val_fn": 201,
+      "val_tp": 2909,
+      "f1_gap": 0.011831090337847905,
+      "selected": false,
+      "polynomial_degree": 2,
+      "polynomial_include_bias": false,
+      "polynomial_interaction_only": false,
+      "polynomial_order": "C",
+      "post_poly_scaler": "StandardScaler",
+      "post_poly_with_mean": true,
+      "post_poly_with_std": true,
+      "preprocessing_order": "shared_preprocessing -> PolynomialFeatures -> StandardScaler -> LinearSVC",
+      "random_state": 42,
+      "penalty": "l2",
+      "loss": "squared_hinge",
+      "dual": "auto",
+      "tol": 0.0001,
+      "class_weight": "unweighted",
+      "fit_intercept": true,
+      "intercept_scaling": 1.0,
+      "decision_threshold": 0.0,
+      "raw_features": 41,
+      "base_features": 73,
+      "transformed_features": 2774,
+      "train_size": 24000,
+      "validation_size": 6000,
+      "positive_label": 1,
+      "metric_average": "binary",
+      "selection_metric": "val_f1",
+      "train_val_feature_overlap_rows": 321,
+      "train_split_sha256": "2194ca9b82c1c4413212d6a50a7a0f249df11c46a0463f1c6588505c66495458",
+      "validation_split_sha256": "4200f755ce76db4fe6a75e223d0e127813a8ef927bb1ddfb078d0afee43f86b8",
+      "preprocessor_sha256": "0db95871a824ff57478ccfb45402193399debff70a40652634f58303e34d8df7",
+      "sklearn_version": "1.9.1",
+      "numpy_version": "2.5.5"
+    },
+    {
+      "model": "SVM",
+      "estimator": "LinearSVC",
+      "transformation": "T1",
+      "param": "C",
+      "value": 1.0,
+      "C": 1.0,
+      "fit_time_s": 295.527,
+      "total_fit_time_s": 295.527,
+      "fit_attempts": 1,
+      "max_iter_used": 5000,
+      "n_iter": 822,
+      "converged": true,
+      "warning_messages": "",
+      "train_precision": 0.9115898386225002,
+      "train_recall": 0.9489590868901214,
+      "train_f1": 0.9298991808443604,
+      "train_fpr": 0.09905701185223635,
+      "train_tn": 10414,
+      "train_fp": 1145,
+      "train_fn": 635,
+      "train_tp": 11806,
+      "val_precision": 0.9007444168734491,
+      "val_recall": 0.9337620578778135,
+      "val_f1": 0.9169561098831702,
+      "val_fpr": 0.11072664359861592,
+      "val_tn": 2570,
+      "val_fp": 320,
+      "val_fn": 206,
+      "val_tp": 2904,
+      "f1_gap": 0.012943070961190184,
+      "selected": false,
+      "polynomial_degree": 2,
+      "polynomial_include_bias": false,
+      "polynomial_interaction_only": false,
+      "polynomial_order": "C",
+      "post_poly_scaler": "StandardScaler",
+      "post_poly_with_mean": true,
+      "post_poly_with_std": true,
+      "preprocessing_order": "shared_preprocessing -> PolynomialFeatures -> StandardScaler -> LinearSVC",
+      "random_state": 42,
+      "penalty": "l2",
+      "loss": "squared_hinge",
+      "dual": "auto",
+      "tol": 0.0001,
+      "class_weight": "unweighted",
+      "fit_intercept": true,
+      "intercept_scaling": 1.0,
+      "decision_threshold": 0.0,
+      "raw_features": 41,
+      "base_features": 73,
+      "transformed_features": 2774,
+      "train_size": 24000,
+      "validation_size": 6000,
+      "positive_label": 1,
+      "metric_average": "binary",
+      "selection_metric": "val_f1",
+      "train_val_feature_overlap_rows": 321,
+      "train_split_sha256": "2194ca9b82c1c4413212d6a50a7a0f249df11c46a0463f1c6588505c66495458",
+      "validation_split_sha256": "4200f755ce76db4fe6a75e223d0e127813a8ef927bb1ddfb078d0afee43f86b8",
+      "preprocessor_sha256": "0db95871a824ff57478ccfb45402193399debff70a40652634f58303e34d8df7",
+      "sklearn_version": "1.9.1",
+      "numpy_version": "2.5.5"
+    },
+    {
+      "model": "SVM",
+      "estimator": "LinearSVC",
+      "transformation": "T1",
+      "param": "C",
+      "value": 10.0,
+      "C": 10.0,
+      "fit_time_s": 647.716,
+      "total_fit_time_s": 647.716,
+      "fit_attempts": 1,
+      "max_iter_used": 5000,
+      "n_iter": 1491,
+      "converged": true,
+      "warning_messages": "",
+      "train_precision": 0.91357833655706,
+      "train_recall": 0.9491198456715698,
+      "train_f1": 0.9310100134037689,
+      "train_fpr": 0.09663465697724717,
+      "train_tn": 10442,
+      "train_fp": 1117,
+      "train_fn": 633,
+      "train_tp": 11808,
+      "val_precision": 0.9045837231057062,
+      "val_recall": 0.9327974276527331,
+      "val_f1": 0.918473959157828,
+      "val_fpr": 0.10588235294117647,
+      "val_tn": 2584,
+      "val_fp": 306,
+      "val_fn": 209,
+      "val_tp": 2901,
+      "f1_gap": 0.012536054245940842,
+      "selected": false,
+      "polynomial_degree": 2,
+      "polynomial_include_bias": false,
+      "polynomial_interaction_only": false,
+      "polynomial_order": "C",
+      "post_poly_scaler": "StandardScaler",
+      "post_poly_with_mean": true,
+      "post_poly_with_std": true,
+      "preprocessing_order": "shared_preprocessing -> PolynomialFeatures -> StandardScaler -> LinearSVC",
+      "random_state": 42,
+      "penalty": "l2",
+      "loss": "squared_hinge",
+      "dual": "auto",
+      "tol": 0.0001,
+      "class_weight": "unweighted",
+      "fit_intercept": true,
+      "intercept_scaling": 1.0,
+      "decision_threshold": 0.0,
+      "raw_features": 41,
+      "base_features": 73,
+      "transformed_features": 2774,
+      "train_size": 24000,
+      "validation_size": 6000,
+      "positive_label": 1,
+      "metric_average": "binary",
+      "selection_metric": "val_f1",
+      "train_val_feature_overlap_rows": 321,
+      "train_split_sha256": "2194ca9b82c1c4413212d6a50a7a0f249df11c46a0463f1c6588505c66495458",
+      "validation_split_sha256": "4200f755ce76db4fe6a75e223d0e127813a8ef927bb1ddfb078d0afee43f86b8",
+      "preprocessor_sha256": "0db95871a824ff57478ccfb45402193399debff70a40652634f58303e34d8df7",
+      "sklearn_version": "1.9.1",
+      "numpy_version": "2.5.5"
+    },
+    {
+      "model": "SVM",
+      "estimator": "LinearSVC",
+      "transformation": "T1",
+      "param": "C",
+      "value": 100.0,
+      "C": 100.0,
+      "fit_time_s": 686.353,
+      "total_fit_time_s": 686.353,
+      "fit_attempts": 1,
+      "max_iter_used": 5000,
+      "n_iter": 1459,
+      "converged": true,
+      "warning_messages": "",
+      "train_precision": 0.9142857142857143,
+      "train_recall": 0.9491198456715698,
+      "train_f1": 0.9313771888310459,
+      "train_fpr": 0.0957695302361796,
+      "train_tn": 10452,
+      "train_fp": 1107,
+      "train_fn": 633,
+      "train_tp": 11808,
+      "val_precision": 0.9052369077306733,
+      "val_recall": 0.9337620578778135,
+      "val_f1": 0.9192782526115859,
+      "val_fpr": 0.10519031141868512,
+      "val_tn": 2586,
+      "val_fp": 304,
+      "val_fn": 206,
+      "val_tp": 2904,
+      "f1_gap": 0.01209893621946001,
+      "selected": false,
+      "polynomial_degree": 2,
+      "polynomial_include_bias": false,
+      "polynomial_interaction_only": false,
+      "polynomial_order": "C",
+      "post_poly_scaler": "StandardScaler",
+      "post_poly_with_mean": true,
+      "post_poly_with_std": true,
+      "preprocessing_order": "shared_preprocessing -> PolynomialFeatures -> StandardScaler -> LinearSVC",
+      "random_state": 42,
+      "penalty": "l2",
+      "loss": "squared_hinge",
+      "dual": "auto",
+      "tol": 0.0001,
+      "class_weight": "unweighted",
+      "fit_intercept": true,
+      "intercept_scaling": 1.0,
+      "decision_threshold": 0.0,
+      "raw_features": 41,
+      "base_features": 73,
+      "transformed_features": 2774,
+      "train_size": 24000,
+      "validation_size": 6000,
+      "positive_label": 1,
+      "metric_average": "binary",
+      "selection_metric": "val_f1",
+      "train_val_feature_overlap_rows": 321,
+      "train_split_sha256": "2194ca9b82c1c4413212d6a50a7a0f249df11c46a0463f1c6588505c66495458",
+      "validation_split_sha256": "4200f755ce76db4fe6a75e223d0e127813a8ef927bb1ddfb078d0afee43f86b8",
+      "preprocessor_sha256": "0db95871a824ff57478ccfb45402193399debff70a40652634f58303e34d8df7",
+      "sklearn_version": "1.9.1",
+      "numpy_version": "2.5.5"
+    }
+  ],
+  "final": [
+    {
+      "model": "SVM",
+      "estimator": "LinearSVC",
+      "transformation": "T1",
+      "param": "C",
+      "value": 0.01,
+      "C": 0.01,
+      "fit_time_s": 28.747,
+      "total_fit_time_s": 28.747,
+      "fit_attempts": 1,
+      "max_iter_used": 5000,
+      "n_iter": 95,
+      "converged": true,
+      "warning_messages": "",
+      "train_precision": 0.902552380952381,
+      "train_recall": 0.9521742625190901,
+      "train_f1": 0.9266995228037237,
+      "train_fpr": 0.11064971018254174,
+      "train_tn": 10280,
+      "train_fp": 1279,
+      "train_fn": 595,
+      "train_tp": 11846,
+      "val_precision": 0.8970048899755502,
+      "val_recall": 0.9437299035369775,
+      "val_f1": 0.9197743654026951,
+      "val_fpr": 0.11660899653979238,
+      "val_tn": 2553,
+      "val_fp": 337,
+      "val_fn": 175,
+      "val_tp": 2935,
+      "f1_gap": 0.006925157401028614,
+      "selected": true,
+      "polynomial_degree": 2,
+      "polynomial_include_bias": false,
+      "polynomial_interaction_only": false,
+      "polynomial_order": "C",
+      "post_poly_scaler": "StandardScaler",
+      "post_poly_with_mean": true,
+      "post_poly_with_std": true,
+      "preprocessing_order": "shared_preprocessing -> PolynomialFeatures -> StandardScaler -> LinearSVC",
+      "random_state": 42,
+      "penalty": "l2",
+      "loss": "squared_hinge",
+      "dual": "auto",
+      "tol": 0.0001,
+      "class_weight": "unweighted",
+      "fit_intercept": true,
+      "intercept_scaling": 1.0,
+      "decision_threshold": 0.0,
+      "raw_features": 41,
+      "base_features": 73,
+      "transformed_features": 2774,
+      "train_size": 24000,
+      "validation_size": 6000,
+      "positive_label": 1,
+      "metric_average": "binary",
+      "selection_metric": "val_f1",
+      "train_val_feature_overlap_rows": 321,
+      "train_split_sha256": "2194ca9b82c1c4413212d6a50a7a0f249df11c46a0463f1c6588505c66495458",
+      "validation_split_sha256": "4200f755ce76db4fe6a75e223d0e127813a8ef927bb1ddfb078d0afee43f86b8",
+      "preprocessor_sha256": "0db95871a824ff57478ccfb45402193399debff70a40652634f58303e34d8df7",
+      "sklearn_version": "1.9.1",
+      "numpy_version": "2.5.5",
+      "evaluation_stage": "final_test",
+      "final_refit": false,
+      "model_fit_rows": 24000,
+      "test_size": 82332,
+      "test_evaluations": 1,
+      "test_batch_size": 1024,
+      "test_predict_time_s": 0.879,
+      "test_split_sha256": "69db071e9406ddf9e238d3e6535cb090fd127f931df4771cd062b3ba3c3865ec",
+      "test_feature_overlap_training_rows": 2900,
+      "test_feature_overlap_validation_rows": 725,
+      "test_feature_overlap_development_rows": 3381,
+      "test_precision": 0.7971441320838911,
+      "test_recall": 0.9851760345892526,
+      "test_f1": 0.8812415521374942,
+      "test_fpr": 0.3071621621621622,
+      "test_tn": 25635,
+      "test_fp": 11365,
+      "test_fn": 672,
+      "test_tp": 44660
+    }
+  ],
+  "load_events": [
+    {
+      "name": "train",
+      "rows": 24000,
+      "features": 41,
+      "X": {
+        "shape": [
+          24000,
+          41
+        ],
+        "columns": [
+          "dur",
+          "proto",
+          "service",
+          "state",
+          "spkts",
+          "dpkts",
+          "sbytes",
+          "dbytes",
+          "rate",
+          "sttl",
+          "dttl",
+          "sload",
+          "dload",
+          "sloss",
+          "dloss",
+          "sinpkt",
+          "dinpkt",
+          "sjit",
+          "djit",
+          "swin",
+          "stcpb",
+          "dtcpb",
+          "dwin",
+          "tcprtt",
+          "synack",
+          "ackdat",
+          "smean",
+          "dmean",
+          "trans_depth",
+          "response_body_len",
+          "ct_srv_src",
+          "ct_state_ttl",
+          "ct_dst_ltm",
+          "ct_src_dport_ltm",
+          "ct_dst_sport_ltm",
+          "ct_dst_src_ltm",
+          "ct_ftp_cmd",
+          "ct_flw_http_mthd",
+          "ct_src_ltm",
+          "ct_srv_dst",
+          "is_sm_ips_ports"
+        ],
+        "dtypes": [
+          "float64",
+          "str",
+          "str",
+          "str",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64"
+        ],
+        "hash": "bed6ebf400b1de3064fb3270fd720b621275c7cf7d28a80c4d2633599a56fdae"
+      },
+      "y_hash": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf"
+    },
+    {
+      "name": "val",
+      "rows": 6000,
+      "features": 41,
+      "X": {
+        "shape": [
+          6000,
+          41
+        ],
+        "columns": [
+          "dur",
+          "proto",
+          "service",
+          "state",
+          "spkts",
+          "dpkts",
+          "sbytes",
+          "dbytes",
+          "rate",
+          "sttl",
+          "dttl",
+          "sload",
+          "dload",
+          "sloss",
+          "dloss",
+          "sinpkt",
+          "dinpkt",
+          "sjit",
+          "djit",
+          "swin",
+          "stcpb",
+          "dtcpb",
+          "dwin",
+          "tcprtt",
+          "synack",
+          "ackdat",
+          "smean",
+          "dmean",
+          "trans_depth",
+          "response_body_len",
+          "ct_srv_src",
+          "ct_state_ttl",
+          "ct_dst_ltm",
+          "ct_src_dport_ltm",
+          "ct_dst_sport_ltm",
+          "ct_dst_src_ltm",
+          "ct_ftp_cmd",
+          "ct_flw_http_mthd",
+          "ct_src_ltm",
+          "ct_srv_dst",
+          "is_sm_ips_ports"
+        ],
+        "dtypes": [
+          "float64",
+          "str",
+          "str",
+          "str",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64"
+        ],
+        "hash": "08762d7c6ba101da3fc5ce5625d006ea3c8ef2005098624f057399ba5334e253"
+      },
+      "y_hash": "169de1c34b3a549b1324a9d73548db53d3c35f949e03933ec968895bfe4803ff"
+    },
+    {
+      "name": "test",
+      "rows": 82332,
+      "features": 41,
+      "X": {
+        "shape": [
+          82332,
+          41
+        ],
+        "columns": [
+          "dur",
+          "proto",
+          "service",
+          "state",
+          "spkts",
+          "dpkts",
+          "sbytes",
+          "dbytes",
+          "rate",
+          "sttl",
+          "dttl",
+          "sload",
+          "dload",
+          "sloss",
+          "dloss",
+          "sinpkt",
+          "dinpkt",
+          "sjit",
+          "djit",
+          "swin",
+          "stcpb",
+          "dtcpb",
+          "dwin",
+          "tcprtt",
+          "synack",
+          "ackdat",
+          "smean",
+          "dmean",
+          "trans_depth",
+          "response_body_len",
+          "ct_srv_src",
+          "ct_state_ttl",
+          "ct_dst_ltm",
+          "ct_src_dport_ltm",
+          "ct_dst_sport_ltm",
+          "ct_dst_src_ltm",
+          "ct_ftp_cmd",
+          "ct_flw_http_mthd",
+          "ct_src_ltm",
+          "ct_srv_dst",
+          "is_sm_ips_ports"
+        ],
+        "dtypes": [
+          "float64",
+          "str",
+          "str",
+          "str",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64"
+        ],
+        "hash": "cf33169f01798469d3e23339cff0b234a044abc65a27d33a3f39b6e1f890075d"
+      },
+      "y_hash": "71a3e1a9b9e9906400dc208aafb8c74c57d206844ea313fee31235d88798ce37"
+    }
+  ],
+  "fit_events": [
+    {
+      "class": "ColumnTransformer",
+      "method": "fit_transform",
+      "shape": [
+        24000,
+        41
+      ],
+      "y_hash": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf",
+      "X": {
+        "shape": [
+          24000,
+          41
+        ],
+        "columns": [
+          "dur",
+          "proto",
+          "service",
+          "state",
+          "spkts",
+          "dpkts",
+          "sbytes",
+          "dbytes",
+          "rate",
+          "sttl",
+          "dttl",
+          "sload",
+          "dload",
+          "sloss",
+          "dloss",
+          "sinpkt",
+          "dinpkt",
+          "sjit",
+          "djit",
+          "swin",
+          "stcpb",
+          "dtcpb",
+          "dwin",
+          "tcprtt",
+          "synack",
+          "ackdat",
+          "smean",
+          "dmean",
+          "trans_depth",
+          "response_body_len",
+          "ct_srv_src",
+          "ct_state_ttl",
+          "ct_dst_ltm",
+          "ct_src_dport_ltm",
+          "ct_dst_sport_ltm",
+          "ct_dst_src_ltm",
+          "ct_ftp_cmd",
+          "ct_flw_http_mthd",
+          "ct_src_ltm",
+          "ct_srv_dst",
+          "is_sm_ips_ports"
+        ],
+        "dtypes": [
+          "float64",
+          "str",
+          "str",
+          "str",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64"
+        ],
+        "hash": "bed6ebf400b1de3064fb3270fd720b621275c7cf7d28a80c4d2633599a56fdae"
+      }
+    },
+    {
+      "class": "StandardScaler",
+      "method": "fit",
+      "shape": [
+        24000,
+        31
+      ],
+      "y_hash": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf",
+      "X": {
+        "shape": [
+          24000,
+          31
+        ],
+        "columns": [
+          "dur",
+          "spkts",
+          "dpkts",
+          "sbytes",
+          "dbytes",
+          "rate",
+          "sload",
+          "dload",
+          "sloss",
+          "dloss",
+          "sinpkt",
+          "dinpkt",
+          "sjit",
+          "djit",
+          "tcprtt",
+          "synack",
+          "ackdat",
+          "smean",
+          "dmean",
+          "trans_depth",
+          "response_body_len",
+          "ct_srv_src",
+          "ct_state_ttl",
+          "ct_dst_ltm",
+          "ct_src_dport_ltm",
+          "ct_dst_sport_ltm",
+          "ct_dst_src_ltm",
+          "ct_ftp_cmd",
+          "ct_flw_http_mthd",
+          "ct_src_ltm",
+          "ct_srv_dst"
+        ],
+        "dtypes": [
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64"
+        ],
+        "hash": "63e8398e1ba9a30eb7a8bdda2479d149a3472d63d0f84f137451901769b5b521"
+      }
+    },
+    {
+      "class": "StandardScaler",
+      "method": "fit",
+      "shape": [
+        24000,
+        7
+      ],
+      "y_hash": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf",
+      "X": {
+        "shape": [
+          24000,
+          7
+        ],
+        "columns": [
+          "sttl",
+          "dttl",
+          "swin",
+          "dwin",
+          "stcpb",
+          "dtcpb",
+          "is_sm_ips_ports"
+        ],
+        "dtypes": [
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64"
+        ],
+        "hash": "9b80afc8ce11fa16324bd8adb4fb0f2a99b08b7769673944bdcb0e62e95b4d03"
+      }
+    },
+    {
+      "class": "StandardScaler",
+      "method": "fit",
+      "shape": [
+        24000,
+        2774
+      ],
+      "y_hash": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf"
+    },
+    {
+      "class": "LinearSVC",
+      "method": "fit",
+      "shape": [
+        24000,
+        2774
+      ],
+      "y_hash": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf",
+      "C": 0.001,
+      "estimator_id": 6063447680
+    },
+    {
+      "class": "ColumnTransformer",
+      "method": "fit_transform",
+      "shape": [
+        24000,
+        41
+      ],
+      "y_hash": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf",
+      "X": {
+        "shape": [
+          24000,
+          41
+        ],
+        "columns": [
+          "dur",
+          "proto",
+          "service",
+          "state",
+          "spkts",
+          "dpkts",
+          "sbytes",
+          "dbytes",
+          "rate",
+          "sttl",
+          "dttl",
+          "sload",
+          "dload",
+          "sloss",
+          "dloss",
+          "sinpkt",
+          "dinpkt",
+          "sjit",
+          "djit",
+          "swin",
+          "stcpb",
+          "dtcpb",
+          "dwin",
+          "tcprtt",
+          "synack",
+          "ackdat",
+          "smean",
+          "dmean",
+          "trans_depth",
+          "response_body_len",
+          "ct_srv_src",
+          "ct_state_ttl",
+          "ct_dst_ltm",
+          "ct_src_dport_ltm",
+          "ct_dst_sport_ltm",
+          "ct_dst_src_ltm",
+          "ct_ftp_cmd",
+          "ct_flw_http_mthd",
+          "ct_src_ltm",
+          "ct_srv_dst",
+          "is_sm_ips_ports"
+        ],
+        "dtypes": [
+          "float64",
+          "str",
+          "str",
+          "str",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64"
+        ],
+        "hash": "bed6ebf400b1de3064fb3270fd720b621275c7cf7d28a80c4d2633599a56fdae"
+      }
+    },
+    {
+      "class": "StandardScaler",
+      "method": "fit",
+      "shape": [
+        24000,
+        31
+      ],
+      "y_hash": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf",
+      "X": {
+        "shape": [
+          24000,
+          31
+        ],
+        "columns": [
+          "dur",
+          "spkts",
+          "dpkts",
+          "sbytes",
+          "dbytes",
+          "rate",
+          "sload",
+          "dload",
+          "sloss",
+          "dloss",
+          "sinpkt",
+          "dinpkt",
+          "sjit",
+          "djit",
+          "tcprtt",
+          "synack",
+          "ackdat",
+          "smean",
+          "dmean",
+          "trans_depth",
+          "response_body_len",
+          "ct_srv_src",
+          "ct_state_ttl",
+          "ct_dst_ltm",
+          "ct_src_dport_ltm",
+          "ct_dst_sport_ltm",
+          "ct_dst_src_ltm",
+          "ct_ftp_cmd",
+          "ct_flw_http_mthd",
+          "ct_src_ltm",
+          "ct_srv_dst"
+        ],
+        "dtypes": [
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64"
+        ],
+        "hash": "63e8398e1ba9a30eb7a8bdda2479d149a3472d63d0f84f137451901769b5b521"
+      }
+    },
+    {
+      "class": "StandardScaler",
+      "method": "fit",
+      "shape": [
+        24000,
+        7
+      ],
+      "y_hash": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf",
+      "X": {
+        "shape": [
+          24000,
+          7
+        ],
+        "columns": [
+          "sttl",
+          "dttl",
+          "swin",
+          "dwin",
+          "stcpb",
+          "dtcpb",
+          "is_sm_ips_ports"
+        ],
+        "dtypes": [
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64"
+        ],
+        "hash": "9b80afc8ce11fa16324bd8adb4fb0f2a99b08b7769673944bdcb0e62e95b4d03"
+      }
+    },
+    {
+      "class": "StandardScaler",
+      "method": "fit",
+      "shape": [
+        24000,
+        2774
+      ],
+      "y_hash": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf"
+    },
+    {
+      "class": "LinearSVC",
+      "method": "fit",
+      "shape": [
+        24000,
+        2774
+      ],
+      "y_hash": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf",
+      "C": 0.01,
+      "estimator_id": 6077493520
+    },
+    {
+      "class": "ColumnTransformer",
+      "method": "fit_transform",
+      "shape": [
+        24000,
+        41
+      ],
+      "y_hash": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf",
+      "X": {
+        "shape": [
+          24000,
+          41
+        ],
+        "columns": [
+          "dur",
+          "proto",
+          "service",
+          "state",
+          "spkts",
+          "dpkts",
+          "sbytes",
+          "dbytes",
+          "rate",
+          "sttl",
+          "dttl",
+          "sload",
+          "dload",
+          "sloss",
+          "dloss",
+          "sinpkt",
+          "dinpkt",
+          "sjit",
+          "djit",
+          "swin",
+          "stcpb",
+          "dtcpb",
+          "dwin",
+          "tcprtt",
+          "synack",
+          "ackdat",
+          "smean",
+          "dmean",
+          "trans_depth",
+          "response_body_len",
+          "ct_srv_src",
+          "ct_state_ttl",
+          "ct_dst_ltm",
+          "ct_src_dport_ltm",
+          "ct_dst_sport_ltm",
+          "ct_dst_src_ltm",
+          "ct_ftp_cmd",
+          "ct_flw_http_mthd",
+          "ct_src_ltm",
+          "ct_srv_dst",
+          "is_sm_ips_ports"
+        ],
+        "dtypes": [
+          "float64",
+          "str",
+          "str",
+          "str",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64"
+        ],
+        "hash": "bed6ebf400b1de3064fb3270fd720b621275c7cf7d28a80c4d2633599a56fdae"
+      }
+    },
+    {
+      "class": "StandardScaler",
+      "method": "fit",
+      "shape": [
+        24000,
+        31
+      ],
+      "y_hash": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf",
+      "X": {
+        "shape": [
+          24000,
+          31
+        ],
+        "columns": [
+          "dur",
+          "spkts",
+          "dpkts",
+          "sbytes",
+          "dbytes",
+          "rate",
+          "sload",
+          "dload",
+          "sloss",
+          "dloss",
+          "sinpkt",
+          "dinpkt",
+          "sjit",
+          "djit",
+          "tcprtt",
+          "synack",
+          "ackdat",
+          "smean",
+          "dmean",
+          "trans_depth",
+          "response_body_len",
+          "ct_srv_src",
+          "ct_state_ttl",
+          "ct_dst_ltm",
+          "ct_src_dport_ltm",
+          "ct_dst_sport_ltm",
+          "ct_dst_src_ltm",
+          "ct_ftp_cmd",
+          "ct_flw_http_mthd",
+          "ct_src_ltm",
+          "ct_srv_dst"
+        ],
+        "dtypes": [
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64"
+        ],
+        "hash": "63e8398e1ba9a30eb7a8bdda2479d149a3472d63d0f84f137451901769b5b521"
+      }
+    },
+    {
+      "class": "StandardScaler",
+      "method": "fit",
+      "shape": [
+        24000,
+        7
+      ],
+      "y_hash": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf",
+      "X": {
+        "shape": [
+          24000,
+          7
+        ],
+        "columns": [
+          "sttl",
+          "dttl",
+          "swin",
+          "dwin",
+          "stcpb",
+          "dtcpb",
+          "is_sm_ips_ports"
+        ],
+        "dtypes": [
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64"
+        ],
+        "hash": "9b80afc8ce11fa16324bd8adb4fb0f2a99b08b7769673944bdcb0e62e95b4d03"
+      }
+    },
+    {
+      "class": "StandardScaler",
+      "method": "fit",
+      "shape": [
+        24000,
+        2774
+      ],
+      "y_hash": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf"
+    },
+    {
+      "class": "LinearSVC",
+      "method": "fit",
+      "shape": [
+        24000,
+        2774
+      ],
+      "y_hash": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf",
+      "C": 0.1,
+      "estimator_id": 6077488720
+    },
+    {
+      "class": "ColumnTransformer",
+      "method": "fit_transform",
+      "shape": [
+        24000,
+        41
+      ],
+      "y_hash": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf",
+      "X": {
+        "shape": [
+          24000,
+          41
+        ],
+        "columns": [
+          "dur",
+          "proto",
+          "service",
+          "state",
+          "spkts",
+          "dpkts",
+          "sbytes",
+          "dbytes",
+          "rate",
+          "sttl",
+          "dttl",
+          "sload",
+          "dload",
+          "sloss",
+          "dloss",
+          "sinpkt",
+          "dinpkt",
+          "sjit",
+          "djit",
+          "swin",
+          "stcpb",
+          "dtcpb",
+          "dwin",
+          "tcprtt",
+          "synack",
+          "ackdat",
+          "smean",
+          "dmean",
+          "trans_depth",
+          "response_body_len",
+          "ct_srv_src",
+          "ct_state_ttl",
+          "ct_dst_ltm",
+          "ct_src_dport_ltm",
+          "ct_dst_sport_ltm",
+          "ct_dst_src_ltm",
+          "ct_ftp_cmd",
+          "ct_flw_http_mthd",
+          "ct_src_ltm",
+          "ct_srv_dst",
+          "is_sm_ips_ports"
+        ],
+        "dtypes": [
+          "float64",
+          "str",
+          "str",
+          "str",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64"
+        ],
+        "hash": "bed6ebf400b1de3064fb3270fd720b621275c7cf7d28a80c4d2633599a56fdae"
+      }
+    },
+    {
+      "class": "StandardScaler",
+      "method": "fit",
+      "shape": [
+        24000,
+        31
+      ],
+      "y_hash": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf",
+      "X": {
+        "shape": [
+          24000,
+          31
+        ],
+        "columns": [
+          "dur",
+          "spkts",
+          "dpkts",
+          "sbytes",
+          "dbytes",
+          "rate",
+          "sload",
+          "dload",
+          "sloss",
+          "dloss",
+          "sinpkt",
+          "dinpkt",
+          "sjit",
+          "djit",
+          "tcprtt",
+          "synack",
+          "ackdat",
+          "smean",
+          "dmean",
+          "trans_depth",
+          "response_body_len",
+          "ct_srv_src",
+          "ct_state_ttl",
+          "ct_dst_ltm",
+          "ct_src_dport_ltm",
+          "ct_dst_sport_ltm",
+          "ct_dst_src_ltm",
+          "ct_ftp_cmd",
+          "ct_flw_http_mthd",
+          "ct_src_ltm",
+          "ct_srv_dst"
+        ],
+        "dtypes": [
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64"
+        ],
+        "hash": "63e8398e1ba9a30eb7a8bdda2479d149a3472d63d0f84f137451901769b5b521"
+      }
+    },
+    {
+      "class": "StandardScaler",
+      "method": "fit",
+      "shape": [
+        24000,
+        7
+      ],
+      "y_hash": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf",
+      "X": {
+        "shape": [
+          24000,
+          7
+        ],
+        "columns": [
+          "sttl",
+          "dttl",
+          "swin",
+          "dwin",
+          "stcpb",
+          "dtcpb",
+          "is_sm_ips_ports"
+        ],
+        "dtypes": [
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64"
+        ],
+        "hash": "9b80afc8ce11fa16324bd8adb4fb0f2a99b08b7769673944bdcb0e62e95b4d03"
+      }
+    },
+    {
+      "class": "StandardScaler",
+      "method": "fit",
+      "shape": [
+        24000,
+        2774
+      ],
+      "y_hash": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf"
+    },
+    {
+      "class": "LinearSVC",
+      "method": "fit",
+      "shape": [
+        24000,
+        2774
+      ],
+      "y_hash": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf",
+      "C": 1,
+      "estimator_id": 6078617008
+    },
+    {
+      "class": "ColumnTransformer",
+      "method": "fit_transform",
+      "shape": [
+        24000,
+        41
+      ],
+      "y_hash": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf",
+      "X": {
+        "shape": [
+          24000,
+          41
+        ],
+        "columns": [
+          "dur",
+          "proto",
+          "service",
+          "state",
+          "spkts",
+          "dpkts",
+          "sbytes",
+          "dbytes",
+          "rate",
+          "sttl",
+          "dttl",
+          "sload",
+          "dload",
+          "sloss",
+          "dloss",
+          "sinpkt",
+          "dinpkt",
+          "sjit",
+          "djit",
+          "swin",
+          "stcpb",
+          "dtcpb",
+          "dwin",
+          "tcprtt",
+          "synack",
+          "ackdat",
+          "smean",
+          "dmean",
+          "trans_depth",
+          "response_body_len",
+          "ct_srv_src",
+          "ct_state_ttl",
+          "ct_dst_ltm",
+          "ct_src_dport_ltm",
+          "ct_dst_sport_ltm",
+          "ct_dst_src_ltm",
+          "ct_ftp_cmd",
+          "ct_flw_http_mthd",
+          "ct_src_ltm",
+          "ct_srv_dst",
+          "is_sm_ips_ports"
+        ],
+        "dtypes": [
+          "float64",
+          "str",
+          "str",
+          "str",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64"
+        ],
+        "hash": "bed6ebf400b1de3064fb3270fd720b621275c7cf7d28a80c4d2633599a56fdae"
+      }
+    },
+    {
+      "class": "StandardScaler",
+      "method": "fit",
+      "shape": [
+        24000,
+        31
+      ],
+      "y_hash": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf",
+      "X": {
+        "shape": [
+          24000,
+          31
+        ],
+        "columns": [
+          "dur",
+          "spkts",
+          "dpkts",
+          "sbytes",
+          "dbytes",
+          "rate",
+          "sload",
+          "dload",
+          "sloss",
+          "dloss",
+          "sinpkt",
+          "dinpkt",
+          "sjit",
+          "djit",
+          "tcprtt",
+          "synack",
+          "ackdat",
+          "smean",
+          "dmean",
+          "trans_depth",
+          "response_body_len",
+          "ct_srv_src",
+          "ct_state_ttl",
+          "ct_dst_ltm",
+          "ct_src_dport_ltm",
+          "ct_dst_sport_ltm",
+          "ct_dst_src_ltm",
+          "ct_ftp_cmd",
+          "ct_flw_http_mthd",
+          "ct_src_ltm",
+          "ct_srv_dst"
+        ],
+        "dtypes": [
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64"
+        ],
+        "hash": "63e8398e1ba9a30eb7a8bdda2479d149a3472d63d0f84f137451901769b5b521"
+      }
+    },
+    {
+      "class": "StandardScaler",
+      "method": "fit",
+      "shape": [
+        24000,
+        7
+      ],
+      "y_hash": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf",
+      "X": {
+        "shape": [
+          24000,
+          7
+        ],
+        "columns": [
+          "sttl",
+          "dttl",
+          "swin",
+          "dwin",
+          "stcpb",
+          "dtcpb",
+          "is_sm_ips_ports"
+        ],
+        "dtypes": [
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64"
+        ],
+        "hash": "9b80afc8ce11fa16324bd8adb4fb0f2a99b08b7769673944bdcb0e62e95b4d03"
+      }
+    },
+    {
+      "class": "StandardScaler",
+      "method": "fit",
+      "shape": [
+        24000,
+        2774
+      ],
+      "y_hash": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf"
+    },
+    {
+      "class": "LinearSVC",
+      "method": "fit",
+      "shape": [
+        24000,
+        2774
+      ],
+      "y_hash": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf",
+      "C": 10,
+      "estimator_id": 6078618528
+    },
+    {
+      "class": "ColumnTransformer",
+      "method": "fit_transform",
+      "shape": [
+        24000,
+        41
+      ],
+      "y_hash": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf",
+      "X": {
+        "shape": [
+          24000,
+          41
+        ],
+        "columns": [
+          "dur",
+          "proto",
+          "service",
+          "state",
+          "spkts",
+          "dpkts",
+          "sbytes",
+          "dbytes",
+          "rate",
+          "sttl",
+          "dttl",
+          "sload",
+          "dload",
+          "sloss",
+          "dloss",
+          "sinpkt",
+          "dinpkt",
+          "sjit",
+          "djit",
+          "swin",
+          "stcpb",
+          "dtcpb",
+          "dwin",
+          "tcprtt",
+          "synack",
+          "ackdat",
+          "smean",
+          "dmean",
+          "trans_depth",
+          "response_body_len",
+          "ct_srv_src",
+          "ct_state_ttl",
+          "ct_dst_ltm",
+          "ct_src_dport_ltm",
+          "ct_dst_sport_ltm",
+          "ct_dst_src_ltm",
+          "ct_ftp_cmd",
+          "ct_flw_http_mthd",
+          "ct_src_ltm",
+          "ct_srv_dst",
+          "is_sm_ips_ports"
+        ],
+        "dtypes": [
+          "float64",
+          "str",
+          "str",
+          "str",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64"
+        ],
+        "hash": "bed6ebf400b1de3064fb3270fd720b621275c7cf7d28a80c4d2633599a56fdae"
+      }
+    },
+    {
+      "class": "StandardScaler",
+      "method": "fit",
+      "shape": [
+        24000,
+        31
+      ],
+      "y_hash": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf",
+      "X": {
+        "shape": [
+          24000,
+          31
+        ],
+        "columns": [
+          "dur",
+          "spkts",
+          "dpkts",
+          "sbytes",
+          "dbytes",
+          "rate",
+          "sload",
+          "dload",
+          "sloss",
+          "dloss",
+          "sinpkt",
+          "dinpkt",
+          "sjit",
+          "djit",
+          "tcprtt",
+          "synack",
+          "ackdat",
+          "smean",
+          "dmean",
+          "trans_depth",
+          "response_body_len",
+          "ct_srv_src",
+          "ct_state_ttl",
+          "ct_dst_ltm",
+          "ct_src_dport_ltm",
+          "ct_dst_sport_ltm",
+          "ct_dst_src_ltm",
+          "ct_ftp_cmd",
+          "ct_flw_http_mthd",
+          "ct_src_ltm",
+          "ct_srv_dst"
+        ],
+        "dtypes": [
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64"
+        ],
+        "hash": "63e8398e1ba9a30eb7a8bdda2479d149a3472d63d0f84f137451901769b5b521"
+      }
+    },
+    {
+      "class": "StandardScaler",
+      "method": "fit",
+      "shape": [
+        24000,
+        7
+      ],
+      "y_hash": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf",
+      "X": {
+        "shape": [
+          24000,
+          7
+        ],
+        "columns": [
+          "sttl",
+          "dttl",
+          "swin",
+          "dwin",
+          "stcpb",
+          "dtcpb",
+          "is_sm_ips_ports"
+        ],
+        "dtypes": [
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64"
+        ],
+        "hash": "9b80afc8ce11fa16324bd8adb4fb0f2a99b08b7769673944bdcb0e62e95b4d03"
+      }
+    },
+    {
+      "class": "StandardScaler",
+      "method": "fit",
+      "shape": [
+        24000,
+        2774
+      ],
+      "y_hash": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf"
+    },
+    {
+      "class": "LinearSVC",
+      "method": "fit",
+      "shape": [
+        24000,
+        2774
+      ],
+      "y_hash": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf",
+      "C": 100,
+      "estimator_id": 6077343664
+    },
+    {
+      "class": "ColumnTransformer",
+      "method": "fit_transform",
+      "shape": [
+        24000,
+        41
+      ],
+      "y_hash": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf",
+      "X": {
+        "shape": [
+          24000,
+          41
+        ],
+        "columns": [
+          "dur",
+          "proto",
+          "service",
+          "state",
+          "spkts",
+          "dpkts",
+          "sbytes",
+          "dbytes",
+          "rate",
+          "sttl",
+          "dttl",
+          "sload",
+          "dload",
+          "sloss",
+          "dloss",
+          "sinpkt",
+          "dinpkt",
+          "sjit",
+          "djit",
+          "swin",
+          "stcpb",
+          "dtcpb",
+          "dwin",
+          "tcprtt",
+          "synack",
+          "ackdat",
+          "smean",
+          "dmean",
+          "trans_depth",
+          "response_body_len",
+          "ct_srv_src",
+          "ct_state_ttl",
+          "ct_dst_ltm",
+          "ct_src_dport_ltm",
+          "ct_dst_sport_ltm",
+          "ct_dst_src_ltm",
+          "ct_ftp_cmd",
+          "ct_flw_http_mthd",
+          "ct_src_ltm",
+          "ct_srv_dst",
+          "is_sm_ips_ports"
+        ],
+        "dtypes": [
+          "float64",
+          "str",
+          "str",
+          "str",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64"
+        ],
+        "hash": "bed6ebf400b1de3064fb3270fd720b621275c7cf7d28a80c4d2633599a56fdae"
+      }
+    },
+    {
+      "class": "StandardScaler",
+      "method": "fit",
+      "shape": [
+        24000,
+        31
+      ],
+      "y_hash": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf",
+      "X": {
+        "shape": [
+          24000,
+          31
+        ],
+        "columns": [
+          "dur",
+          "spkts",
+          "dpkts",
+          "sbytes",
+          "dbytes",
+          "rate",
+          "sload",
+          "dload",
+          "sloss",
+          "dloss",
+          "sinpkt",
+          "dinpkt",
+          "sjit",
+          "djit",
+          "tcprtt",
+          "synack",
+          "ackdat",
+          "smean",
+          "dmean",
+          "trans_depth",
+          "response_body_len",
+          "ct_srv_src",
+          "ct_state_ttl",
+          "ct_dst_ltm",
+          "ct_src_dport_ltm",
+          "ct_dst_sport_ltm",
+          "ct_dst_src_ltm",
+          "ct_ftp_cmd",
+          "ct_flw_http_mthd",
+          "ct_src_ltm",
+          "ct_srv_dst"
+        ],
+        "dtypes": [
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64"
+        ],
+        "hash": "63e8398e1ba9a30eb7a8bdda2479d149a3472d63d0f84f137451901769b5b521"
+      }
+    },
+    {
+      "class": "StandardScaler",
+      "method": "fit",
+      "shape": [
+        24000,
+        7
+      ],
+      "y_hash": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf",
+      "X": {
+        "shape": [
+          24000,
+          7
+        ],
+        "columns": [
+          "sttl",
+          "dttl",
+          "swin",
+          "dwin",
+          "stcpb",
+          "dtcpb",
+          "is_sm_ips_ports"
+        ],
+        "dtypes": [
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64"
+        ],
+        "hash": "9b80afc8ce11fa16324bd8adb4fb0f2a99b08b7769673944bdcb0e62e95b4d03"
+      }
+    },
+    {
+      "class": "LinearSVC",
+      "method": "fit",
+      "shape": [
+        24000,
+        73
+      ],
+      "y_hash": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf",
+      "C": 0.1,
+      "estimator_id": 4404766352
+    }
+  ],
+  "plots": {
+    "curve_svm_t1_poly2.png": {
+      "size_inches": [
+        13.0,
+        4.5
+      ],
+      "figure_dpi": 100.0,
+      "save_kwargs": {
+        "dpi": 150
+      },
+      "axes": [
+        {
+          "title": "SVM T1: polynomial degree 2: train vs validation F1",
+          "xlabel": "C (smaller = stronger regularization)",
+          "ylabel": "",
+          "xscale": "log",
+          "yscale": "linear",
+          "xlim": [
+            0.0005623413251903486,
+            177.82794100389242
+          ],
+          "ylim": [
+            0.9161343453889169,
+            0.9321030385187663
+          ],
+          "xticks": [
+            0.0001,
+            0.001,
+            0.01,
+            0.1,
+            1.0,
+            10.0,
+            100.0,
+            1000.0
+          ],
+          "yticks": [
+            0.916,
+            0.918,
+            0.92,
+            0.922,
+            0.924,
+            0.926,
+            0.928,
+            0.93,
+            0.932,
+            0.934
+          ],
+          "xticklabels": [
+            "$\\mathdefault{10^{-4}}$",
+            "$\\mathdefault{10^{-3}}$",
+            "$\\mathdefault{10^{-2}}$",
+            "$\\mathdefault{10^{-1}}$",
+            "$\\mathdefault{10^{0}}$",
+            "$\\mathdefault{10^{1}}$",
+            "$\\mathdefault{10^{2}}$",
+            "$\\mathdefault{10^{3}}$"
+          ],
+          "yticklabels": [
+            "0.916",
+            "0.918",
+            "0.920",
+            "0.922",
+            "0.924",
+            "0.926",
+            "0.928",
+            "0.930",
+            "0.932",
+            "0.934"
+          ],
+          "position": [
+            0.04978632478632479,
+            0.13544656635802477,
+            0.4513675213675214,
+            0.7838126929012346
+          ],
+          "legend": [
+            "train F1",
+            "validation F1"
+          ],
+          "lines": [
+            {
+              "x": [
+                0.001,
+                0.01,
+                0.1,
+                1.0,
+                10.0,
+                100.0
+              ],
+              "y": [
+                0.9238201986626986,
+                0.9266995228037237,
+                0.9290626842208686,
+                0.9298991808443604,
+                0.9310100134037689,
+                0.9313771888310459
+              ],
+              "label": "train F1",
+              "color": [
+                0.12156862745098039,
+                0.4666666666666667,
+                0.7058823529411765
+              ],
+              "linestyle": "--",
+              "marker": "o",
+              "linewidth": 1.5,
+              "markersize": 6.0
+            },
+            {
+              "x": [
+                0.001,
+                0.01,
+                0.1,
+                1.0,
+                10.0,
+                100.0
+              ],
+              "y": [
+                0.9168601950766373,
+                0.9197743654026951,
+                0.9172315938830207,
+                0.9169561098831702,
+                0.918473959157828,
+                0.9192782526115859
+              ],
+              "label": "validation F1",
+              "color": [
+                1.0,
+                0.4980392156862745,
+                0.054901960784313725
+              ],
+              "linestyle": "-",
+              "marker": "o",
+              "linewidth": 1.5,
+              "markersize": 6.0
+            }
+          ],
+          "images": [],
+          "texts": []
+        },
+        {
+          "title": "SVM T1: polynomial degree 2: validation metrics",
+          "xlabel": "C (smaller = stronger regularization)",
+          "ylabel": "",
+          "xscale": "log",
+          "yscale": "linear",
+          "xlim": [
+            0.0005623413251903486,
+            177.82794100389242
+          ],
+          "ylim": [
+            0.06284532538190234,
+            0.9944350181911237
+          ],
+          "xticks": [
+            0.0001,
+            0.001,
+            0.01,
+            0.1,
+            1.0,
+            10.0,
+            100.0,
+            1000.0
+          ],
+          "yticks": [
+            0.0,
+            0.2,
+            0.4,
+            0.6000000000000001,
+            0.8,
+            1.0
+          ],
+          "xticklabels": [
+            "$\\mathdefault{10^{-4}}$",
+            "$\\mathdefault{10^{-3}}$",
+            "$\\mathdefault{10^{-2}}$",
+            "$\\mathdefault{10^{-1}}$",
+            "$\\mathdefault{10^{0}}$",
+            "$\\mathdefault{10^{1}}$",
+            "$\\mathdefault{10^{2}}$",
+            "$\\mathdefault{10^{3}}$"
+          ],
+          "yticklabels": [
+            "0.0",
+            "0.2",
+            "0.4",
+            "0.6",
+            "0.8",
+            "1.0"
+          ],
+          "position": [
+            0.5370940170940172,
+            0.13544656635802477,
+            0.45136752136752145,
+            0.7838126929012346
+          ],
+          "legend": [
+            "precision",
+            "recall",
+            "fpr"
+          ],
+          "lines": [
+            {
+              "x": [
+                0.001,
+                0.01,
+                0.1,
+                1.0,
+                10.0,
+                100.0
+              ],
+              "y": [
+                0.8841445207524634,
+                0.8970048899755502,
+                0.8997834828332818,
+                0.9007444168734491,
+                0.9045837231057062,
+                0.9052369077306733
+              ],
+              "label": "precision",
+              "color": [
+                0.12156862745098039,
+                0.4666666666666667,
+                0.7058823529411765
+              ],
+              "linestyle": "-",
+              "marker": "o",
+              "linewidth": 1.5,
+              "markersize": 6.0
+            },
+            {
+              "x": [
+                0.001,
+                0.01,
+                0.1,
+                1.0,
+                10.0,
+                100.0
+              ],
+              "y": [
+                0.9520900321543408,
+                0.9437299035369775,
+                0.9353697749196141,
+                0.9337620578778135,
+                0.9327974276527331,
+                0.9337620578778135
+              ],
+              "label": "recall",
+              "color": [
+                1.0,
+                0.4980392156862745,
+                0.054901960784313725
+              ],
+              "linestyle": "-",
+              "marker": "o",
+              "linewidth": 1.5,
+              "markersize": 6.0
+            },
+            {
+              "x": [
+                0.001,
+                0.01,
+                0.1,
+                1.0,
+                10.0,
+                100.0
+              ],
+              "y": [
+                0.1342560553633218,
+                0.11660899653979238,
+                0.11211072664359861,
+                0.11072664359861592,
+                0.10588235294117647,
+                0.10519031141868512
+              ],
+              "label": "fpr",
+              "color": [
+                0.17254901960784313,
+                0.6274509803921569,
+                0.17254901960784313
+              ],
+              "linestyle": "-",
+              "marker": "o",
+              "linewidth": 1.5,
+              "markersize": 6.0
+            }
+          ],
+          "images": [],
+          "texts": []
+        }
+      ]
+    },
+    "confusion_svm_t1_poly2_validation.png": {
+      "size_inches": [
+        6.4,
+        4.8
+      ],
+      "figure_dpi": 100.0,
+      "save_kwargs": {
+        "dpi": 150,
+        "bbox_inches": "tight"
+      },
+      "axes": [
+        {
+          "title": "SVM T1, C=0.01: validation",
+          "xlabel": "Predicted label",
+          "ylabel": "True label",
+          "xscale": "linear",
+          "yscale": "linear",
+          "xlim": [
+            -0.5,
+            1.5
+          ],
+          "ylim": [
+            1.5,
+            -0.5
+          ],
+          "xticks": [
+            0,
+            1
+          ],
+          "yticks": [
+            0,
+            1
+          ],
+          "xticklabels": [
+            "Normal",
+            "Attack"
+          ],
+          "yticklabels": [
+            "Normal",
+            "Attack"
+          ],
+          "position": [
+            0.1675000000000001,
+            0.10999999999999999,
+            0.5775,
+            0.77
+          ],
+          "legend": null,
+          "lines": [],
+          "images": [
+            {
+              "array": [
+                [
+                  2553,
+                  337
+                ],
+                [
+                  175,
+                  2935
+                ]
+              ],
+              "cmap": "Blues",
+              "extent": [
+                -0.5,
+                1.5,
+                1.5,
+                -0.5
+              ],
+              "clim": [
+                175,
+                2935
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "2,553",
+              "position": [
+                0,
+                0
+              ],
+              "color": [
+                0.9686274509803922,
+                0.984313725490196,
+                1.0,
+                1.0
+              ],
+              "fontsize": 10.0,
+              "rotation": 0.0
+            },
+            {
+              "text": "337",
+              "position": [
+                1,
+                0
+              ],
+              "color": [
+                0.03137254901960784,
+                0.18823529411764706,
+                0.4196078431372549,
+                1.0
+              ],
+              "fontsize": 10.0,
+              "rotation": 0.0
+            },
+            {
+              "text": "175",
+              "position": [
+                0,
+                1
+              ],
+              "color": [
+                0.03137254901960784,
+                0.18823529411764706,
+                0.4196078431372549,
+                1.0
+              ],
+              "fontsize": 10.0,
+              "rotation": 0.0
+            },
+            {
+              "text": "2,935",
+              "position": [
+                1,
+                1
+              ],
+              "color": [
+                0.9686274509803922,
+                0.984313725490196,
+                1.0,
+                1.0
+              ],
+              "fontsize": 10.0,
+              "rotation": 0.0
+            }
+          ]
+        },
+        {
+          "title": "",
+          "xlabel": "",
+          "ylabel": "",
+          "xscale": "linear",
+          "yscale": "linear",
+          "xlim": [
+            0.0,
+            1.0
+          ],
+          "ylim": [
+            175.0,
+            2935.0
+          ],
+          "xticks": [],
+          "yticks": [
+            0.0,
+            500.0,
+            1000.0,
+            1500.0,
+            2000.0,
+            2500.0,
+            3000.0
+          ],
+          "xticklabels": [],
+          "yticklabels": [
+            "0",
+            "500",
+            "1000",
+            "1500",
+            "2000",
+            "2500",
+            "3000"
+          ],
+          "position": [
+            0.7837500000000002,
+            0.10999999999999999,
+            0.028874999999999984,
+            0.77
+          ],
+          "legend": null,
+          "lines": [],
+          "images": [],
+          "texts": []
+        }
+      ]
+    },
+    "confusion_svm_t1_poly2_test.png": {
+      "size_inches": [
+        6.4,
+        4.8
+      ],
+      "figure_dpi": 100.0,
+      "save_kwargs": {
+        "dpi": 150,
+        "bbox_inches": "tight"
+      },
+      "axes": [
+        {
+          "title": "SVM T1, frozen C=0.01: final test",
+          "xlabel": "Predicted label",
+          "ylabel": "True label",
+          "xscale": "linear",
+          "yscale": "linear",
+          "xlim": [
+            -0.5,
+            1.5
+          ],
+          "ylim": [
+            1.5,
+            -0.5
+          ],
+          "xticks": [
+            0,
+            1
+          ],
+          "yticks": [
+            0,
+            1
+          ],
+          "xticklabels": [
+            "Normal",
+            "Attack"
+          ],
+          "yticklabels": [
+            "Normal",
+            "Attack"
+          ],
+          "position": [
+            0.1675000000000001,
+            0.10999999999999999,
+            0.5775,
+            0.77
+          ],
+          "legend": null,
+          "lines": [],
+          "images": [
+            {
+              "array": [
+                [
+                  25635,
+                  11365
+                ],
+                [
+                  672,
+                  44660
+                ]
+              ],
+              "cmap": "Blues",
+              "extent": [
+                -0.5,
+                1.5,
+                1.5,
+                -0.5
+              ],
+              "clim": [
+                672,
+                44660
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "25,635",
+              "position": [
+                0,
+                0
+              ],
+              "color": [
+                0.9686274509803922,
+                0.984313725490196,
+                1.0,
+                1.0
+              ],
+              "fontsize": 10.0,
+              "rotation": 0.0
+            },
+            {
+              "text": "11,365",
+              "position": [
+                1,
+                0
+              ],
+              "color": [
+                0.03137254901960784,
+                0.18823529411764706,
+                0.4196078431372549,
+                1.0
+              ],
+              "fontsize": 10.0,
+              "rotation": 0.0
+            },
+            {
+              "text": "672",
+              "position": [
+                0,
+                1
+              ],
+              "color": [
+                0.03137254901960784,
+                0.18823529411764706,
+                0.4196078431372549,
+                1.0
+              ],
+              "fontsize": 10.0,
+              "rotation": 0.0
+            },
+            {
+              "text": "44,660",
+              "position": [
+                1,
+                1
+              ],
+              "color": [
+                0.9686274509803922,
+                0.984313725490196,
+                1.0,
+                1.0
+              ],
+              "fontsize": 10.0,
+              "rotation": 0.0
+            }
+          ]
+        },
+        {
+          "title": "",
+          "xlabel": "",
+          "ylabel": "",
+          "xscale": "linear",
+          "yscale": "linear",
+          "xlim": [
+            0.0,
+            1.0
+          ],
+          "ylim": [
+            672.0,
+            44660.0
+          ],
+          "xticks": [],
+          "yticks": [
+            0.0,
+            5000.0,
+            10000.0,
+            15000.0,
+            20000.0,
+            25000.0,
+            30000.0,
+            35000.0,
+            40000.0,
+            45000.0
+          ],
+          "xticklabels": [],
+          "yticklabels": [
+            "0",
+            "5000",
+            "10000",
+            "15000",
+            "20000",
+            "25000",
+            "30000",
+            "35000",
+            "40000",
+            "45000"
+          ],
+          "position": [
+            0.7837500000000002,
+            0.10999999999999999,
+            0.028874999999999984,
+            0.77
+          ],
+          "legend": null,
+          "lines": [],
+          "images": [],
+          "texts": []
+        }
+      ]
+    }
+  },
+  "independent_metrics": [
+    {
+      "C": 0.001,
+      "split": "train",
+      "precision": 0.8897409172126266,
+      "recall": 0.960614098545133,
+      "f1": 0.9238201986626986,
+      "fpr": 0.12812527035210658,
+      "confusion": [
+        [
+          10078,
+          1481
+        ],
+        [
+          490,
+          11951
+        ]
+      ]
+    },
+    {
+      "C": 0.001,
+      "split": "val",
+      "precision": 0.8841445207524634,
+      "recall": 0.9520900321543408,
+      "f1": 0.9168601950766373,
+      "fpr": 0.1342560553633218,
+      "confusion": [
+        [
+          2502,
+          388
+        ],
+        [
+          149,
+          2961
+        ]
+      ]
+    },
+    {
+      "C": 0.01,
+      "split": "train",
+      "precision": 0.902552380952381,
+      "recall": 0.9521742625190901,
+      "f1": 0.9266995228037237,
+      "fpr": 0.11064971018254174,
+      "confusion": [
+        [
+          10280,
+          1279
+        ],
+        [
+          595,
+          11846
+        ]
+      ]
+    },
+    {
+      "C": 0.01,
+      "split": "val",
+      "precision": 0.8970048899755502,
+      "recall": 0.9437299035369775,
+      "f1": 0.9197743654026951,
+      "fpr": 0.11660899653979238,
+      "confusion": [
+        [
+          2553,
+          337
+        ],
+        [
+          175,
+          2935
+        ]
+      ]
+    },
+    {
+      "C": 0.1,
+      "split": "train",
+      "precision": 0.908951091971701,
+      "recall": 0.9500843983602604,
+      "f1": 0.9290626842208686,
+      "fpr": 0.10243100614239986,
+      "confusion": [
+        [
+          10375,
+          1184
+        ],
+        [
+          621,
+          11820
+        ]
+      ]
+    },
+    {
+      "C": 0.1,
+      "split": "val",
+      "precision": 0.8997834828332818,
+      "recall": 0.9353697749196141,
+      "f1": 0.9172315938830207,
+      "fpr": 0.11211072664359861,
+      "confusion": [
+        [
+          2566,
+          324
+        ],
+        [
+          201,
+          2909
+        ]
+      ]
+    },
+    {
+      "C": 1,
+      "split": "train",
+      "precision": 0.9115898386225002,
+      "recall": 0.9489590868901214,
+      "f1": 0.9298991808443604,
+      "fpr": 0.09905701185223635,
+      "confusion": [
+        [
+          10414,
+          1145
+        ],
+        [
+          635,
+          11806
+        ]
+      ]
+    },
+    {
+      "C": 1,
+      "split": "val",
+      "precision": 0.9007444168734491,
+      "recall": 0.9337620578778135,
+      "f1": 0.9169561098831702,
+      "fpr": 0.11072664359861592,
+      "confusion": [
+        [
+          2570,
+          320
+        ],
+        [
+          206,
+          2904
+        ]
+      ]
+    },
+    {
+      "C": 10,
+      "split": "train",
+      "precision": 0.91357833655706,
+      "recall": 0.9491198456715698,
+      "f1": 0.9310100134037689,
+      "fpr": 0.09663465697724717,
+      "confusion": [
+        [
+          10442,
+          1117
+        ],
+        [
+          633,
+          11808
+        ]
+      ]
+    },
+    {
+      "C": 10,
+      "split": "val",
+      "precision": 0.9045837231057062,
+      "recall": 0.9327974276527331,
+      "f1": 0.918473959157828,
+      "fpr": 0.10588235294117647,
+      "confusion": [
+        [
+          2584,
+          306
+        ],
+        [
+          209,
+          2901
+        ]
+      ]
+    },
+    {
+      "C": 100,
+      "split": "train",
+      "precision": 0.9142857142857143,
+      "recall": 0.9491198456715698,
+      "f1": 0.9313771888310459,
+      "fpr": 0.0957695302361796,
+      "confusion": [
+        [
+          10452,
+          1107
+        ],
+        [
+          633,
+          11808
+        ]
+      ]
+    },
+    {
+      "C": 100,
+      "split": "val",
+      "precision": 0.9052369077306733,
+      "recall": 0.9337620578778135,
+      "f1": 0.9192782526115859,
+      "fpr": 0.10519031141868512,
+      "confusion": [
+        [
+          2586,
+          304
+        ],
+        [
+          206,
+          2904
+        ]
+      ]
+    }
+  ],
+  "independent_final_test_metrics": {
+    "precision": 0.7971441320838911,
+    "recall": 0.9851760345892526,
+    "f1": 0.8812415521374942,
+    "fpr": 0.3071621621621622,
+    "confusion": [
+      [
+        25635,
+        11365
+      ],
+      [
+        672,
+        44660
+      ]
+    ]
+  },
+  "test_prediction_batches": 81,
+  "test_predictions_only_selected_model": true,
+  "all_fits_on_24000_training_rows_before_test": true,
+  "independent_polynomial_term_check": "Exact equality for all 2,774 terms on three training examples.",
+  "environment": {
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:04:32) [Clang 20.1.8 ]",
+    "executable": "/Users/victoriajiang/Documents/GitHub/Network-Cyberattack-Detection/.venv/bin/python",
+    "host": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "packages": {
+      "numpy": "2.5.5",
+      "pandas": "3.1.1",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "nbformat": "5.11.1",
+      "nbclient": "0.11.0",
+      "ipykernel": "7.4.0"
+    }
+  }
+}

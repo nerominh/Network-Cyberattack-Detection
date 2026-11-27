@@ -1,0 +1,4 @@
+{
+  "status": "failed",
+  "error": "CellTimeoutError('A cell timed out while it was being executed, after 900 seconds.\\nThe message was: Cell execution timed out.\\nHere is a preview of the cell contents:\\n-------------------\\n[\\'rows, fitted = [], {}\\', \\'for C in GRID:\\', \\'    pipe, fit_info = fit_with_retries(C)\\', \\'    prep, poly, scale, classifier = pipe.steps[0][1], pipe.steps[1][1], pipe.steps[2][1], pipe.steps[3][1]\\', \\'    base_features = len(prep.get_feature_names_out())\\']\\n...\\n[\\'}\\', \\'for name, value in metadata.items():\\', \\'    results[name] = value\\', \\'results.to_csv(RESULT_CSV, index=False)\\', \\'display(results[[\"C\", \"train_precision\", \"train_recall\", \"train_f1\", \"train_fpr\", \"val_precision\", \"val_recall\", \"val_f1\", \"val_fpr\", \"f1_gap\", \"fit_time_s\", \"n_iter\", \"converged\"]].round(4))\\']\\n-------------------\\n')"
+}

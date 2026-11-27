@@ -1,0 +1,11 @@
+{
+  "file": "notebook/lr_t0.ipynb",
+  "change": "Restore imported RANDOM_STATE and LogisticRegression(random_state=RANDOM_STATE).",
+  "reason": "The pre-cleanup model explicitly used random_state=42; cleanup removed that explicit setting.",
+  "expected_effect": "lbfgs does not use random_state, so this restores parameter fidelity without tuning or changing the intended model.",
+  "preserved_before_fix": "inputs/lr_cleaned.ipynb",
+  "fixed_input_sha256": "05a40d74ea3e367110d62646db405cd39fc704e7f587c0c40f0bb4cef9b2a4d7",
+  "additional_change": "Restore the baseline requirement that all six LR fits converge before model selection, using RuntimeError instead of assert.",
+  "additional_reason": "The cleaned notebook had changed failure handling to select among only converged settings. Successful-run results were already identical, but the original failure policy should be retained.",
+  "final_input_sha256": "5d5ce4bd05b2cfc8708cbfbe4a3958db2bc6165eb838c1f8bb0be2de5c49db7c"
+}

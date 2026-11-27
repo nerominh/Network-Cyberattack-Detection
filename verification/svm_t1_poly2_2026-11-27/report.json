@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "files": {
+    "notebook": "notebook/svm_t1_poly2.ipynb",
+    "search_csv": "results/svm_t1_poly2_results.csv",
+    "final_csv": "results/svm_t1_poly2_final_results.csv",
+    "figures": [
+      "figures/curve_svm_t1_poly2.png",
+      "figures/confusion_svm_t1_poly2_validation.png",
+      "figures/confusion_svm_t1_poly2_test.png"
+    ]
+  },
+  "selected_C": 0.01,
+  "converged_candidates": 6,
+  "candidate_warnings": [],
+  "selected_metrics": {
+    "train": {
+      "precision": 0.902552380952381,
+      "recall": 0.9521742625190901,
+      "f1": 0.9266995228037237,
+      "fpr": 0.11064971018254174
+    },
+    "val": {
+      "precision": 0.8970048899755502,
+      "recall": 0.9437299035369775,
+      "f1": 0.9197743654026951,
+      "fpr": 0.11660899653979238
+    },
+    "test": {
+      "precision": 0.7971441320838911,
+      "recall": 0.9851760345892526,
+      "f1": 0.8812415521374942,
+      "fpr": 0.3071621621621622
+    }
+  },
+  "final_confusion": {
+    "tn": 25635,
+    "fp": 11365,
+    "fn": 672,
+    "tp": 44660
+  },
+  "validation_confusion": {
+    "tn": 2553,
+    "fp": 337,
+    "fn": 175,
+    "tp": 2935
+  },
+  "checks": [
+    "Fresh-kernel top-to-bottom execution passed.",
+    "All candidate metrics independently agree with actual predictions and true labels.",
+    "All 2,774 polynomial terms independently reconstructed exactly on three rows.",
+    "Only training data fitted; no fits occurred after test loading.",
+    "Only the selected T1 model predicted test, covering 82,332 rows in one batched pass.",
+    "CSV row counts, selected flags, parameters, metrics and confusion counts verified.",
+    "Canonical train/validation splits exactly reproduce preprocessing.ipynb stratified sampling; full test data equals its official source.",
+    "Plotted data and class labels independently match recorded metrics and predictions.",
+    "Existing reference notebooks, CSVs, shared code and unrelated work unchanged.",
+    "All three exported figures visually inspected: readable axes/legends, correct class orientation and counts, no clipping."
+  ],
+  "overlap_audit": {
+    "train_val_feature_overlap_rows": 321,
+    "test_feature_overlap_training_rows": 2900,
+    "test_feature_overlap_validation_rows": 725,
+    "test_feature_overlap_development_rows": 3381
+  },
+  "limitations": [
+    "Full-file EDA informed fixed preprocessing choices before validation isolation.",
+    "Exact feature-vector overlap predates this experiment and limits holdout independence.",
+    "This test score is for the frozen selected T1 configuration, not the globally selected model across all approaches.",
+    "The test set has now been evaluated and must not guide subsequent tuning.",
+    "The selected training-only model was reused because no train-plus-validation final-refit protocol was defined in the reference."
+  ],
+  "environment": {
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:04:32) [Clang 20.1.8 ]",
+    "executable": "/Users/victoriajiang/Documents/GitHub/Network-Cyberattack-Detection/.venv/bin/python",
+    "host": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "packages": {
+      "numpy": "2.5.5",
+      "pandas": "3.1.1",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "nbformat": "5.11.1",
+      "nbclient": "0.11.0",
+      "ipykernel": "7.4.0"
+    }
+  }
+}

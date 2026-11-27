@@ -1,0 +1,24 @@
+{
+  "raw_training_rows": 175341,
+  "deduplicated_rows": 107740,
+  "sample_rows": 30000,
+  "training_rows": 24000,
+  "validation_rows": 6000,
+  "stratification": "attack_cat for both sample selection and train/validation split",
+  "random_state": 42,
+  "regenerated_train_ids_and_order_match": true,
+  "regenerated_val_ids_and_order_match": true,
+  "source_id_overlap": 0,
+  "model_input_features": 41,
+  "attack_label_mapping_consistent": true,
+  "shared_unique_feature_vectors": 286,
+  "validation_rows_with_a_training_feature_match": 321,
+  "validation_rows_with_same_feature_and_same_label_match": 312,
+  "validation_rows_with_same_feature_and_conflicting_label_match": 9,
+  "test_data_used": false,
+  "preexisting_methodological_limitations": [
+    "Full-training-file EDA informed fixed feature/category choices before validation was held out.",
+    "Deduplication uses all columns except id, not model inputs alone; feature-vector overlap can remain across splits.",
+    "Validation selects C and is therefore a model-selection score, not an untouched final-test estimate."
+  ]
+}

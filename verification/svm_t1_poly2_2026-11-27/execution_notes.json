@@ -1,0 +1,22 @@
+{
+  "initial_attempt": {
+    "outcome": "900-second cell timeout during the C sweep",
+    "completed_candidates": [
+      0.001,
+      0.01,
+      0.1,
+      1
+    ],
+    "test_loaded": false,
+    "test_evaluated": false,
+    "preserved_status": "timeout_attempt_execution_status.json",
+    "preserved_notebook": "timeout_attempt_executed_with_audit.ipynb"
+  },
+  "rerun": {
+    "fresh_kernel": true,
+    "cell_time_limit": null,
+    "model_settings_changed": false,
+    "dependencies_changed": false
+  },
+  "reason_for_repeat": "Execution harness time limit, not model tuning or forced agreement."
+}

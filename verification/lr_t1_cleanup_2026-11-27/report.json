@@ -1,0 +1,434 @@
+{
+  "overall": "Cleanup preserved T1 training results and plotted data under matched numerical runtimes. Default-runtime runs reproduce historical metrics and plots.",
+  "changes": {
+    "code_lines_before": 225,
+    "code_lines_after": 76,
+    "markdown_words_before": 1774,
+    "markdown_words_after": 758,
+    "removed_optional_diagnostics": [
+      "separate preprocessing preview fit",
+      "optimizer/coefficient-norm tables",
+      "coefficient inspection",
+      "cross-run CSV comparison",
+      "duplicate CSV rewriting",
+      "debug assertions and verbose generated captions"
+    ],
+    "retained": [
+      "full polynomial feature map and feature-count table",
+      "six-C sweep",
+      "retry budgets and converged-only selection",
+      "metric and attack-type tables",
+      "validation curve and confusion matrix",
+      "CSV export checkpoint"
+    ]
+  },
+  "checks": [
+    {
+      "check": "Split membership and labels",
+      "baseline": "24,000 train / 6,000 validation, attack_cat stratification, seed 42",
+      "cleaned": "Exact IDs, row order, labels and values",
+      "status": "PASS"
+    },
+    {
+      "check": "Preprocessing and degree-2 transformation",
+      "baseline": "41 raw -> 73 preprocessed -> 2,774 polynomial features",
+      "cleaned": "Same settings, fitted statistics and all transformed-value hashes",
+      "status": "PASS"
+    },
+    {
+      "check": "Six-C sweep and model selection",
+      "baseline": "0.001, 0.01, 0.1, 1, 10, 100; retries 2000/4000/8000; converged-only F1",
+      "cleaned": "Same parameters, retries, convergence and selection",
+      "status": "PASS"
+    },
+    {
+      "check": "Predictions and training/validation metrics",
+      "baseline": "180,000 predictions across six fits",
+      "cleaned": "Zero differences; metrics independently verified",
+      "status": "PASS"
+    },
+    {
+      "check": "Selected C and validation F1",
+      "baseline": "C=0.01; F1=0.917419756934",
+      "cleaned": "C=0.01; F1=0.917419756934",
+      "status": "PASS"
+    },
+    {
+      "check": "Required tables and core graphs",
+      "baseline": "Metric, term-count and attack-recall tables; curve and confusion matrix",
+      "cleaned": "Same non-timing table data; plot data/axes/labels/legends and pixels identical",
+      "status": "PASS"
+    },
+    {
+      "check": "Historical saved metrics and plots",
+      "baseline": "Original pre-cleanup CSV and PNG files",
+      "cleaned": "Reproduced under project default numerical runtime",
+      "status": "PASS"
+    },
+    {
+      "check": "Scope",
+      "baseline": "lr_t0.ipynb, original CSVs/figures/data and unrelated work",
+      "cleaned": "Unchanged; only target notebook and verification artifacts edited",
+      "status": "PASS"
+    }
+  ],
+  "runtime_comparisons": {
+    "controlled_single_thread": {
+      "baseline_run": "baseline",
+      "cleaned_run": "cleaned",
+      "status": "PASS",
+      "exact_array_comparisons": {
+        "y_train": true,
+        "y_val": true,
+        "train_ids": true,
+        "val_ids": true,
+        "train_index": true,
+        "val_index": true,
+        "train_preprocessed": true,
+        "val_preprocessed": true,
+        "polynomial_powers": true,
+        "c0_coef": true,
+        "c0_intercept": true,
+        "c0_classes": true,
+        "c0_iterations": true,
+        "c0_train_predictions": true,
+        "c0_train_scores": true,
+        "c0_val_predictions": true,
+        "c0_val_scores": true,
+        "c1_coef": true,
+        "c1_intercept": true,
+        "c1_classes": true,
+        "c1_iterations": true,
+        "c1_train_predictions": true,
+        "c1_train_scores": true,
+        "c1_val_predictions": true,
+        "c1_val_scores": true,
+        "c2_coef": true,
+        "c2_intercept": true,
+        "c2_classes": true,
+        "c2_iterations": true,
+        "c2_train_predictions": true,
+        "c2_train_scores": true,
+        "c2_val_predictions": true,
+        "c2_val_scores": true,
+        "c3_coef": true,
+        "c3_intercept": true,
+        "c3_classes": true,
+        "c3_iterations": true,
+        "c3_train_predictions": true,
+        "c3_train_scores": true,
+        "c3_val_predictions": true,
+        "c3_val_scores": true,
+        "c4_coef": true,
+        "c4_intercept": true,
+        "c4_classes": true,
+        "c4_iterations": true,
+        "c4_train_predictions": true,
+        "c4_train_scores": true,
+        "c4_val_predictions": true,
+        "c4_val_scores": true,
+        "c5_coef": true,
+        "c5_intercept": true,
+        "c5_classes": true,
+        "c5_iterations": true,
+        "c5_train_predictions": true,
+        "c5_train_scores": true,
+        "c5_val_predictions": true,
+        "c5_val_scores": true
+      },
+      "input_values_ids_labels_order_exact": true,
+      "polynomial_unscaled_and_scaled_values_all_rows_exact_by_sha256": true,
+      "six_model_configurations_scalers_and_coefficients_exact": true,
+      "reported_metrics_exact_excluding_wall_time": true,
+      "tables_exact_excluding_wall_time": true,
+      "table_types_compared": [
+        "polynomial_terms",
+        "metric_table_except_wall_time",
+        "attack_type_recall"
+      ],
+      "best_C": 0.01,
+      "best_validation_metrics": {
+        "val_precision": 0.889694771834391,
+        "val_recall": 0.9466237942122186,
+        "val_f1": 0.9172768343978813,
+        "val_fpr": 0.12629757785467127
+      },
+      "validation_confusion": [
+        [
+          2525,
+          365
+        ],
+        [
+          166,
+          2944
+        ]
+      ],
+      "predictions_compared": 180000,
+      "independent_metric_max_error": 0.0,
+      "plots": {
+        "curve_lr_t1_poly2.png": {
+          "plotted_data_axes_labels_legends_styles_exact": true,
+          "rgba_pixels_equal": true,
+          "png_bytes_equal": true
+        },
+        "confusion_lr_t1_poly2.png": {
+          "plotted_data_axes_labels_legends_styles_exact": true,
+          "rgba_pixels_equal": true,
+          "png_bytes_equal": true
+        }
+      },
+      "fit_rows": [
+        24000
+      ],
+      "fit_events_baseline": 41,
+      "fit_events_cleaned": 36,
+      "load_split_names": [
+        "train",
+        "val"
+      ]
+    },
+    "project_default_runtime": {
+      "baseline_run": "baseline_default",
+      "cleaned_run": "cleaned_default",
+      "status": "PASS",
+      "exact_array_comparisons": {
+        "y_train": true,
+        "y_val": true,
+        "train_ids": true,
+        "val_ids": true,
+        "train_index": true,
+        "val_index": true,
+        "train_preprocessed": true,
+        "val_preprocessed": true,
+        "polynomial_powers": true,
+        "c0_coef": true,
+        "c0_intercept": true,
+        "c0_classes": true,
+        "c0_iterations": true,
+        "c0_train_predictions": true,
+        "c0_train_scores": true,
+        "c0_val_predictions": true,
+        "c0_val_scores": true,
+        "c1_coef": true,
+        "c1_intercept": true,
+        "c1_classes": true,
+        "c1_iterations": true,
+        "c1_train_predictions": true,
+        "c1_train_scores": true,
+        "c1_val_predictions": true,
+        "c1_val_scores": true,
+        "c2_coef": true,
+        "c2_intercept": true,
+        "c2_classes": true,
+        "c2_iterations": true,
+        "c2_train_predictions": true,
+        "c2_train_scores": true,
+        "c2_val_predictions": true,
+        "c2_val_scores": true,
+        "c3_coef": true,
+        "c3_intercept": true,
+        "c3_classes": true,
+        "c3_iterations": true,
+        "c3_train_predictions": true,
+        "c3_train_scores": true,
+        "c3_val_predictions": true,
+        "c3_val_scores": true,
+        "c4_coef": true,
+        "c4_intercept": true,
+        "c4_classes": true,
+        "c4_iterations": true,
+        "c4_train_predictions": true,
+        "c4_train_scores": true,
+        "c4_val_predictions": true,
+        "c4_val_scores": true,
+        "c5_coef": true,
+        "c5_intercept": true,
+        "c5_classes": true,
+        "c5_iterations": true,
+        "c5_train_predictions": true,
+        "c5_train_scores": true,
+        "c5_val_predictions": true,
+        "c5_val_scores": true
+      },
+      "input_values_ids_labels_order_exact": true,
+      "polynomial_unscaled_and_scaled_values_all_rows_exact_by_sha256": true,
+      "six_model_configurations_scalers_and_coefficients_exact": true,
+      "reported_metrics_exact_excluding_wall_time": true,
+      "tables_exact_excluding_wall_time": true,
+      "table_types_compared": [
+        "polynomial_terms",
+        "metric_table_except_wall_time",
+        "attack_type_recall"
+      ],
+      "best_C": 0.01,
+      "best_validation_metrics": {
+        "val_precision": 0.8899637243047158,
+        "val_recall": 0.9466237942122186,
+        "val_f1": 0.9174197569336242,
+        "val_fpr": 0.1259515570934256
+      },
+      "validation_confusion": [
+        [
+          2526,
+          364
+        ],
+        [
+          166,
+          2944
+        ]
+      ],
+      "predictions_compared": 180000,
+      "independent_metric_max_error": 0.0,
+      "plots": {
+        "curve_lr_t1_poly2.png": {
+          "plotted_data_axes_labels_legends_styles_exact": true,
+          "rgba_pixels_equal": true,
+          "png_bytes_equal": true
+        },
+        "confusion_lr_t1_poly2.png": {
+          "plotted_data_axes_labels_legends_styles_exact": true,
+          "rgba_pixels_equal": true,
+          "png_bytes_equal": true
+        }
+      },
+      "fit_rows": [
+        24000
+      ],
+      "fit_events_baseline": 41,
+      "fit_events_cleaned": 36,
+      "load_split_names": [
+        "train",
+        "val"
+      ]
+    }
+  },
+  "historical_default_metric_max_error": 0.0,
+  "historical_default_plot_comparison": {
+    "curve_lr_t1_poly2.png": {
+      "rgba_pixels_equal": true,
+      "png_bytes_equal": true
+    },
+    "confusion_lr_t1_poly2.png": {
+      "rgba_pixels_equal": true,
+      "png_bytes_equal": true
+    }
+  },
+  "runtime_sensitivity": {
+    "finding": "Imposing one numerical thread changes the LBFGS solution slightly relative to the normal Accelerate-backed runtime; no model setting was changed. Baseline and cleaned are exactly equal within each runtime.",
+    "differences_by_C": [
+      {
+        "C": 0.001,
+        "train_prediction_differences": 0,
+        "val_prediction_differences": 0,
+        "single_thread_val_f1": 0.9162697803041941,
+        "default_val_f1": 0.9162697803041941
+      },
+      {
+        "C": 0.01,
+        "train_prediction_differences": 0,
+        "val_prediction_differences": 1,
+        "single_thread_val_f1": 0.9172768343978813,
+        "default_val_f1": 0.9174197569336242
+      },
+      {
+        "C": 0.1,
+        "train_prediction_differences": 26,
+        "val_prediction_differences": 3,
+        "single_thread_val_f1": 0.9162856692416838,
+        "default_val_f1": 0.9167192429022082
+      },
+      {
+        "C": 1.0,
+        "train_prediction_differences": 24,
+        "val_prediction_differences": 10,
+        "single_thread_val_f1": 0.9163232963549921,
+        "default_val_f1": 0.9163232963549921
+      },
+      {
+        "C": 10.0,
+        "train_prediction_differences": 37,
+        "val_prediction_differences": 13,
+        "single_thread_val_f1": 0.9146942017474186,
+        "default_val_f1": 0.9154481881754609
+      },
+      {
+        "C": 100.0,
+        "train_prediction_differences": 92,
+        "val_prediction_differences": 21,
+        "single_thread_val_f1": 0.9165609137055838,
+        "default_val_f1": 0.9166798920806222
+      }
+    ],
+    "default_runtime_environment": {
+      "OMP_NUM_THREADS": null,
+      "OPENBLAS_NUM_THREADS": null,
+      "MKL_NUM_THREADS": null,
+      "VECLIB_MAXIMUM_THREADS": null,
+      "NUMEXPR_NUM_THREADS": null
+    },
+    "blas": {
+      "name": "accelerate",
+      "found": true,
+      "version": "unknown",
+      "detection method": "system",
+      "include directory": "unknown",
+      "lib directory": "unknown",
+      "openblas configuration": "unknown",
+      "pc file directory": "unknown"
+    }
+  },
+  "comparison_policy": {
+    "deterministic": "Exact arrays, hashes of every transformed value, predictions, scores, probabilities, coefficients, scaler statistics and plotted data expected. Investigate any discrepancy.",
+    "independent_metric_tolerance": 1e-15,
+    "reason": "Equivalent integer-count metric formulas and historical CSV decimal parsing may differ at floating-point rounding precision. This does not permit prediction differences.",
+    "timing": "Exclude wall-clock fit_time_s from result equality. Instrumentation affects timing.",
+    "threads": "Both runs use one BLAS/OpenMP thread for reproducibility."
+  },
+  "data_audit": {
+    "raw_training_rows": 175341,
+    "deduplicated_rows": 107740,
+    "sample_rows": 30000,
+    "training_rows": 24000,
+    "validation_rows": 6000,
+    "stratification": "attack_cat for both sample selection and train/validation split",
+    "random_state": 42,
+    "regenerated_train_ids_and_order_match": true,
+    "regenerated_val_ids_and_order_match": true,
+    "source_id_overlap": 0,
+    "model_input_features": 41,
+    "attack_label_mapping_consistent": true,
+    "shared_unique_feature_vectors": 286,
+    "validation_rows_with_a_training_feature_match": 321,
+    "validation_rows_with_same_feature_and_same_label_match": 312,
+    "validation_rows_with_same_feature_and_conflicting_label_match": 9,
+    "test_data_used": false,
+    "preexisting_methodological_limitations": [
+      "Full-training-file EDA informed fixed feature/category choices before validation was held out.",
+      "Deduplication uses all columns except id, not model inputs alone; feature-vector overlap can remain across splits.",
+      "Validation selects C and is therefore a model-selection score, not an untouched final-test estimate."
+    ]
+  },
+  "scope": {
+    "changed_original_files": [
+      "notebook/lr_t1_poly2.ipynb"
+    ],
+    "lr_t0_unchanged": true,
+    "original_results_figures_data_and_baselines_preserved": true,
+    "dependencies_installed_or_upgraded": false,
+    "host": "Local macOS; no HPC job required."
+  },
+  "experiment_execution_failures": [],
+  "verification_harness_issue": {
+    "error": "Initial NoSuchKernel before any training",
+    "cause": "Temporary kernel directory/name mismatch in the verification launcher",
+    "fix": "Aligned the temporary kernelspec name; preserved failed launch artifacts. All four actual notebook runs passed."
+  },
+  "fixes_to_modeling_experiment": [],
+  "limitations": [
+    "Full-file EDA informed preprocessing choices before validation isolation.",
+    "321 validation rows share identical raw model inputs with training: 312 same-label, 9 conflicting-label matches; no splits changed.",
+    "Validation selects C and is not an untouched final test. Test data were not made available to execution workspaces.",
+    "Retry branches beyond 2,000 iterations were not needed in the actual successful fits; the candidate budgets and model settings were preserved.",
+    "Fit times vary and are excluded from result equality. Cross-thread-runtime solutions are not claimed identical."
+  ]
+}

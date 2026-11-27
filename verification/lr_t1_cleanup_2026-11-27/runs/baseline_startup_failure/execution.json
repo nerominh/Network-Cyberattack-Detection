@@ -1,0 +1,6 @@
+{
+  "name": "baseline",
+  "status": "failed",
+  "source_cells_preserved": true,
+  "error": "NoSuchKernel('t1-verification')"
+}

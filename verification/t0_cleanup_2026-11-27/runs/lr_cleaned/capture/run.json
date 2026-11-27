@@ -1,0 +1,5361 @@
+{
+  "raw_X_train": {
+    "shape": [
+      24000,
+      41
+    ],
+    "columns": [
+      "dur",
+      "proto",
+      "service",
+      "state",
+      "spkts",
+      "dpkts",
+      "sbytes",
+      "dbytes",
+      "rate",
+      "sttl",
+      "dttl",
+      "sload",
+      "dload",
+      "sloss",
+      "dloss",
+      "sinpkt",
+      "dinpkt",
+      "sjit",
+      "djit",
+      "swin",
+      "stcpb",
+      "dtcpb",
+      "dwin",
+      "tcprtt",
+      "synack",
+      "ackdat",
+      "smean",
+      "dmean",
+      "trans_depth",
+      "response_body_len",
+      "ct_srv_src",
+      "ct_state_ttl",
+      "ct_dst_ltm",
+      "ct_src_dport_ltm",
+      "ct_dst_sport_ltm",
+      "ct_dst_src_ltm",
+      "ct_ftp_cmd",
+      "ct_flw_http_mthd",
+      "ct_src_ltm",
+      "ct_srv_dst",
+      "is_sm_ips_ports"
+    ],
+    "dtypes": [
+      "float64",
+      "str",
+      "str",
+      "str",
+      "int64",
+      "int64",
+      "int64",
+      "int64",
+      "float64",
+      "int64",
+      "int64",
+      "float64",
+      "float64",
+      "int64",
+      "int64",
+      "float64",
+      "float64",
+      "float64",
+      "float64",
+      "int64",
+      "int64",
+      "int64",
+      "int64",
+      "float64",
+      "float64",
+      "float64",
+      "int64",
+      "int64",
+      "int64",
+      "int64",
+      "int64",
+      "int64",
+      "int64",
+      "int64",
+      "int64",
+      "int64",
+      "int64",
+      "int64",
+      "int64",
+      "int64",
+      "int64"
+    ],
+    "hash": "bed6ebf400b1de3064fb3270fd720b621275c7cf7d28a80c4d2633599a56fdae"
+  },
+  "raw_X_val": {
+    "shape": [
+      6000,
+      41
+    ],
+    "columns": [
+      "dur",
+      "proto",
+      "service",
+      "state",
+      "spkts",
+      "dpkts",
+      "sbytes",
+      "dbytes",
+      "rate",
+      "sttl",
+      "dttl",
+      "sload",
+      "dload",
+      "sloss",
+      "dloss",
+      "sinpkt",
+      "dinpkt",
+      "sjit",
+      "djit",
+      "swin",
+      "stcpb",
+      "dtcpb",
+      "dwin",
+      "tcprtt",
+      "synack",
+      "ackdat",
+      "smean",
+      "dmean",
+      "trans_depth",
+      "response_body_len",
+      "ct_srv_src",
+      "ct_state_ttl",
+      "ct_dst_ltm",
+      "ct_src_dport_ltm",
+      "ct_dst_sport_ltm",
+      "ct_dst_src_ltm",
+      "ct_ftp_cmd",
+      "ct_flw_http_mthd",
+      "ct_src_ltm",
+      "ct_srv_dst",
+      "is_sm_ips_ports"
+    ],
+    "dtypes": [
+      "float64",
+      "str",
+      "str",
+      "str",
+      "int64",
+      "int64",
+      "int64",
+      "int64",
+      "float64",
+      "int64",
+      "int64",
+      "float64",
+      "float64",
+      "int64",
+      "int64",
+      "float64",
+      "float64",
+      "float64",
+      "float64",
+      "int64",
+      "int64",
+      "int64",
+      "int64",
+      "float64",
+      "float64",
+      "float64",
+      "int64",
+      "int64",
+      "int64",
+      "int64",
+      "int64",
+      "int64",
+      "int64",
+      "int64",
+      "int64",
+      "int64",
+      "int64",
+      "int64",
+      "int64",
+      "int64",
+      "int64"
+    ],
+    "hash": "08762d7c6ba101da3fc5ce5625d006ea3c8ef2005098624f057399ba5334e253"
+  },
+  "best_C": 100.0,
+  "grid": [
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "results": [
+    {
+      "model": "LR",
+      "transformation": "T0",
+      "param": "C",
+      "value": 0.001,
+      "train_precision": 0.84735661197588,
+      "train_recall": 0.9713849369021783,
+      "train_f1": 0.9051417443732914,
+      "train_fpr": 0.1883380915304092,
+      "val_precision": 0.8501131221719457,
+      "val_recall": 0.9665594855305466,
+      "val_f1": 0.9046042732470659,
+      "val_fpr": 0.18339100346020762,
+      "fit_time_s": 0.06,
+      "converged": true,
+      "f1_gap": 0.0005374711262254861
+    },
+    {
+      "model": "LR",
+      "transformation": "T0",
+      "param": "C",
+      "value": 0.01,
+      "train_precision": 0.8666037324813013,
+      "train_recall": 0.9592476489028213,
+      "train_f1": 0.91057530901877,
+      "train_fpr": 0.15892378233411195,
+      "val_precision": 0.868029197080292,
+      "val_recall": 0.9559485530546624,
+      "val_f1": 0.9098699311400154,
+      "val_fpr": 0.156401384083045,
+      "fit_time_s": 0.05,
+      "converged": true,
+      "f1_gap": 0.0007053778787546872
+    },
+    {
+      "model": "LR",
+      "transformation": "T0",
+      "param": "C",
+      "value": 0.1,
+      "train_precision": 0.8741658722592945,
+      "train_recall": 0.9582027168234065,
+      "train_f1": 0.9142572283150548,
+      "train_fpr": 0.1484557487671944,
+      "val_precision": 0.8775933609958506,
+      "val_recall": 0.9520900321543408,
+      "val_f1": 0.9133251079580506,
+      "val_fpr": 0.14290657439446366,
+      "fit_time_s": 0.07,
+      "converged": true,
+      "f1_gap": 0.0009321203570042957
+    },
+    {
+      "model": "LR",
+      "transformation": "T0",
+      "param": "C",
+      "value": 1.0,
+      "train_precision": 0.8805194805194805,
+      "train_recall": 0.9537014709428503,
+      "train_f1": 0.915650563358543,
+      "train_fpr": 0.1392854053118782,
+      "val_precision": 0.8819133034379671,
+      "val_recall": 0.9485530546623794,
+      "val_f1": 0.9140201394268009,
+      "val_fpr": 0.13667820069204153,
+      "fit_time_s": 0.12,
+      "converged": true,
+      "f1_gap": 0.0016304239317420643
+    },
+    {
+      "model": "LR",
+      "transformation": "T0",
+      "param": "C",
+      "value": 10.0,
+      "train_precision": 0.8839325675070864,
+      "train_recall": 0.952495780081987,
+      "train_f1": 0.9169342670329245,
+      "train_fpr": 0.13461372091011334,
+      "val_precision": 0.8841059602649006,
+      "val_recall": 0.9443729903536977,
+      "val_f1": 0.9132462686567164,
+      "val_fpr": 0.13321799307958476,
+      "fit_time_s": 0.15,
+      "converged": true,
+      "f1_gap": 0.003687998376208035
+    },
+    {
+      "model": "LR",
+      "transformation": "T0",
+      "param": "C",
+      "value": 100.0,
+      "train_precision": 0.8840482573726541,
+      "train_recall": 0.9541837472871956,
+      "train_f1": 0.9177780354864896,
+      "train_fpr": 0.1347002335842201,
+      "val_precision": 0.8830935251798561,
+      "val_recall": 0.9472668810289389,
+      "val_f1": 0.9140552280484021,
+      "val_fpr": 0.13494809688581316,
+      "fit_time_s": 0.2,
+      "converged": true,
+      "f1_gap": 0.0037228074380875054
+    }
+  ],
+  "fit_events": [
+    {
+      "class": "ColumnTransformer",
+      "method": "fit_transform",
+      "X": {
+        "shape": [
+          24000,
+          41
+        ],
+        "columns": [
+          "dur",
+          "proto",
+          "service",
+          "state",
+          "spkts",
+          "dpkts",
+          "sbytes",
+          "dbytes",
+          "rate",
+          "sttl",
+          "dttl",
+          "sload",
+          "dload",
+          "sloss",
+          "dloss",
+          "sinpkt",
+          "dinpkt",
+          "sjit",
+          "djit",
+          "swin",
+          "stcpb",
+          "dtcpb",
+          "dwin",
+          "tcprtt",
+          "synack",
+          "ackdat",
+          "smean",
+          "dmean",
+          "trans_depth",
+          "response_body_len",
+          "ct_srv_src",
+          "ct_state_ttl",
+          "ct_dst_ltm",
+          "ct_src_dport_ltm",
+          "ct_dst_sport_ltm",
+          "ct_dst_src_ltm",
+          "ct_ftp_cmd",
+          "ct_flw_http_mthd",
+          "ct_src_ltm",
+          "ct_srv_dst",
+          "is_sm_ips_ports"
+        ],
+        "dtypes": [
+          "float64",
+          "str",
+          "str",
+          "str",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64"
+        ],
+        "hash": "bed6ebf400b1de3064fb3270fd720b621275c7cf7d28a80c4d2633599a56fdae"
+      },
+      "y": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf"
+    },
+    {
+      "class": "StandardScaler",
+      "method": "fit",
+      "X": {
+        "shape": [
+          24000,
+          31
+        ],
+        "columns": [
+          "dur",
+          "spkts",
+          "dpkts",
+          "sbytes",
+          "dbytes",
+          "rate",
+          "sload",
+          "dload",
+          "sloss",
+          "dloss",
+          "sinpkt",
+          "dinpkt",
+          "sjit",
+          "djit",
+          "tcprtt",
+          "synack",
+          "ackdat",
+          "smean",
+          "dmean",
+          "trans_depth",
+          "response_body_len",
+          "ct_srv_src",
+          "ct_state_ttl",
+          "ct_dst_ltm",
+          "ct_src_dport_ltm",
+          "ct_dst_sport_ltm",
+          "ct_dst_src_ltm",
+          "ct_ftp_cmd",
+          "ct_flw_http_mthd",
+          "ct_src_ltm",
+          "ct_srv_dst"
+        ],
+        "dtypes": [
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64"
+        ],
+        "hash": "63e8398e1ba9a30eb7a8bdda2479d149a3472d63d0f84f137451901769b5b521"
+      },
+      "y": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf"
+    },
+    {
+      "class": "StandardScaler",
+      "method": "fit",
+      "X": {
+        "shape": [
+          24000,
+          7
+        ],
+        "columns": [
+          "sttl",
+          "dttl",
+          "swin",
+          "dwin",
+          "stcpb",
+          "dtcpb",
+          "is_sm_ips_ports"
+        ],
+        "dtypes": [
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64"
+        ],
+        "hash": "9b80afc8ce11fa16324bd8adb4fb0f2a99b08b7769673944bdcb0e62e95b4d03"
+      },
+      "y": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf"
+    },
+    {
+      "class": "LogisticRegression",
+      "method": "fit",
+      "X": {
+        "shape": [
+          24000,
+          73
+        ],
+        "hash": "974da91dc1f720a54574365ebb522fa1586a985ee6c6e9233168adf464865193"
+      },
+      "y": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf"
+    },
+    {
+      "class": "ColumnTransformer",
+      "method": "fit_transform",
+      "X": {
+        "shape": [
+          24000,
+          41
+        ],
+        "columns": [
+          "dur",
+          "proto",
+          "service",
+          "state",
+          "spkts",
+          "dpkts",
+          "sbytes",
+          "dbytes",
+          "rate",
+          "sttl",
+          "dttl",
+          "sload",
+          "dload",
+          "sloss",
+          "dloss",
+          "sinpkt",
+          "dinpkt",
+          "sjit",
+          "djit",
+          "swin",
+          "stcpb",
+          "dtcpb",
+          "dwin",
+          "tcprtt",
+          "synack",
+          "ackdat",
+          "smean",
+          "dmean",
+          "trans_depth",
+          "response_body_len",
+          "ct_srv_src",
+          "ct_state_ttl",
+          "ct_dst_ltm",
+          "ct_src_dport_ltm",
+          "ct_dst_sport_ltm",
+          "ct_dst_src_ltm",
+          "ct_ftp_cmd",
+          "ct_flw_http_mthd",
+          "ct_src_ltm",
+          "ct_srv_dst",
+          "is_sm_ips_ports"
+        ],
+        "dtypes": [
+          "float64",
+          "str",
+          "str",
+          "str",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64"
+        ],
+        "hash": "bed6ebf400b1de3064fb3270fd720b621275c7cf7d28a80c4d2633599a56fdae"
+      },
+      "y": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf"
+    },
+    {
+      "class": "StandardScaler",
+      "method": "fit",
+      "X": {
+        "shape": [
+          24000,
+          31
+        ],
+        "columns": [
+          "dur",
+          "spkts",
+          "dpkts",
+          "sbytes",
+          "dbytes",
+          "rate",
+          "sload",
+          "dload",
+          "sloss",
+          "dloss",
+          "sinpkt",
+          "dinpkt",
+          "sjit",
+          "djit",
+          "tcprtt",
+          "synack",
+          "ackdat",
+          "smean",
+          "dmean",
+          "trans_depth",
+          "response_body_len",
+          "ct_srv_src",
+          "ct_state_ttl",
+          "ct_dst_ltm",
+          "ct_src_dport_ltm",
+          "ct_dst_sport_ltm",
+          "ct_dst_src_ltm",
+          "ct_ftp_cmd",
+          "ct_flw_http_mthd",
+          "ct_src_ltm",
+          "ct_srv_dst"
+        ],
+        "dtypes": [
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64"
+        ],
+        "hash": "63e8398e1ba9a30eb7a8bdda2479d149a3472d63d0f84f137451901769b5b521"
+      },
+      "y": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf"
+    },
+    {
+      "class": "StandardScaler",
+      "method": "fit",
+      "X": {
+        "shape": [
+          24000,
+          7
+        ],
+        "columns": [
+          "sttl",
+          "dttl",
+          "swin",
+          "dwin",
+          "stcpb",
+          "dtcpb",
+          "is_sm_ips_ports"
+        ],
+        "dtypes": [
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64"
+        ],
+        "hash": "9b80afc8ce11fa16324bd8adb4fb0f2a99b08b7769673944bdcb0e62e95b4d03"
+      },
+      "y": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf"
+    },
+    {
+      "class": "LogisticRegression",
+      "method": "fit",
+      "X": {
+        "shape": [
+          24000,
+          73
+        ],
+        "hash": "974da91dc1f720a54574365ebb522fa1586a985ee6c6e9233168adf464865193"
+      },
+      "y": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf"
+    },
+    {
+      "class": "ColumnTransformer",
+      "method": "fit_transform",
+      "X": {
+        "shape": [
+          24000,
+          41
+        ],
+        "columns": [
+          "dur",
+          "proto",
+          "service",
+          "state",
+          "spkts",
+          "dpkts",
+          "sbytes",
+          "dbytes",
+          "rate",
+          "sttl",
+          "dttl",
+          "sload",
+          "dload",
+          "sloss",
+          "dloss",
+          "sinpkt",
+          "dinpkt",
+          "sjit",
+          "djit",
+          "swin",
+          "stcpb",
+          "dtcpb",
+          "dwin",
+          "tcprtt",
+          "synack",
+          "ackdat",
+          "smean",
+          "dmean",
+          "trans_depth",
+          "response_body_len",
+          "ct_srv_src",
+          "ct_state_ttl",
+          "ct_dst_ltm",
+          "ct_src_dport_ltm",
+          "ct_dst_sport_ltm",
+          "ct_dst_src_ltm",
+          "ct_ftp_cmd",
+          "ct_flw_http_mthd",
+          "ct_src_ltm",
+          "ct_srv_dst",
+          "is_sm_ips_ports"
+        ],
+        "dtypes": [
+          "float64",
+          "str",
+          "str",
+          "str",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64"
+        ],
+        "hash": "bed6ebf400b1de3064fb3270fd720b621275c7cf7d28a80c4d2633599a56fdae"
+      },
+      "y": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf"
+    },
+    {
+      "class": "StandardScaler",
+      "method": "fit",
+      "X": {
+        "shape": [
+          24000,
+          31
+        ],
+        "columns": [
+          "dur",
+          "spkts",
+          "dpkts",
+          "sbytes",
+          "dbytes",
+          "rate",
+          "sload",
+          "dload",
+          "sloss",
+          "dloss",
+          "sinpkt",
+          "dinpkt",
+          "sjit",
+          "djit",
+          "tcprtt",
+          "synack",
+          "ackdat",
+          "smean",
+          "dmean",
+          "trans_depth",
+          "response_body_len",
+          "ct_srv_src",
+          "ct_state_ttl",
+          "ct_dst_ltm",
+          "ct_src_dport_ltm",
+          "ct_dst_sport_ltm",
+          "ct_dst_src_ltm",
+          "ct_ftp_cmd",
+          "ct_flw_http_mthd",
+          "ct_src_ltm",
+          "ct_srv_dst"
+        ],
+        "dtypes": [
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64"
+        ],
+        "hash": "63e8398e1ba9a30eb7a8bdda2479d149a3472d63d0f84f137451901769b5b521"
+      },
+      "y": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf"
+    },
+    {
+      "class": "StandardScaler",
+      "method": "fit",
+      "X": {
+        "shape": [
+          24000,
+          7
+        ],
+        "columns": [
+          "sttl",
+          "dttl",
+          "swin",
+          "dwin",
+          "stcpb",
+          "dtcpb",
+          "is_sm_ips_ports"
+        ],
+        "dtypes": [
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64"
+        ],
+        "hash": "9b80afc8ce11fa16324bd8adb4fb0f2a99b08b7769673944bdcb0e62e95b4d03"
+      },
+      "y": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf"
+    },
+    {
+      "class": "LogisticRegression",
+      "method": "fit",
+      "X": {
+        "shape": [
+          24000,
+          73
+        ],
+        "hash": "974da91dc1f720a54574365ebb522fa1586a985ee6c6e9233168adf464865193"
+      },
+      "y": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf"
+    },
+    {
+      "class": "ColumnTransformer",
+      "method": "fit_transform",
+      "X": {
+        "shape": [
+          24000,
+          41
+        ],
+        "columns": [
+          "dur",
+          "proto",
+          "service",
+          "state",
+          "spkts",
+          "dpkts",
+          "sbytes",
+          "dbytes",
+          "rate",
+          "sttl",
+          "dttl",
+          "sload",
+          "dload",
+          "sloss",
+          "dloss",
+          "sinpkt",
+          "dinpkt",
+          "sjit",
+          "djit",
+          "swin",
+          "stcpb",
+          "dtcpb",
+          "dwin",
+          "tcprtt",
+          "synack",
+          "ackdat",
+          "smean",
+          "dmean",
+          "trans_depth",
+          "response_body_len",
+          "ct_srv_src",
+          "ct_state_ttl",
+          "ct_dst_ltm",
+          "ct_src_dport_ltm",
+          "ct_dst_sport_ltm",
+          "ct_dst_src_ltm",
+          "ct_ftp_cmd",
+          "ct_flw_http_mthd",
+          "ct_src_ltm",
+          "ct_srv_dst",
+          "is_sm_ips_ports"
+        ],
+        "dtypes": [
+          "float64",
+          "str",
+          "str",
+          "str",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64"
+        ],
+        "hash": "bed6ebf400b1de3064fb3270fd720b621275c7cf7d28a80c4d2633599a56fdae"
+      },
+      "y": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf"
+    },
+    {
+      "class": "StandardScaler",
+      "method": "fit",
+      "X": {
+        "shape": [
+          24000,
+          31
+        ],
+        "columns": [
+          "dur",
+          "spkts",
+          "dpkts",
+          "sbytes",
+          "dbytes",
+          "rate",
+          "sload",
+          "dload",
+          "sloss",
+          "dloss",
+          "sinpkt",
+          "dinpkt",
+          "sjit",
+          "djit",
+          "tcprtt",
+          "synack",
+          "ackdat",
+          "smean",
+          "dmean",
+          "trans_depth",
+          "response_body_len",
+          "ct_srv_src",
+          "ct_state_ttl",
+          "ct_dst_ltm",
+          "ct_src_dport_ltm",
+          "ct_dst_sport_ltm",
+          "ct_dst_src_ltm",
+          "ct_ftp_cmd",
+          "ct_flw_http_mthd",
+          "ct_src_ltm",
+          "ct_srv_dst"
+        ],
+        "dtypes": [
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64"
+        ],
+        "hash": "63e8398e1ba9a30eb7a8bdda2479d149a3472d63d0f84f137451901769b5b521"
+      },
+      "y": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf"
+    },
+    {
+      "class": "StandardScaler",
+      "method": "fit",
+      "X": {
+        "shape": [
+          24000,
+          7
+        ],
+        "columns": [
+          "sttl",
+          "dttl",
+          "swin",
+          "dwin",
+          "stcpb",
+          "dtcpb",
+          "is_sm_ips_ports"
+        ],
+        "dtypes": [
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64"
+        ],
+        "hash": "9b80afc8ce11fa16324bd8adb4fb0f2a99b08b7769673944bdcb0e62e95b4d03"
+      },
+      "y": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf"
+    },
+    {
+      "class": "LogisticRegression",
+      "method": "fit",
+      "X": {
+        "shape": [
+          24000,
+          73
+        ],
+        "hash": "974da91dc1f720a54574365ebb522fa1586a985ee6c6e9233168adf464865193"
+      },
+      "y": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf"
+    },
+    {
+      "class": "ColumnTransformer",
+      "method": "fit_transform",
+      "X": {
+        "shape": [
+          24000,
+          41
+        ],
+        "columns": [
+          "dur",
+          "proto",
+          "service",
+          "state",
+          "spkts",
+          "dpkts",
+          "sbytes",
+          "dbytes",
+          "rate",
+          "sttl",
+          "dttl",
+          "sload",
+          "dload",
+          "sloss",
+          "dloss",
+          "sinpkt",
+          "dinpkt",
+          "sjit",
+          "djit",
+          "swin",
+          "stcpb",
+          "dtcpb",
+          "dwin",
+          "tcprtt",
+          "synack",
+          "ackdat",
+          "smean",
+          "dmean",
+          "trans_depth",
+          "response_body_len",
+          "ct_srv_src",
+          "ct_state_ttl",
+          "ct_dst_ltm",
+          "ct_src_dport_ltm",
+          "ct_dst_sport_ltm",
+          "ct_dst_src_ltm",
+          "ct_ftp_cmd",
+          "ct_flw_http_mthd",
+          "ct_src_ltm",
+          "ct_srv_dst",
+          "is_sm_ips_ports"
+        ],
+        "dtypes": [
+          "float64",
+          "str",
+          "str",
+          "str",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64"
+        ],
+        "hash": "bed6ebf400b1de3064fb3270fd720b621275c7cf7d28a80c4d2633599a56fdae"
+      },
+      "y": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf"
+    },
+    {
+      "class": "StandardScaler",
+      "method": "fit",
+      "X": {
+        "shape": [
+          24000,
+          31
+        ],
+        "columns": [
+          "dur",
+          "spkts",
+          "dpkts",
+          "sbytes",
+          "dbytes",
+          "rate",
+          "sload",
+          "dload",
+          "sloss",
+          "dloss",
+          "sinpkt",
+          "dinpkt",
+          "sjit",
+          "djit",
+          "tcprtt",
+          "synack",
+          "ackdat",
+          "smean",
+          "dmean",
+          "trans_depth",
+          "response_body_len",
+          "ct_srv_src",
+          "ct_state_ttl",
+          "ct_dst_ltm",
+          "ct_src_dport_ltm",
+          "ct_dst_sport_ltm",
+          "ct_dst_src_ltm",
+          "ct_ftp_cmd",
+          "ct_flw_http_mthd",
+          "ct_src_ltm",
+          "ct_srv_dst"
+        ],
+        "dtypes": [
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64"
+        ],
+        "hash": "63e8398e1ba9a30eb7a8bdda2479d149a3472d63d0f84f137451901769b5b521"
+      },
+      "y": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf"
+    },
+    {
+      "class": "StandardScaler",
+      "method": "fit",
+      "X": {
+        "shape": [
+          24000,
+          7
+        ],
+        "columns": [
+          "sttl",
+          "dttl",
+          "swin",
+          "dwin",
+          "stcpb",
+          "dtcpb",
+          "is_sm_ips_ports"
+        ],
+        "dtypes": [
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64"
+        ],
+        "hash": "9b80afc8ce11fa16324bd8adb4fb0f2a99b08b7769673944bdcb0e62e95b4d03"
+      },
+      "y": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf"
+    },
+    {
+      "class": "LogisticRegression",
+      "method": "fit",
+      "X": {
+        "shape": [
+          24000,
+          73
+        ],
+        "hash": "974da91dc1f720a54574365ebb522fa1586a985ee6c6e9233168adf464865193"
+      },
+      "y": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf"
+    },
+    {
+      "class": "ColumnTransformer",
+      "method": "fit_transform",
+      "X": {
+        "shape": [
+          24000,
+          41
+        ],
+        "columns": [
+          "dur",
+          "proto",
+          "service",
+          "state",
+          "spkts",
+          "dpkts",
+          "sbytes",
+          "dbytes",
+          "rate",
+          "sttl",
+          "dttl",
+          "sload",
+          "dload",
+          "sloss",
+          "dloss",
+          "sinpkt",
+          "dinpkt",
+          "sjit",
+          "djit",
+          "swin",
+          "stcpb",
+          "dtcpb",
+          "dwin",
+          "tcprtt",
+          "synack",
+          "ackdat",
+          "smean",
+          "dmean",
+          "trans_depth",
+          "response_body_len",
+          "ct_srv_src",
+          "ct_state_ttl",
+          "ct_dst_ltm",
+          "ct_src_dport_ltm",
+          "ct_dst_sport_ltm",
+          "ct_dst_src_ltm",
+          "ct_ftp_cmd",
+          "ct_flw_http_mthd",
+          "ct_src_ltm",
+          "ct_srv_dst",
+          "is_sm_ips_ports"
+        ],
+        "dtypes": [
+          "float64",
+          "str",
+          "str",
+          "str",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64"
+        ],
+        "hash": "bed6ebf400b1de3064fb3270fd720b621275c7cf7d28a80c4d2633599a56fdae"
+      },
+      "y": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf"
+    },
+    {
+      "class": "StandardScaler",
+      "method": "fit",
+      "X": {
+        "shape": [
+          24000,
+          31
+        ],
+        "columns": [
+          "dur",
+          "spkts",
+          "dpkts",
+          "sbytes",
+          "dbytes",
+          "rate",
+          "sload",
+          "dload",
+          "sloss",
+          "dloss",
+          "sinpkt",
+          "dinpkt",
+          "sjit",
+          "djit",
+          "tcprtt",
+          "synack",
+          "ackdat",
+          "smean",
+          "dmean",
+          "trans_depth",
+          "response_body_len",
+          "ct_srv_src",
+          "ct_state_ttl",
+          "ct_dst_ltm",
+          "ct_src_dport_ltm",
+          "ct_dst_sport_ltm",
+          "ct_dst_src_ltm",
+          "ct_ftp_cmd",
+          "ct_flw_http_mthd",
+          "ct_src_ltm",
+          "ct_srv_dst"
+        ],
+        "dtypes": [
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "float64"
+        ],
+        "hash": "63e8398e1ba9a30eb7a8bdda2479d149a3472d63d0f84f137451901769b5b521"
+      },
+      "y": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf"
+    },
+    {
+      "class": "StandardScaler",
+      "method": "fit",
+      "X": {
+        "shape": [
+          24000,
+          7
+        ],
+        "columns": [
+          "sttl",
+          "dttl",
+          "swin",
+          "dwin",
+          "stcpb",
+          "dtcpb",
+          "is_sm_ips_ports"
+        ],
+        "dtypes": [
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64"
+        ],
+        "hash": "9b80afc8ce11fa16324bd8adb4fb0f2a99b08b7769673944bdcb0e62e95b4d03"
+      },
+      "y": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf"
+    },
+    {
+      "class": "LogisticRegression",
+      "method": "fit",
+      "X": {
+        "shape": [
+          24000,
+          73
+        ],
+        "hash": "974da91dc1f720a54574365ebb522fa1586a985ee6c6e9233168adf464865193"
+      },
+      "y": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf"
+    }
+  ],
+  "load_events": [
+    {
+      "name": "train",
+      "X": {
+        "shape": [
+          24000,
+          41
+        ],
+        "columns": [
+          "dur",
+          "proto",
+          "service",
+          "state",
+          "spkts",
+          "dpkts",
+          "sbytes",
+          "dbytes",
+          "rate",
+          "sttl",
+          "dttl",
+          "sload",
+          "dload",
+          "sloss",
+          "dloss",
+          "sinpkt",
+          "dinpkt",
+          "sjit",
+          "djit",
+          "swin",
+          "stcpb",
+          "dtcpb",
+          "dwin",
+          "tcprtt",
+          "synack",
+          "ackdat",
+          "smean",
+          "dmean",
+          "trans_depth",
+          "response_body_len",
+          "ct_srv_src",
+          "ct_state_ttl",
+          "ct_dst_ltm",
+          "ct_src_dport_ltm",
+          "ct_dst_sport_ltm",
+          "ct_dst_src_ltm",
+          "ct_ftp_cmd",
+          "ct_flw_http_mthd",
+          "ct_src_ltm",
+          "ct_srv_dst",
+          "is_sm_ips_ports"
+        ],
+        "dtypes": [
+          "float64",
+          "str",
+          "str",
+          "str",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64"
+        ],
+        "hash": "bed6ebf400b1de3064fb3270fd720b621275c7cf7d28a80c4d2633599a56fdae"
+      },
+      "y": "b84ce144708d80f3a7b2f6b8f7a3755aba32322c2849b3a5a6d97c906aa3cccf"
+    },
+    {
+      "name": "val",
+      "X": {
+        "shape": [
+          6000,
+          41
+        ],
+        "columns": [
+          "dur",
+          "proto",
+          "service",
+          "state",
+          "spkts",
+          "dpkts",
+          "sbytes",
+          "dbytes",
+          "rate",
+          "sttl",
+          "dttl",
+          "sload",
+          "dload",
+          "sloss",
+          "dloss",
+          "sinpkt",
+          "dinpkt",
+          "sjit",
+          "djit",
+          "swin",
+          "stcpb",
+          "dtcpb",
+          "dwin",
+          "tcprtt",
+          "synack",
+          "ackdat",
+          "smean",
+          "dmean",
+          "trans_depth",
+          "response_body_len",
+          "ct_srv_src",
+          "ct_state_ttl",
+          "ct_dst_ltm",
+          "ct_src_dport_ltm",
+          "ct_dst_sport_ltm",
+          "ct_dst_src_ltm",
+          "ct_ftp_cmd",
+          "ct_flw_http_mthd",
+          "ct_src_ltm",
+          "ct_srv_dst",
+          "is_sm_ips_ports"
+        ],
+        "dtypes": [
+          "float64",
+          "str",
+          "str",
+          "str",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "float64",
+          "float64",
+          "float64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64",
+          "int64"
+        ],
+        "hash": "08762d7c6ba101da3fc5ce5625d006ea3c8ef2005098624f057399ba5334e253"
+      },
+      "y": "169de1c34b3a549b1324a9d73548db53d3c35f949e03933ec968895bfe4803ff"
+    }
+  ],
+  "plots": {
+    "curve_lr_t0.png": {
+      "size_inches": [
+        13.0,
+        4.5
+      ],
+      "figure_dpi": 100.0,
+      "save_kwargs": {
+        "dpi": 150
+      },
+      "axes": [
+        {
+          "title": "LR T0: train vs validation F1",
+          "xlabel": "C (smaller = stronger regularization)",
+          "ylabel": "",
+          "xscale": "log",
+          "yscale": "linear",
+          "xlim": [
+            0.0005623413251903486,
+            177.82794100389242
+          ],
+          "ylim": [
+            0.9039455851350947,
+            0.9184367235984608
+          ],
+          "xticks": [
+            0.0001,
+            0.001,
+            0.01,
+            0.1,
+            1.0,
+            10.0,
+            100.0,
+            1000.0
+          ],
+          "yticks": [
+            0.902,
+            0.904,
+            0.906,
+            0.908,
+            0.91,
+            0.912,
+            0.914,
+            0.916,
+            0.918,
+            0.92
+          ],
+          "xticklabels": [
+            "$\\mathdefault{10^{-4}}$",
+            "$\\mathdefault{10^{-3}}$",
+            "$\\mathdefault{10^{-2}}$",
+            "$\\mathdefault{10^{-1}}$",
+            "$\\mathdefault{10^{0}}$",
+            "$\\mathdefault{10^{1}}$",
+            "$\\mathdefault{10^{2}}$",
+            "$\\mathdefault{10^{3}}$"
+          ],
+          "yticklabels": [
+            "0.902",
+            "0.904",
+            "0.906",
+            "0.908",
+            "0.910",
+            "0.912",
+            "0.914",
+            "0.916",
+            "0.918",
+            "0.920"
+          ],
+          "position": [
+            0.04978632478632479,
+            0.13544656635802477,
+            0.4513675213675214,
+            0.7838126929012346
+          ],
+          "legend": [
+            "train F1",
+            "validation F1"
+          ],
+          "lines": [
+            {
+              "x": [
+                0.001,
+                0.01,
+                0.1,
+                1.0,
+                10.0,
+                100.0
+              ],
+              "y": [
+                0.9051417443732914,
+                0.91057530901877,
+                0.9142572283150548,
+                0.915650563358543,
+                0.9169342670329245,
+                0.9177780354864896
+              ],
+              "label": "train F1",
+              "color": [
+                0.12156862745098039,
+                0.4666666666666667,
+                0.7058823529411765
+              ],
+              "linestyle": "--",
+              "marker": "o",
+              "linewidth": 1.5,
+              "markersize": 6.0
+            },
+            {
+              "x": [
+                0.001,
+                0.01,
+                0.1,
+                1.0,
+                10.0,
+                100.0
+              ],
+              "y": [
+                0.9046042732470659,
+                0.9098699311400154,
+                0.9133251079580506,
+                0.9140201394268009,
+                0.9132462686567164,
+                0.9140552280484021
+              ],
+              "label": "validation F1",
+              "color": [
+                1.0,
+                0.4980392156862745,
+                0.054901960784313725
+              ],
+              "linestyle": "-",
+              "marker": "o",
+              "linewidth": 1.5,
+              "markersize": 6.0
+            }
+          ],
+          "images": [],
+          "texts": []
+        },
+        {
+          "title": "LR T0: validation metrics",
+          "xlabel": "C (smaller = stronger regularization)",
+          "ylabel": "",
+          "xscale": "log",
+          "yscale": "linear",
+          "xlim": [
+            0.0005623413251903486,
+            177.82794100389242
+          ],
+          "ylim": [
+            0.09155091845703667,
+            1.0082265601530946
+          ],
+          "xticks": [
+            0.0001,
+            0.001,
+            0.01,
+            0.1,
+            1.0,
+            10.0,
+            100.0,
+            1000.0
+          ],
+          "yticks": [
+            0.0,
+            0.2,
+            0.4,
+            0.6000000000000001,
+            0.8,
+            1.0,
+            1.2000000000000002
+          ],
+          "xticklabels": [
+            "$\\mathdefault{10^{-4}}$",
+            "$\\mathdefault{10^{-3}}$",
+            "$\\mathdefault{10^{-2}}$",
+            "$\\mathdefault{10^{-1}}$",
+            "$\\mathdefault{10^{0}}$",
+            "$\\mathdefault{10^{1}}$",
+            "$\\mathdefault{10^{2}}$",
+            "$\\mathdefault{10^{3}}$"
+          ],
+          "yticklabels": [
+            "0.0",
+            "0.2",
+            "0.4",
+            "0.6",
+            "0.8",
+            "1.0",
+            "1.2"
+          ],
+          "position": [
+            0.5370940170940172,
+            0.13544656635802477,
+            0.45136752136752145,
+            0.7838126929012346
+          ],
+          "legend": [
+            "precision",
+            "recall",
+            "fpr"
+          ],
+          "lines": [
+            {
+              "x": [
+                0.001,
+                0.01,
+                0.1,
+                1.0,
+                10.0,
+                100.0
+              ],
+              "y": [
+                0.8501131221719457,
+                0.868029197080292,
+                0.8775933609958506,
+                0.8819133034379671,
+                0.8841059602649006,
+                0.8830935251798561
+              ],
+              "label": "precision",
+              "color": [
+                0.12156862745098039,
+                0.4666666666666667,
+                0.7058823529411765
+              ],
+              "linestyle": "-",
+              "marker": "o",
+              "linewidth": 1.5,
+              "markersize": 6.0
+            },
+            {
+              "x": [
+                0.001,
+                0.01,
+                0.1,
+                1.0,
+                10.0,
+                100.0
+              ],
+              "y": [
+                0.9665594855305466,
+                0.9559485530546624,
+                0.9520900321543408,
+                0.9485530546623794,
+                0.9443729903536977,
+                0.9472668810289389
+              ],
+              "label": "recall",
+              "color": [
+                1.0,
+                0.4980392156862745,
+                0.054901960784313725
+              ],
+              "linestyle": "-",
+              "marker": "o",
+              "linewidth": 1.5,
+              "markersize": 6.0
+            },
+            {
+              "x": [
+                0.001,
+                0.01,
+                0.1,
+                1.0,
+                10.0,
+                100.0
+              ],
+              "y": [
+                0.18339100346020762,
+                0.156401384083045,
+                0.14290657439446366,
+                0.13667820069204153,
+                0.13321799307958476,
+                0.13494809688581316
+              ],
+              "label": "fpr",
+              "color": [
+                0.17254901960784313,
+                0.6274509803921569,
+                0.17254901960784313
+              ],
+              "linestyle": "-",
+              "marker": "o",
+              "linewidth": 1.5,
+              "markersize": 6.0
+            }
+          ],
+          "images": [],
+          "texts": []
+        }
+      ]
+    },
+    "confusion_lr_t0.png": {
+      "size_inches": [
+        6.4,
+        4.8
+      ],
+      "figure_dpi": 100.0,
+      "save_kwargs": {
+        "dpi": 150,
+        "bbox_inches": "tight"
+      },
+      "axes": [
+        {
+          "title": "LR T0, C=100: validation",
+          "xlabel": "Predicted label",
+          "ylabel": "True label",
+          "xscale": "linear",
+          "yscale": "linear",
+          "xlim": [
+            -0.5,
+            1.5
+          ],
+          "ylim": [
+            1.5,
+            -0.5
+          ],
+          "xticks": [
+            0,
+            1
+          ],
+          "yticks": [
+            0,
+            1
+          ],
+          "xticklabels": [
+            "Normal",
+            "Attack"
+          ],
+          "yticklabels": [
+            "Normal",
+            "Attack"
+          ],
+          "position": [
+            0.1675000000000001,
+            0.10999999999999999,
+            0.5775,
+            0.77
+          ],
+          "legend": null,
+          "lines": [],
+          "images": [
+            {
+              "array": [
+                [
+                  2500,
+                  390
+                ],
+                [
+                  164,
+                  2946
+                ]
+              ],
+              "cmap": "Blues",
+              "extent": [
+                -0.5,
+                1.5,
+                1.5,
+                -0.5
+              ],
+              "clim": [
+                164,
+                2946
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "2,500",
+              "position": [
+                0,
+                0
+              ],
+              "color": [
+                0.9686274509803922,
+                0.984313725490196,
+                1.0,
+                1.0
+              ],
+              "fontsize": 10.0,
+              "rotation": 0.0
+            },
+            {
+              "text": "390",
+              "position": [
+                1,
+                0
+              ],
+              "color": [
+                0.03137254901960784,
+                0.18823529411764706,
+                0.4196078431372549,
+                1.0
+              ],
+              "fontsize": 10.0,
+              "rotation": 0.0
+            },
+            {
+              "text": "164",
+              "position": [
+                0,
+                1
+              ],
+              "color": [
+                0.03137254901960784,
+                0.18823529411764706,
+                0.4196078431372549,
+                1.0
+              ],
+              "fontsize": 10.0,
+              "rotation": 0.0
+            },
+            {
+              "text": "2,946",
+              "position": [
+                1,
+                1
+              ],
+              "color": [
+                0.9686274509803922,
+                0.984313725490196,
+                1.0,
+                1.0
+              ],
+              "fontsize": 10.0,
+              "rotation": 0.0
+            }
+          ]
+        },
+        {
+          "title": "",
+          "xlabel": "",
+          "ylabel": "",
+          "xscale": "linear",
+          "yscale": "linear",
+          "xlim": [
+            0.0,
+            1.0
+          ],
+          "ylim": [
+            164.0,
+            2946.0
+          ],
+          "xticks": [],
+          "yticks": [
+            0.0,
+            500.0,
+            1000.0,
+            1500.0,
+            2000.0,
+            2500.0,
+            3000.0
+          ],
+          "xticklabels": [],
+          "yticklabels": [
+            "0",
+            "500",
+            "1000",
+            "1500",
+            "2000",
+            "2500",
+            "3000"
+          ],
+          "position": [
+            0.7837500000000002,
+            0.10999999999999999,
+            0.028874999999999984,
+            0.77
+          ],
+          "legend": null,
+          "lines": [],
+          "images": [],
+          "texts": []
+        }
+      ]
+    }
+  },
+  "models": [
+    {
+      "C": 0.001,
+      "estimator_class": "LogisticRegression",
+      "estimator_params": {
+        "C": 0.001,
+        "class_weight": null,
+        "dual": false,
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "l1_ratio": 0.0,
+        "max_iter": 2000,
+        "n_jobs": null,
+        "penalty": "deprecated",
+        "random_state": null,
+        "solver": "lbfgs",
+        "tol": 0.0001,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "preprocessor_params": {
+        "n_jobs": null,
+        "remainder": "drop",
+        "sparse_threshold": 0.3,
+        "transformer_weights": null,
+        "transformers": [
+          [
+            "cat",
+            {
+              "class": "sklearn.pipeline.Pipeline",
+              "params": {
+                "memory": null,
+                "steps": [
+                  [
+                    "functiontransformer",
+                    {
+                      "class": "sklearn.preprocessing._function_transformer.FunctionTransformer",
+                      "params": {
+                        "accept_sparse": false,
+                        "check_inverse": true,
+                        "feature_names_out": "one-to-one",
+                        "func": "src.preprocessing.group_rare",
+                        "inv_kw_args": null,
+                        "inverse_func": null,
+                        "kw_args": null,
+                        "validate": false
+                      }
+                    }
+                  ],
+                  [
+                    "onehotencoder",
+                    {
+                      "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+                      "params": {
+                        "categories": [
+                          [
+                            "tcp",
+                            "udp",
+                            "unas",
+                            "ospf",
+                            "arp",
+                            "sctp",
+                            "any",
+                            "gre",
+                            "rsvp",
+                            "ipv6",
+                            "sun-nd",
+                            "swipe",
+                            "sep",
+                            "mobile",
+                            "pim",
+                            "other"
+                          ],
+                          [
+                            "-",
+                            "http",
+                            "dns",
+                            "smtp",
+                            "ftp-data",
+                            "ftp",
+                            "ssh",
+                            "pop3",
+                            "snmp",
+                            "ssl",
+                            "dhcp",
+                            "irc",
+                            "radius"
+                          ],
+                          [
+                            "FIN",
+                            "INT",
+                            "CON",
+                            "REQ",
+                            "RST",
+                            "other"
+                          ]
+                        ],
+                        "drop": null,
+                        "dtype": "numpy.float64",
+                        "feature_name_combiner": "concat",
+                        "handle_unknown": "ignore",
+                        "max_categories": null,
+                        "min_frequency": null,
+                        "sparse_output": false
+                      }
+                    }
+                  ]
+                ],
+                "transform_input": null,
+                "verbose": false
+              }
+            },
+            [
+              "proto",
+              "service",
+              "state"
+            ]
+          ],
+          [
+            "log",
+            {
+              "class": "sklearn.pipeline.Pipeline",
+              "params": {
+                "memory": null,
+                "steps": [
+                  [
+                    "functiontransformer",
+                    {
+                      "class": "sklearn.preprocessing._function_transformer.FunctionTransformer",
+                      "params": {
+                        "accept_sparse": false,
+                        "check_inverse": true,
+                        "feature_names_out": "one-to-one",
+                        "func": "numpy.log1p",
+                        "inv_kw_args": null,
+                        "inverse_func": null,
+                        "kw_args": null,
+                        "validate": false
+                      }
+                    }
+                  ],
+                  [
+                    "standardscaler",
+                    {
+                      "class": "sklearn.preprocessing._data.StandardScaler",
+                      "params": {
+                        "copy": true,
+                        "with_mean": true,
+                        "with_std": true
+                      }
+                    }
+                  ]
+                ],
+                "transform_input": null,
+                "verbose": false
+              }
+            },
+            [
+              "dur",
+              "spkts",
+              "dpkts",
+              "sbytes",
+              "dbytes",
+              "rate",
+              "sload",
+              "dload",
+              "sloss",
+              "dloss",
+              "sinpkt",
+              "dinpkt",
+              "sjit",
+              "djit",
+              "tcprtt",
+              "synack",
+              "ackdat",
+              "smean",
+              "dmean",
+              "trans_depth",
+              "response_body_len",
+              "ct_srv_src",
+              "ct_state_ttl",
+              "ct_dst_ltm",
+              "ct_src_dport_ltm",
+              "ct_dst_sport_ltm",
+              "ct_dst_src_ltm",
+              "ct_ftp_cmd",
+              "ct_flw_http_mthd",
+              "ct_src_ltm",
+              "ct_srv_dst"
+            ]
+          ],
+          [
+            "num",
+            {
+              "class": "sklearn.preprocessing._data.StandardScaler",
+              "params": {
+                "copy": true,
+                "with_mean": true,
+                "with_std": true
+              }
+            },
+            [
+              "sttl",
+              "dttl",
+              "swin",
+              "dwin",
+              "stcpb",
+              "dtcpb",
+              "is_sm_ips_ports"
+            ]
+          ]
+        ],
+        "verbose": false,
+        "verbose_feature_names_out": true
+      },
+      "feature_names": [
+        "cat__proto_tcp",
+        "cat__proto_udp",
+        "cat__proto_unas",
+        "cat__proto_ospf",
+        "cat__proto_arp",
+        "cat__proto_sctp",
+        "cat__proto_any",
+        "cat__proto_gre",
+        "cat__proto_rsvp",
+        "cat__proto_ipv6",
+        "cat__proto_sun-nd",
+        "cat__proto_swipe",
+        "cat__proto_sep",
+        "cat__proto_mobile",
+        "cat__proto_pim",
+        "cat__proto_other",
+        "cat__service_-",
+        "cat__service_http",
+        "cat__service_dns",
+        "cat__service_smtp",
+        "cat__service_ftp-data",
+        "cat__service_ftp",
+        "cat__service_ssh",
+        "cat__service_pop3",
+        "cat__service_snmp",
+        "cat__service_ssl",
+        "cat__service_dhcp",
+        "cat__service_irc",
+        "cat__service_radius",
+        "cat__state_FIN",
+        "cat__state_INT",
+        "cat__state_CON",
+        "cat__state_REQ",
+        "cat__state_RST",
+        "cat__state_other",
+        "log__dur",
+        "log__spkts",
+        "log__dpkts",
+        "log__sbytes",
+        "log__dbytes",
+        "log__rate",
+        "log__sload",
+        "log__dload",
+        "log__sloss",
+        "log__dloss",
+        "log__sinpkt",
+        "log__dinpkt",
+        "log__sjit",
+        "log__djit",
+        "log__tcprtt",
+        "log__synack",
+        "log__ackdat",
+        "log__smean",
+        "log__dmean",
+        "log__trans_depth",
+        "log__response_body_len",
+        "log__ct_srv_src",
+        "log__ct_state_ttl",
+        "log__ct_dst_ltm",
+        "log__ct_src_dport_ltm",
+        "log__ct_dst_sport_ltm",
+        "log__ct_dst_src_ltm",
+        "log__ct_ftp_cmd",
+        "log__ct_flw_http_mthd",
+        "log__ct_src_ltm",
+        "log__ct_srv_dst",
+        "num__sttl",
+        "num__dttl",
+        "num__swin",
+        "num__dwin",
+        "num__stcpb",
+        "num__dtcpb",
+        "num__is_sm_ips_ports"
+      ],
+      "scalers": {
+        "log": {
+          "mean_": [
+            0.4512485702902092,
+            2.507488314306908,
+            2.176068885001428,
+            6.99895411145375,
+            5.975736588638446,
+            6.085253277391506,
+            12.158491160331291,
+            8.811414294972616,
+            1.1941777583057596,
+            1.2048143063211127,
+            2.5243716064562163,
+            2.401080334589432,
+            5.19240860937724,
+            3.4476488442953768,
+            0.05790091562005151,
+            0.03045533009798955,
+            0.029641213226367712,
+            4.658150355037475,
+            3.9029232317128892,
+            0.11059028126233435,
+            0.7256571756129021,
+            1.5093076654985993,
+            0.53132987440253,
+            1.1861160915265334,
+            0.9055808022541724,
+            0.7867158240540499,
+            1.302513859245782,
+            0.013092450681040393,
+            0.11469255765607321,
+            1.3192787134704724,
+            1.4430475476635232
+          ],
+          "scale_": [
+            0.6284039845467242,
+            1.1470679600248903,
+            1.4580389908788336,
+            1.6191039590595813,
+            3.4562747253133668,
+            3.435916184401728,
+            3.823484167358887,
+            5.037211054661378,
+            1.0263237694040894,
+            1.231972010753423,
+            2.1912611391232364,
+            2.1524697921578566,
+            3.69572206799398,
+            2.812943180805459,
+            0.07862674650024196,
+            0.04540678093429394,
+            0.04208309482270341,
+            0.8159892363114288,
+            2.1363364560567515,
+            0.25979424005182766,
+            2.2762179587461517,
+            0.7231364305422584,
+            0.4473450633414797,
+            0.5870498697184617,
+            0.47611092701975144,
+            0.34411881438794273,
+            0.6872012932598353,
+            0.09468383910745576,
+            0.2746504938326506,
+            0.6487325446308182,
+            0.7246881334547169
+          ],
+          "var_": [
+            0.3948915677941996,
+            1.3157649049156632,
+            2.1258776989229675,
+            2.6214976302424104,
+            11.945834976839988,
+            11.80552002623373,
+            14.61903117804408,
+            25.373495209202787,
+            1.0533404796438186,
+            1.5177550352798324,
+            4.8016253798316635,
+            4.633126206152087,
+            13.658361603857703,
+            7.912649338439933,
+            0.006182165265213311,
+            0.0020617757548149597,
+            0.0017709868698566463,
+            0.6658384337761089,
+            4.56393345347712,
+            0.06749304716410665,
+            5.181168195718497,
+            0.5229262971773985,
+            0.20011760569599252,
+            0.34462754953646285,
+            0.22668161482760707,
+            0.1184177584157634,
+            0.47224561745799004,
+            0.008965029388126568,
+            0.07543289376251885,
+            0.4208539144631765,
+            0.5251728907700816
+          ],
+          "n_samples_seen_": 24000.0
+        },
+        "num": {
+          "mean_": [
+            143.15866666666668,
+            121.69204166666667,
+            180.21425,
+            178.829375,
+            1514024488.537375,
+            1511512456.3952916,
+            0.004875
+          ],
+          "scale_": [
+            107.71456412616118,
+            116.05155084414682,
+            116.08390649412819,
+            116.71137588988219,
+            1430741820.4057348,
+            1429883626.3596828,
+            0.06965080311812635
+          ],
+          "var_": [
+            11602.42732488889,
+            13467.962453331595,
+            13475.473346937497,
+            13621.545262109374,
+            2.047022156657916e+18,
+            2.044567184931517e+18,
+            0.004851234374999999
+          ],
+          "n_samples_seen_": 24000.0
+        }
+      },
+      "independent_scores": {
+        "train": {
+          "precision": 0.84735661197588,
+          "recall": 0.9713849369021783,
+          "f1": 0.9051417443732914,
+          "fpr": 0.1883380915304092,
+          "confusion": [
+            [
+              9382,
+              2177
+            ],
+            [
+              356,
+              12085
+            ]
+          ]
+        },
+        "val": {
+          "precision": 0.8501131221719457,
+          "recall": 0.9665594855305466,
+          "f1": 0.9046042732470659,
+          "fpr": 0.18339100346020762,
+          "confusion": [
+            [
+              2360,
+              530
+            ],
+            [
+              104,
+              3006
+            ]
+          ]
+        }
+      },
+      "encoder_categories": [
+        [
+          "tcp",
+          "udp",
+          "unas",
+          "ospf",
+          "arp",
+          "sctp",
+          "any",
+          "gre",
+          "rsvp",
+          "ipv6",
+          "sun-nd",
+          "swipe",
+          "sep",
+          "mobile",
+          "pim",
+          "other"
+        ],
+        [
+          "-",
+          "http",
+          "dns",
+          "smtp",
+          "ftp-data",
+          "ftp",
+          "ssh",
+          "pop3",
+          "snmp",
+          "ssl",
+          "dhcp",
+          "irc",
+          "radius"
+        ],
+        [
+          "FIN",
+          "INT",
+          "CON",
+          "REQ",
+          "RST",
+          "other"
+        ]
+      ]
+    },
+    {
+      "C": 0.01,
+      "estimator_class": "LogisticRegression",
+      "estimator_params": {
+        "C": 0.01,
+        "class_weight": null,
+        "dual": false,
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "l1_ratio": 0.0,
+        "max_iter": 2000,
+        "n_jobs": null,
+        "penalty": "deprecated",
+        "random_state": null,
+        "solver": "lbfgs",
+        "tol": 0.0001,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "preprocessor_params": {
+        "n_jobs": null,
+        "remainder": "drop",
+        "sparse_threshold": 0.3,
+        "transformer_weights": null,
+        "transformers": [
+          [
+            "cat",
+            {
+              "class": "sklearn.pipeline.Pipeline",
+              "params": {
+                "memory": null,
+                "steps": [
+                  [
+                    "functiontransformer",
+                    {
+                      "class": "sklearn.preprocessing._function_transformer.FunctionTransformer",
+                      "params": {
+                        "accept_sparse": false,
+                        "check_inverse": true,
+                        "feature_names_out": "one-to-one",
+                        "func": "src.preprocessing.group_rare",
+                        "inv_kw_args": null,
+                        "inverse_func": null,
+                        "kw_args": null,
+                        "validate": false
+                      }
+                    }
+                  ],
+                  [
+                    "onehotencoder",
+                    {
+                      "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+                      "params": {
+                        "categories": [
+                          [
+                            "tcp",
+                            "udp",
+                            "unas",
+                            "ospf",
+                            "arp",
+                            "sctp",
+                            "any",
+                            "gre",
+                            "rsvp",
+                            "ipv6",
+                            "sun-nd",
+                            "swipe",
+                            "sep",
+                            "mobile",
+                            "pim",
+                            "other"
+                          ],
+                          [
+                            "-",
+                            "http",
+                            "dns",
+                            "smtp",
+                            "ftp-data",
+                            "ftp",
+                            "ssh",
+                            "pop3",
+                            "snmp",
+                            "ssl",
+                            "dhcp",
+                            "irc",
+                            "radius"
+                          ],
+                          [
+                            "FIN",
+                            "INT",
+                            "CON",
+                            "REQ",
+                            "RST",
+                            "other"
+                          ]
+                        ],
+                        "drop": null,
+                        "dtype": "numpy.float64",
+                        "feature_name_combiner": "concat",
+                        "handle_unknown": "ignore",
+                        "max_categories": null,
+                        "min_frequency": null,
+                        "sparse_output": false
+                      }
+                    }
+                  ]
+                ],
+                "transform_input": null,
+                "verbose": false
+              }
+            },
+            [
+              "proto",
+              "service",
+              "state"
+            ]
+          ],
+          [
+            "log",
+            {
+              "class": "sklearn.pipeline.Pipeline",
+              "params": {
+                "memory": null,
+                "steps": [
+                  [
+                    "functiontransformer",
+                    {
+                      "class": "sklearn.preprocessing._function_transformer.FunctionTransformer",
+                      "params": {
+                        "accept_sparse": false,
+                        "check_inverse": true,
+                        "feature_names_out": "one-to-one",
+                        "func": "numpy.log1p",
+                        "inv_kw_args": null,
+                        "inverse_func": null,
+                        "kw_args": null,
+                        "validate": false
+                      }
+                    }
+                  ],
+                  [
+                    "standardscaler",
+                    {
+                      "class": "sklearn.preprocessing._data.StandardScaler",
+                      "params": {
+                        "copy": true,
+                        "with_mean": true,
+                        "with_std": true
+                      }
+                    }
+                  ]
+                ],
+                "transform_input": null,
+                "verbose": false
+              }
+            },
+            [
+              "dur",
+              "spkts",
+              "dpkts",
+              "sbytes",
+              "dbytes",
+              "rate",
+              "sload",
+              "dload",
+              "sloss",
+              "dloss",
+              "sinpkt",
+              "dinpkt",
+              "sjit",
+              "djit",
+              "tcprtt",
+              "synack",
+              "ackdat",
+              "smean",
+              "dmean",
+              "trans_depth",
+              "response_body_len",
+              "ct_srv_src",
+              "ct_state_ttl",
+              "ct_dst_ltm",
+              "ct_src_dport_ltm",
+              "ct_dst_sport_ltm",
+              "ct_dst_src_ltm",
+              "ct_ftp_cmd",
+              "ct_flw_http_mthd",
+              "ct_src_ltm",
+              "ct_srv_dst"
+            ]
+          ],
+          [
+            "num",
+            {
+              "class": "sklearn.preprocessing._data.StandardScaler",
+              "params": {
+                "copy": true,
+                "with_mean": true,
+                "with_std": true
+              }
+            },
+            [
+              "sttl",
+              "dttl",
+              "swin",
+              "dwin",
+              "stcpb",
+              "dtcpb",
+              "is_sm_ips_ports"
+            ]
+          ]
+        ],
+        "verbose": false,
+        "verbose_feature_names_out": true
+      },
+      "feature_names": [
+        "cat__proto_tcp",
+        "cat__proto_udp",
+        "cat__proto_unas",
+        "cat__proto_ospf",
+        "cat__proto_arp",
+        "cat__proto_sctp",
+        "cat__proto_any",
+        "cat__proto_gre",
+        "cat__proto_rsvp",
+        "cat__proto_ipv6",
+        "cat__proto_sun-nd",
+        "cat__proto_swipe",
+        "cat__proto_sep",
+        "cat__proto_mobile",
+        "cat__proto_pim",
+        "cat__proto_other",
+        "cat__service_-",
+        "cat__service_http",
+        "cat__service_dns",
+        "cat__service_smtp",
+        "cat__service_ftp-data",
+        "cat__service_ftp",
+        "cat__service_ssh",
+        "cat__service_pop3",
+        "cat__service_snmp",
+        "cat__service_ssl",
+        "cat__service_dhcp",
+        "cat__service_irc",
+        "cat__service_radius",
+        "cat__state_FIN",
+        "cat__state_INT",
+        "cat__state_CON",
+        "cat__state_REQ",
+        "cat__state_RST",
+        "cat__state_other",
+        "log__dur",
+        "log__spkts",
+        "log__dpkts",
+        "log__sbytes",
+        "log__dbytes",
+        "log__rate",
+        "log__sload",
+        "log__dload",
+        "log__sloss",
+        "log__dloss",
+        "log__sinpkt",
+        "log__dinpkt",
+        "log__sjit",
+        "log__djit",
+        "log__tcprtt",
+        "log__synack",
+        "log__ackdat",
+        "log__smean",
+        "log__dmean",
+        "log__trans_depth",
+        "log__response_body_len",
+        "log__ct_srv_src",
+        "log__ct_state_ttl",
+        "log__ct_dst_ltm",
+        "log__ct_src_dport_ltm",
+        "log__ct_dst_sport_ltm",
+        "log__ct_dst_src_ltm",
+        "log__ct_ftp_cmd",
+        "log__ct_flw_http_mthd",
+        "log__ct_src_ltm",
+        "log__ct_srv_dst",
+        "num__sttl",
+        "num__dttl",
+        "num__swin",
+        "num__dwin",
+        "num__stcpb",
+        "num__dtcpb",
+        "num__is_sm_ips_ports"
+      ],
+      "scalers": {
+        "log": {
+          "mean_": [
+            0.4512485702902092,
+            2.507488314306908,
+            2.176068885001428,
+            6.99895411145375,
+            5.975736588638446,
+            6.085253277391506,
+            12.158491160331291,
+            8.811414294972616,
+            1.1941777583057596,
+            1.2048143063211127,
+            2.5243716064562163,
+            2.401080334589432,
+            5.19240860937724,
+            3.4476488442953768,
+            0.05790091562005151,
+            0.03045533009798955,
+            0.029641213226367712,
+            4.658150355037475,
+            3.9029232317128892,
+            0.11059028126233435,
+            0.7256571756129021,
+            1.5093076654985993,
+            0.53132987440253,
+            1.1861160915265334,
+            0.9055808022541724,
+            0.7867158240540499,
+            1.302513859245782,
+            0.013092450681040393,
+            0.11469255765607321,
+            1.3192787134704724,
+            1.4430475476635232
+          ],
+          "scale_": [
+            0.6284039845467242,
+            1.1470679600248903,
+            1.4580389908788336,
+            1.6191039590595813,
+            3.4562747253133668,
+            3.435916184401728,
+            3.823484167358887,
+            5.037211054661378,
+            1.0263237694040894,
+            1.231972010753423,
+            2.1912611391232364,
+            2.1524697921578566,
+            3.69572206799398,
+            2.812943180805459,
+            0.07862674650024196,
+            0.04540678093429394,
+            0.04208309482270341,
+            0.8159892363114288,
+            2.1363364560567515,
+            0.25979424005182766,
+            2.2762179587461517,
+            0.7231364305422584,
+            0.4473450633414797,
+            0.5870498697184617,
+            0.47611092701975144,
+            0.34411881438794273,
+            0.6872012932598353,
+            0.09468383910745576,
+            0.2746504938326506,
+            0.6487325446308182,
+            0.7246881334547169
+          ],
+          "var_": [
+            0.3948915677941996,
+            1.3157649049156632,
+            2.1258776989229675,
+            2.6214976302424104,
+            11.945834976839988,
+            11.80552002623373,
+            14.61903117804408,
+            25.373495209202787,
+            1.0533404796438186,
+            1.5177550352798324,
+            4.8016253798316635,
+            4.633126206152087,
+            13.658361603857703,
+            7.912649338439933,
+            0.006182165265213311,
+            0.0020617757548149597,
+            0.0017709868698566463,
+            0.6658384337761089,
+            4.56393345347712,
+            0.06749304716410665,
+            5.181168195718497,
+            0.5229262971773985,
+            0.20011760569599252,
+            0.34462754953646285,
+            0.22668161482760707,
+            0.1184177584157634,
+            0.47224561745799004,
+            0.008965029388126568,
+            0.07543289376251885,
+            0.4208539144631765,
+            0.5251728907700816
+          ],
+          "n_samples_seen_": 24000.0
+        },
+        "num": {
+          "mean_": [
+            143.15866666666668,
+            121.69204166666667,
+            180.21425,
+            178.829375,
+            1514024488.537375,
+            1511512456.3952916,
+            0.004875
+          ],
+          "scale_": [
+            107.71456412616118,
+            116.05155084414682,
+            116.08390649412819,
+            116.71137588988219,
+            1430741820.4057348,
+            1429883626.3596828,
+            0.06965080311812635
+          ],
+          "var_": [
+            11602.42732488889,
+            13467.962453331595,
+            13475.473346937497,
+            13621.545262109374,
+            2.047022156657916e+18,
+            2.044567184931517e+18,
+            0.004851234374999999
+          ],
+          "n_samples_seen_": 24000.0
+        }
+      },
+      "independent_scores": {
+        "train": {
+          "precision": 0.8666037324813013,
+          "recall": 0.9592476489028213,
+          "f1": 0.91057530901877,
+          "fpr": 0.15892378233411195,
+          "confusion": [
+            [
+              9722,
+              1837
+            ],
+            [
+              507,
+              11934
+            ]
+          ]
+        },
+        "val": {
+          "precision": 0.868029197080292,
+          "recall": 0.9559485530546624,
+          "f1": 0.9098699311400154,
+          "fpr": 0.156401384083045,
+          "confusion": [
+            [
+              2438,
+              452
+            ],
+            [
+              137,
+              2973
+            ]
+          ]
+        }
+      },
+      "encoder_categories": [
+        [
+          "tcp",
+          "udp",
+          "unas",
+          "ospf",
+          "arp",
+          "sctp",
+          "any",
+          "gre",
+          "rsvp",
+          "ipv6",
+          "sun-nd",
+          "swipe",
+          "sep",
+          "mobile",
+          "pim",
+          "other"
+        ],
+        [
+          "-",
+          "http",
+          "dns",
+          "smtp",
+          "ftp-data",
+          "ftp",
+          "ssh",
+          "pop3",
+          "snmp",
+          "ssl",
+          "dhcp",
+          "irc",
+          "radius"
+        ],
+        [
+          "FIN",
+          "INT",
+          "CON",
+          "REQ",
+          "RST",
+          "other"
+        ]
+      ]
+    },
+    {
+      "C": 0.1,
+      "estimator_class": "LogisticRegression",
+      "estimator_params": {
+        "C": 0.1,
+        "class_weight": null,
+        "dual": false,
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "l1_ratio": 0.0,
+        "max_iter": 2000,
+        "n_jobs": null,
+        "penalty": "deprecated",
+        "random_state": null,
+        "solver": "lbfgs",
+        "tol": 0.0001,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "preprocessor_params": {
+        "n_jobs": null,
+        "remainder": "drop",
+        "sparse_threshold": 0.3,
+        "transformer_weights": null,
+        "transformers": [
+          [
+            "cat",
+            {
+              "class": "sklearn.pipeline.Pipeline",
+              "params": {
+                "memory": null,
+                "steps": [
+                  [
+                    "functiontransformer",
+                    {
+                      "class": "sklearn.preprocessing._function_transformer.FunctionTransformer",
+                      "params": {
+                        "accept_sparse": false,
+                        "check_inverse": true,
+                        "feature_names_out": "one-to-one",
+                        "func": "src.preprocessing.group_rare",
+                        "inv_kw_args": null,
+                        "inverse_func": null,
+                        "kw_args": null,
+                        "validate": false
+                      }
+                    }
+                  ],
+                  [
+                    "onehotencoder",
+                    {
+                      "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+                      "params": {
+                        "categories": [
+                          [
+                            "tcp",
+                            "udp",
+                            "unas",
+                            "ospf",
+                            "arp",
+                            "sctp",
+                            "any",
+                            "gre",
+                            "rsvp",
+                            "ipv6",
+                            "sun-nd",
+                            "swipe",
+                            "sep",
+                            "mobile",
+                            "pim",
+                            "other"
+                          ],
+                          [
+                            "-",
+                            "http",
+                            "dns",
+                            "smtp",
+                            "ftp-data",
+                            "ftp",
+                            "ssh",
+                            "pop3",
+                            "snmp",
+                            "ssl",
+                            "dhcp",
+                            "irc",
+                            "radius"
+                          ],
+                          [
+                            "FIN",
+                            "INT",
+                            "CON",
+                            "REQ",
+                            "RST",
+                            "other"
+                          ]
+                        ],
+                        "drop": null,
+                        "dtype": "numpy.float64",
+                        "feature_name_combiner": "concat",
+                        "handle_unknown": "ignore",
+                        "max_categories": null,
+                        "min_frequency": null,
+                        "sparse_output": false
+                      }
+                    }
+                  ]
+                ],
+                "transform_input": null,
+                "verbose": false
+              }
+            },
+            [
+              "proto",
+              "service",
+              "state"
+            ]
+          ],
+          [
+            "log",
+            {
+              "class": "sklearn.pipeline.Pipeline",
+              "params": {
+                "memory": null,
+                "steps": [
+                  [
+                    "functiontransformer",
+                    {
+                      "class": "sklearn.preprocessing._function_transformer.FunctionTransformer",
+                      "params": {
+                        "accept_sparse": false,
+                        "check_inverse": true,
+                        "feature_names_out": "one-to-one",
+                        "func": "numpy.log1p",
+                        "inv_kw_args": null,
+                        "inverse_func": null,
+                        "kw_args": null,
+                        "validate": false
+                      }
+                    }
+                  ],
+                  [
+                    "standardscaler",
+                    {
+                      "class": "sklearn.preprocessing._data.StandardScaler",
+                      "params": {
+                        "copy": true,
+                        "with_mean": true,
+                        "with_std": true
+                      }
+                    }
+                  ]
+                ],
+                "transform_input": null,
+                "verbose": false
+              }
+            },
+            [
+              "dur",
+              "spkts",
+              "dpkts",
+              "sbytes",
+              "dbytes",
+              "rate",
+              "sload",
+              "dload",
+              "sloss",
+              "dloss",
+              "sinpkt",
+              "dinpkt",
+              "sjit",
+              "djit",
+              "tcprtt",
+              "synack",
+              "ackdat",
+              "smean",
+              "dmean",
+              "trans_depth",
+              "response_body_len",
+              "ct_srv_src",
+              "ct_state_ttl",
+              "ct_dst_ltm",
+              "ct_src_dport_ltm",
+              "ct_dst_sport_ltm",
+              "ct_dst_src_ltm",
+              "ct_ftp_cmd",
+              "ct_flw_http_mthd",
+              "ct_src_ltm",
+              "ct_srv_dst"
+            ]
+          ],
+          [
+            "num",
+            {
+              "class": "sklearn.preprocessing._data.StandardScaler",
+              "params": {
+                "copy": true,
+                "with_mean": true,
+                "with_std": true
+              }
+            },
+            [
+              "sttl",
+              "dttl",
+              "swin",
+              "dwin",
+              "stcpb",
+              "dtcpb",
+              "is_sm_ips_ports"
+            ]
+          ]
+        ],
+        "verbose": false,
+        "verbose_feature_names_out": true
+      },
+      "feature_names": [
+        "cat__proto_tcp",
+        "cat__proto_udp",
+        "cat__proto_unas",
+        "cat__proto_ospf",
+        "cat__proto_arp",
+        "cat__proto_sctp",
+        "cat__proto_any",
+        "cat__proto_gre",
+        "cat__proto_rsvp",
+        "cat__proto_ipv6",
+        "cat__proto_sun-nd",
+        "cat__proto_swipe",
+        "cat__proto_sep",
+        "cat__proto_mobile",
+        "cat__proto_pim",
+        "cat__proto_other",
+        "cat__service_-",
+        "cat__service_http",
+        "cat__service_dns",
+        "cat__service_smtp",
+        "cat__service_ftp-data",
+        "cat__service_ftp",
+        "cat__service_ssh",
+        "cat__service_pop3",
+        "cat__service_snmp",
+        "cat__service_ssl",
+        "cat__service_dhcp",
+        "cat__service_irc",
+        "cat__service_radius",
+        "cat__state_FIN",
+        "cat__state_INT",
+        "cat__state_CON",
+        "cat__state_REQ",
+        "cat__state_RST",
+        "cat__state_other",
+        "log__dur",
+        "log__spkts",
+        "log__dpkts",
+        "log__sbytes",
+        "log__dbytes",
+        "log__rate",
+        "log__sload",
+        "log__dload",
+        "log__sloss",
+        "log__dloss",
+        "log__sinpkt",
+        "log__dinpkt",
+        "log__sjit",
+        "log__djit",
+        "log__tcprtt",
+        "log__synack",
+        "log__ackdat",
+        "log__smean",
+        "log__dmean",
+        "log__trans_depth",
+        "log__response_body_len",
+        "log__ct_srv_src",
+        "log__ct_state_ttl",
+        "log__ct_dst_ltm",
+        "log__ct_src_dport_ltm",
+        "log__ct_dst_sport_ltm",
+        "log__ct_dst_src_ltm",
+        "log__ct_ftp_cmd",
+        "log__ct_flw_http_mthd",
+        "log__ct_src_ltm",
+        "log__ct_srv_dst",
+        "num__sttl",
+        "num__dttl",
+        "num__swin",
+        "num__dwin",
+        "num__stcpb",
+        "num__dtcpb",
+        "num__is_sm_ips_ports"
+      ],
+      "scalers": {
+        "log": {
+          "mean_": [
+            0.4512485702902092,
+            2.507488314306908,
+            2.176068885001428,
+            6.99895411145375,
+            5.975736588638446,
+            6.085253277391506,
+            12.158491160331291,
+            8.811414294972616,
+            1.1941777583057596,
+            1.2048143063211127,
+            2.5243716064562163,
+            2.401080334589432,
+            5.19240860937724,
+            3.4476488442953768,
+            0.05790091562005151,
+            0.03045533009798955,
+            0.029641213226367712,
+            4.658150355037475,
+            3.9029232317128892,
+            0.11059028126233435,
+            0.7256571756129021,
+            1.5093076654985993,
+            0.53132987440253,
+            1.1861160915265334,
+            0.9055808022541724,
+            0.7867158240540499,
+            1.302513859245782,
+            0.013092450681040393,
+            0.11469255765607321,
+            1.3192787134704724,
+            1.4430475476635232
+          ],
+          "scale_": [
+            0.6284039845467242,
+            1.1470679600248903,
+            1.4580389908788336,
+            1.6191039590595813,
+            3.4562747253133668,
+            3.435916184401728,
+            3.823484167358887,
+            5.037211054661378,
+            1.0263237694040894,
+            1.231972010753423,
+            2.1912611391232364,
+            2.1524697921578566,
+            3.69572206799398,
+            2.812943180805459,
+            0.07862674650024196,
+            0.04540678093429394,
+            0.04208309482270341,
+            0.8159892363114288,
+            2.1363364560567515,
+            0.25979424005182766,
+            2.2762179587461517,
+            0.7231364305422584,
+            0.4473450633414797,
+            0.5870498697184617,
+            0.47611092701975144,
+            0.34411881438794273,
+            0.6872012932598353,
+            0.09468383910745576,
+            0.2746504938326506,
+            0.6487325446308182,
+            0.7246881334547169
+          ],
+          "var_": [
+            0.3948915677941996,
+            1.3157649049156632,
+            2.1258776989229675,
+            2.6214976302424104,
+            11.945834976839988,
+            11.80552002623373,
+            14.61903117804408,
+            25.373495209202787,
+            1.0533404796438186,
+            1.5177550352798324,
+            4.8016253798316635,
+            4.633126206152087,
+            13.658361603857703,
+            7.912649338439933,
+            0.006182165265213311,
+            0.0020617757548149597,
+            0.0017709868698566463,
+            0.6658384337761089,
+            4.56393345347712,
+            0.06749304716410665,
+            5.181168195718497,
+            0.5229262971773985,
+            0.20011760569599252,
+            0.34462754953646285,
+            0.22668161482760707,
+            0.1184177584157634,
+            0.47224561745799004,
+            0.008965029388126568,
+            0.07543289376251885,
+            0.4208539144631765,
+            0.5251728907700816
+          ],
+          "n_samples_seen_": 24000.0
+        },
+        "num": {
+          "mean_": [
+            143.15866666666668,
+            121.69204166666667,
+            180.21425,
+            178.829375,
+            1514024488.537375,
+            1511512456.3952916,
+            0.004875
+          ],
+          "scale_": [
+            107.71456412616118,
+            116.05155084414682,
+            116.08390649412819,
+            116.71137588988219,
+            1430741820.4057348,
+            1429883626.3596828,
+            0.06965080311812635
+          ],
+          "var_": [
+            11602.42732488889,
+            13467.962453331595,
+            13475.473346937497,
+            13621.545262109374,
+            2.047022156657916e+18,
+            2.044567184931517e+18,
+            0.004851234374999999
+          ],
+          "n_samples_seen_": 24000.0
+        }
+      },
+      "independent_scores": {
+        "train": {
+          "precision": 0.8741658722592945,
+          "recall": 0.9582027168234065,
+          "f1": 0.9142572283150548,
+          "fpr": 0.1484557487671944,
+          "confusion": [
+            [
+              9843,
+              1716
+            ],
+            [
+              520,
+              11921
+            ]
+          ]
+        },
+        "val": {
+          "precision": 0.8775933609958506,
+          "recall": 0.9520900321543408,
+          "f1": 0.9133251079580506,
+          "fpr": 0.14290657439446366,
+          "confusion": [
+            [
+              2477,
+              413
+            ],
+            [
+              149,
+              2961
+            ]
+          ]
+        }
+      },
+      "encoder_categories": [
+        [
+          "tcp",
+          "udp",
+          "unas",
+          "ospf",
+          "arp",
+          "sctp",
+          "any",
+          "gre",
+          "rsvp",
+          "ipv6",
+          "sun-nd",
+          "swipe",
+          "sep",
+          "mobile",
+          "pim",
+          "other"
+        ],
+        [
+          "-",
+          "http",
+          "dns",
+          "smtp",
+          "ftp-data",
+          "ftp",
+          "ssh",
+          "pop3",
+          "snmp",
+          "ssl",
+          "dhcp",
+          "irc",
+          "radius"
+        ],
+        [
+          "FIN",
+          "INT",
+          "CON",
+          "REQ",
+          "RST",
+          "other"
+        ]
+      ]
+    },
+    {
+      "C": 1.0,
+      "estimator_class": "LogisticRegression",
+      "estimator_params": {
+        "C": 1,
+        "class_weight": null,
+        "dual": false,
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "l1_ratio": 0.0,
+        "max_iter": 2000,
+        "n_jobs": null,
+        "penalty": "deprecated",
+        "random_state": null,
+        "solver": "lbfgs",
+        "tol": 0.0001,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "preprocessor_params": {
+        "n_jobs": null,
+        "remainder": "drop",
+        "sparse_threshold": 0.3,
+        "transformer_weights": null,
+        "transformers": [
+          [
+            "cat",
+            {
+              "class": "sklearn.pipeline.Pipeline",
+              "params": {
+                "memory": null,
+                "steps": [
+                  [
+                    "functiontransformer",
+                    {
+                      "class": "sklearn.preprocessing._function_transformer.FunctionTransformer",
+                      "params": {
+                        "accept_sparse": false,
+                        "check_inverse": true,
+                        "feature_names_out": "one-to-one",
+                        "func": "src.preprocessing.group_rare",
+                        "inv_kw_args": null,
+                        "inverse_func": null,
+                        "kw_args": null,
+                        "validate": false
+                      }
+                    }
+                  ],
+                  [
+                    "onehotencoder",
+                    {
+                      "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+                      "params": {
+                        "categories": [
+                          [
+                            "tcp",
+                            "udp",
+                            "unas",
+                            "ospf",
+                            "arp",
+                            "sctp",
+                            "any",
+                            "gre",
+                            "rsvp",
+                            "ipv6",
+                            "sun-nd",
+                            "swipe",
+                            "sep",
+                            "mobile",
+                            "pim",
+                            "other"
+                          ],
+                          [
+                            "-",
+                            "http",
+                            "dns",
+                            "smtp",
+                            "ftp-data",
+                            "ftp",
+                            "ssh",
+                            "pop3",
+                            "snmp",
+                            "ssl",
+                            "dhcp",
+                            "irc",
+                            "radius"
+                          ],
+                          [
+                            "FIN",
+                            "INT",
+                            "CON",
+                            "REQ",
+                            "RST",
+                            "other"
+                          ]
+                        ],
+                        "drop": null,
+                        "dtype": "numpy.float64",
+                        "feature_name_combiner": "concat",
+                        "handle_unknown": "ignore",
+                        "max_categories": null,
+                        "min_frequency": null,
+                        "sparse_output": false
+                      }
+                    }
+                  ]
+                ],
+                "transform_input": null,
+                "verbose": false
+              }
+            },
+            [
+              "proto",
+              "service",
+              "state"
+            ]
+          ],
+          [
+            "log",
+            {
+              "class": "sklearn.pipeline.Pipeline",
+              "params": {
+                "memory": null,
+                "steps": [
+                  [
+                    "functiontransformer",
+                    {
+                      "class": "sklearn.preprocessing._function_transformer.FunctionTransformer",
+                      "params": {
+                        "accept_sparse": false,
+                        "check_inverse": true,
+                        "feature_names_out": "one-to-one",
+                        "func": "numpy.log1p",
+                        "inv_kw_args": null,
+                        "inverse_func": null,
+                        "kw_args": null,
+                        "validate": false
+                      }
+                    }
+                  ],
+                  [
+                    "standardscaler",
+                    {
+                      "class": "sklearn.preprocessing._data.StandardScaler",
+                      "params": {
+                        "copy": true,
+                        "with_mean": true,
+                        "with_std": true
+                      }
+                    }
+                  ]
+                ],
+                "transform_input": null,
+                "verbose": false
+              }
+            },
+            [
+              "dur",
+              "spkts",
+              "dpkts",
+              "sbytes",
+              "dbytes",
+              "rate",
+              "sload",
+              "dload",
+              "sloss",
+              "dloss",
+              "sinpkt",
+              "dinpkt",
+              "sjit",
+              "djit",
+              "tcprtt",
+              "synack",
+              "ackdat",
+              "smean",
+              "dmean",
+              "trans_depth",
+              "response_body_len",
+              "ct_srv_src",
+              "ct_state_ttl",
+              "ct_dst_ltm",
+              "ct_src_dport_ltm",
+              "ct_dst_sport_ltm",
+              "ct_dst_src_ltm",
+              "ct_ftp_cmd",
+              "ct_flw_http_mthd",
+              "ct_src_ltm",
+              "ct_srv_dst"
+            ]
+          ],
+          [
+            "num",
+            {
+              "class": "sklearn.preprocessing._data.StandardScaler",
+              "params": {
+                "copy": true,
+                "with_mean": true,
+                "with_std": true
+              }
+            },
+            [
+              "sttl",
+              "dttl",
+              "swin",
+              "dwin",
+              "stcpb",
+              "dtcpb",
+              "is_sm_ips_ports"
+            ]
+          ]
+        ],
+        "verbose": false,
+        "verbose_feature_names_out": true
+      },
+      "feature_names": [
+        "cat__proto_tcp",
+        "cat__proto_udp",
+        "cat__proto_unas",
+        "cat__proto_ospf",
+        "cat__proto_arp",
+        "cat__proto_sctp",
+        "cat__proto_any",
+        "cat__proto_gre",
+        "cat__proto_rsvp",
+        "cat__proto_ipv6",
+        "cat__proto_sun-nd",
+        "cat__proto_swipe",
+        "cat__proto_sep",
+        "cat__proto_mobile",
+        "cat__proto_pim",
+        "cat__proto_other",
+        "cat__service_-",
+        "cat__service_http",
+        "cat__service_dns",
+        "cat__service_smtp",
+        "cat__service_ftp-data",
+        "cat__service_ftp",
+        "cat__service_ssh",
+        "cat__service_pop3",
+        "cat__service_snmp",
+        "cat__service_ssl",
+        "cat__service_dhcp",
+        "cat__service_irc",
+        "cat__service_radius",
+        "cat__state_FIN",
+        "cat__state_INT",
+        "cat__state_CON",
+        "cat__state_REQ",
+        "cat__state_RST",
+        "cat__state_other",
+        "log__dur",
+        "log__spkts",
+        "log__dpkts",
+        "log__sbytes",
+        "log__dbytes",
+        "log__rate",
+        "log__sload",
+        "log__dload",
+        "log__sloss",
+        "log__dloss",
+        "log__sinpkt",
+        "log__dinpkt",
+        "log__sjit",
+        "log__djit",
+        "log__tcprtt",
+        "log__synack",
+        "log__ackdat",
+        "log__smean",
+        "log__dmean",
+        "log__trans_depth",
+        "log__response_body_len",
+        "log__ct_srv_src",
+        "log__ct_state_ttl",
+        "log__ct_dst_ltm",
+        "log__ct_src_dport_ltm",
+        "log__ct_dst_sport_ltm",
+        "log__ct_dst_src_ltm",
+        "log__ct_ftp_cmd",
+        "log__ct_flw_http_mthd",
+        "log__ct_src_ltm",
+        "log__ct_srv_dst",
+        "num__sttl",
+        "num__dttl",
+        "num__swin",
+        "num__dwin",
+        "num__stcpb",
+        "num__dtcpb",
+        "num__is_sm_ips_ports"
+      ],
+      "scalers": {
+        "log": {
+          "mean_": [
+            0.4512485702902092,
+            2.507488314306908,
+            2.176068885001428,
+            6.99895411145375,
+            5.975736588638446,
+            6.085253277391506,
+            12.158491160331291,
+            8.811414294972616,
+            1.1941777583057596,
+            1.2048143063211127,
+            2.5243716064562163,
+            2.401080334589432,
+            5.19240860937724,
+            3.4476488442953768,
+            0.05790091562005151,
+            0.03045533009798955,
+            0.029641213226367712,
+            4.658150355037475,
+            3.9029232317128892,
+            0.11059028126233435,
+            0.7256571756129021,
+            1.5093076654985993,
+            0.53132987440253,
+            1.1861160915265334,
+            0.9055808022541724,
+            0.7867158240540499,
+            1.302513859245782,
+            0.013092450681040393,
+            0.11469255765607321,
+            1.3192787134704724,
+            1.4430475476635232
+          ],
+          "scale_": [
+            0.6284039845467242,
+            1.1470679600248903,
+            1.4580389908788336,
+            1.6191039590595813,
+            3.4562747253133668,
+            3.435916184401728,
+            3.823484167358887,
+            5.037211054661378,
+            1.0263237694040894,
+            1.231972010753423,
+            2.1912611391232364,
+            2.1524697921578566,
+            3.69572206799398,
+            2.812943180805459,
+            0.07862674650024196,
+            0.04540678093429394,
+            0.04208309482270341,
+            0.8159892363114288,
+            2.1363364560567515,
+            0.25979424005182766,
+            2.2762179587461517,
+            0.7231364305422584,
+            0.4473450633414797,
+            0.5870498697184617,
+            0.47611092701975144,
+            0.34411881438794273,
+            0.6872012932598353,
+            0.09468383910745576,
+            0.2746504938326506,
+            0.6487325446308182,
+            0.7246881334547169
+          ],
+          "var_": [
+            0.3948915677941996,
+            1.3157649049156632,
+            2.1258776989229675,
+            2.6214976302424104,
+            11.945834976839988,
+            11.80552002623373,
+            14.61903117804408,
+            25.373495209202787,
+            1.0533404796438186,
+            1.5177550352798324,
+            4.8016253798316635,
+            4.633126206152087,
+            13.658361603857703,
+            7.912649338439933,
+            0.006182165265213311,
+            0.0020617757548149597,
+            0.0017709868698566463,
+            0.6658384337761089,
+            4.56393345347712,
+            0.06749304716410665,
+            5.181168195718497,
+            0.5229262971773985,
+            0.20011760569599252,
+            0.34462754953646285,
+            0.22668161482760707,
+            0.1184177584157634,
+            0.47224561745799004,
+            0.008965029388126568,
+            0.07543289376251885,
+            0.4208539144631765,
+            0.5251728907700816
+          ],
+          "n_samples_seen_": 24000.0
+        },
+        "num": {
+          "mean_": [
+            143.15866666666668,
+            121.69204166666667,
+            180.21425,
+            178.829375,
+            1514024488.537375,
+            1511512456.3952916,
+            0.004875
+          ],
+          "scale_": [
+            107.71456412616118,
+            116.05155084414682,
+            116.08390649412819,
+            116.71137588988219,
+            1430741820.4057348,
+            1429883626.3596828,
+            0.06965080311812635
+          ],
+          "var_": [
+            11602.42732488889,
+            13467.962453331595,
+            13475.473346937497,
+            13621.545262109374,
+            2.047022156657916e+18,
+            2.044567184931517e+18,
+            0.004851234374999999
+          ],
+          "n_samples_seen_": 24000.0
+        }
+      },
+      "independent_scores": {
+        "train": {
+          "precision": 0.8805194805194805,
+          "recall": 0.9537014709428503,
+          "f1": 0.915650563358543,
+          "fpr": 0.1392854053118782,
+          "confusion": [
+            [
+              9949,
+              1610
+            ],
+            [
+              576,
+              11865
+            ]
+          ]
+        },
+        "val": {
+          "precision": 0.8819133034379671,
+          "recall": 0.9485530546623794,
+          "f1": 0.9140201394268009,
+          "fpr": 0.13667820069204153,
+          "confusion": [
+            [
+              2495,
+              395
+            ],
+            [
+              160,
+              2950
+            ]
+          ]
+        }
+      },
+      "encoder_categories": [
+        [
+          "tcp",
+          "udp",
+          "unas",
+          "ospf",
+          "arp",
+          "sctp",
+          "any",
+          "gre",
+          "rsvp",
+          "ipv6",
+          "sun-nd",
+          "swipe",
+          "sep",
+          "mobile",
+          "pim",
+          "other"
+        ],
+        [
+          "-",
+          "http",
+          "dns",
+          "smtp",
+          "ftp-data",
+          "ftp",
+          "ssh",
+          "pop3",
+          "snmp",
+          "ssl",
+          "dhcp",
+          "irc",
+          "radius"
+        ],
+        [
+          "FIN",
+          "INT",
+          "CON",
+          "REQ",
+          "RST",
+          "other"
+        ]
+      ]
+    },
+    {
+      "C": 10.0,
+      "estimator_class": "LogisticRegression",
+      "estimator_params": {
+        "C": 10,
+        "class_weight": null,
+        "dual": false,
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "l1_ratio": 0.0,
+        "max_iter": 2000,
+        "n_jobs": null,
+        "penalty": "deprecated",
+        "random_state": null,
+        "solver": "lbfgs",
+        "tol": 0.0001,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "preprocessor_params": {
+        "n_jobs": null,
+        "remainder": "drop",
+        "sparse_threshold": 0.3,
+        "transformer_weights": null,
+        "transformers": [
+          [
+            "cat",
+            {
+              "class": "sklearn.pipeline.Pipeline",
+              "params": {
+                "memory": null,
+                "steps": [
+                  [
+                    "functiontransformer",
+                    {
+                      "class": "sklearn.preprocessing._function_transformer.FunctionTransformer",
+                      "params": {
+                        "accept_sparse": false,
+                        "check_inverse": true,
+                        "feature_names_out": "one-to-one",
+                        "func": "src.preprocessing.group_rare",
+                        "inv_kw_args": null,
+                        "inverse_func": null,
+                        "kw_args": null,
+                        "validate": false
+                      }
+                    }
+                  ],
+                  [
+                    "onehotencoder",
+                    {
+                      "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+                      "params": {
+                        "categories": [
+                          [
+                            "tcp",
+                            "udp",
+                            "unas",
+                            "ospf",
+                            "arp",
+                            "sctp",
+                            "any",
+                            "gre",
+                            "rsvp",
+                            "ipv6",
+                            "sun-nd",
+                            "swipe",
+                            "sep",
+                            "mobile",
+                            "pim",
+                            "other"
+                          ],
+                          [
+                            "-",
+                            "http",
+                            "dns",
+                            "smtp",
+                            "ftp-data",
+                            "ftp",
+                            "ssh",
+                            "pop3",
+                            "snmp",
+                            "ssl",
+                            "dhcp",
+                            "irc",
+                            "radius"
+                          ],
+                          [
+                            "FIN",
+                            "INT",
+                            "CON",
+                            "REQ",
+                            "RST",
+                            "other"
+                          ]
+                        ],
+                        "drop": null,
+                        "dtype": "numpy.float64",
+                        "feature_name_combiner": "concat",
+                        "handle_unknown": "ignore",
+                        "max_categories": null,
+                        "min_frequency": null,
+                        "sparse_output": false
+                      }
+                    }
+                  ]
+                ],
+                "transform_input": null,
+                "verbose": false
+              }
+            },
+            [
+              "proto",
+              "service",
+              "state"
+            ]
+          ],
+          [
+            "log",
+            {
+              "class": "sklearn.pipeline.Pipeline",
+              "params": {
+                "memory": null,
+                "steps": [
+                  [
+                    "functiontransformer",
+                    {
+                      "class": "sklearn.preprocessing._function_transformer.FunctionTransformer",
+                      "params": {
+                        "accept_sparse": false,
+                        "check_inverse": true,
+                        "feature_names_out": "one-to-one",
+                        "func": "numpy.log1p",
+                        "inv_kw_args": null,
+                        "inverse_func": null,
+                        "kw_args": null,
+                        "validate": false
+                      }
+                    }
+                  ],
+                  [
+                    "standardscaler",
+                    {
+                      "class": "sklearn.preprocessing._data.StandardScaler",
+                      "params": {
+                        "copy": true,
+                        "with_mean": true,
+                        "with_std": true
+                      }
+                    }
+                  ]
+                ],
+                "transform_input": null,
+                "verbose": false
+              }
+            },
+            [
+              "dur",
+              "spkts",
+              "dpkts",
+              "sbytes",
+              "dbytes",
+              "rate",
+              "sload",
+              "dload",
+              "sloss",
+              "dloss",
+              "sinpkt",
+              "dinpkt",
+              "sjit",
+              "djit",
+              "tcprtt",
+              "synack",
+              "ackdat",
+              "smean",
+              "dmean",
+              "trans_depth",
+              "response_body_len",
+              "ct_srv_src",
+              "ct_state_ttl",
+              "ct_dst_ltm",
+              "ct_src_dport_ltm",
+              "ct_dst_sport_ltm",
+              "ct_dst_src_ltm",
+              "ct_ftp_cmd",
+              "ct_flw_http_mthd",
+              "ct_src_ltm",
+              "ct_srv_dst"
+            ]
+          ],
+          [
+            "num",
+            {
+              "class": "sklearn.preprocessing._data.StandardScaler",
+              "params": {
+                "copy": true,
+                "with_mean": true,
+                "with_std": true
+              }
+            },
+            [
+              "sttl",
+              "dttl",
+              "swin",
+              "dwin",
+              "stcpb",
+              "dtcpb",
+              "is_sm_ips_ports"
+            ]
+          ]
+        ],
+        "verbose": false,
+        "verbose_feature_names_out": true
+      },
+      "feature_names": [
+        "cat__proto_tcp",
+        "cat__proto_udp",
+        "cat__proto_unas",
+        "cat__proto_ospf",
+        "cat__proto_arp",
+        "cat__proto_sctp",
+        "cat__proto_any",
+        "cat__proto_gre",
+        "cat__proto_rsvp",
+        "cat__proto_ipv6",
+        "cat__proto_sun-nd",
+        "cat__proto_swipe",
+        "cat__proto_sep",
+        "cat__proto_mobile",
+        "cat__proto_pim",
+        "cat__proto_other",
+        "cat__service_-",
+        "cat__service_http",
+        "cat__service_dns",
+        "cat__service_smtp",
+        "cat__service_ftp-data",
+        "cat__service_ftp",
+        "cat__service_ssh",
+        "cat__service_pop3",
+        "cat__service_snmp",
+        "cat__service_ssl",
+        "cat__service_dhcp",
+        "cat__service_irc",
+        "cat__service_radius",
+        "cat__state_FIN",
+        "cat__state_INT",
+        "cat__state_CON",
+        "cat__state_REQ",
+        "cat__state_RST",
+        "cat__state_other",
+        "log__dur",
+        "log__spkts",
+        "log__dpkts",
+        "log__sbytes",
+        "log__dbytes",
+        "log__rate",
+        "log__sload",
+        "log__dload",
+        "log__sloss",
+        "log__dloss",
+        "log__sinpkt",
+        "log__dinpkt",
+        "log__sjit",
+        "log__djit",
+        "log__tcprtt",
+        "log__synack",
+        "log__ackdat",
+        "log__smean",
+        "log__dmean",
+        "log__trans_depth",
+        "log__response_body_len",
+        "log__ct_srv_src",
+        "log__ct_state_ttl",
+        "log__ct_dst_ltm",
+        "log__ct_src_dport_ltm",
+        "log__ct_dst_sport_ltm",
+        "log__ct_dst_src_ltm",
+        "log__ct_ftp_cmd",
+        "log__ct_flw_http_mthd",
+        "log__ct_src_ltm",
+        "log__ct_srv_dst",
+        "num__sttl",
+        "num__dttl",
+        "num__swin",
+        "num__dwin",
+        "num__stcpb",
+        "num__dtcpb",
+        "num__is_sm_ips_ports"
+      ],
+      "scalers": {
+        "log": {
+          "mean_": [
+            0.4512485702902092,
+            2.507488314306908,
+            2.176068885001428,
+            6.99895411145375,
+            5.975736588638446,
+            6.085253277391506,
+            12.158491160331291,
+            8.811414294972616,
+            1.1941777583057596,
+            1.2048143063211127,
+            2.5243716064562163,
+            2.401080334589432,
+            5.19240860937724,
+            3.4476488442953768,
+            0.05790091562005151,
+            0.03045533009798955,
+            0.029641213226367712,
+            4.658150355037475,
+            3.9029232317128892,
+            0.11059028126233435,
+            0.7256571756129021,
+            1.5093076654985993,
+            0.53132987440253,
+            1.1861160915265334,
+            0.9055808022541724,
+            0.7867158240540499,
+            1.302513859245782,
+            0.013092450681040393,
+            0.11469255765607321,
+            1.3192787134704724,
+            1.4430475476635232
+          ],
+          "scale_": [
+            0.6284039845467242,
+            1.1470679600248903,
+            1.4580389908788336,
+            1.6191039590595813,
+            3.4562747253133668,
+            3.435916184401728,
+            3.823484167358887,
+            5.037211054661378,
+            1.0263237694040894,
+            1.231972010753423,
+            2.1912611391232364,
+            2.1524697921578566,
+            3.69572206799398,
+            2.812943180805459,
+            0.07862674650024196,
+            0.04540678093429394,
+            0.04208309482270341,
+            0.8159892363114288,
+            2.1363364560567515,
+            0.25979424005182766,
+            2.2762179587461517,
+            0.7231364305422584,
+            0.4473450633414797,
+            0.5870498697184617,
+            0.47611092701975144,
+            0.34411881438794273,
+            0.6872012932598353,
+            0.09468383910745576,
+            0.2746504938326506,
+            0.6487325446308182,
+            0.7246881334547169
+          ],
+          "var_": [
+            0.3948915677941996,
+            1.3157649049156632,
+            2.1258776989229675,
+            2.6214976302424104,
+            11.945834976839988,
+            11.80552002623373,
+            14.61903117804408,
+            25.373495209202787,
+            1.0533404796438186,
+            1.5177550352798324,
+            4.8016253798316635,
+            4.633126206152087,
+            13.658361603857703,
+            7.912649338439933,
+            0.006182165265213311,
+            0.0020617757548149597,
+            0.0017709868698566463,
+            0.6658384337761089,
+            4.56393345347712,
+            0.06749304716410665,
+            5.181168195718497,
+            0.5229262971773985,
+            0.20011760569599252,
+            0.34462754953646285,
+            0.22668161482760707,
+            0.1184177584157634,
+            0.47224561745799004,
+            0.008965029388126568,
+            0.07543289376251885,
+            0.4208539144631765,
+            0.5251728907700816
+          ],
+          "n_samples_seen_": 24000.0
+        },
+        "num": {
+          "mean_": [
+            143.15866666666668,
+            121.69204166666667,
+            180.21425,
+            178.829375,
+            1514024488.537375,
+            1511512456.3952916,
+            0.004875
+          ],
+          "scale_": [
+            107.71456412616118,
+            116.05155084414682,
+            116.08390649412819,
+            116.71137588988219,
+            1430741820.4057348,
+            1429883626.3596828,
+            0.06965080311812635
+          ],
+          "var_": [
+            11602.42732488889,
+            13467.962453331595,
+            13475.473346937497,
+            13621.545262109374,
+            2.047022156657916e+18,
+            2.044567184931517e+18,
+            0.004851234374999999
+          ],
+          "n_samples_seen_": 24000.0
+        }
+      },
+      "independent_scores": {
+        "train": {
+          "precision": 0.8839325675070864,
+          "recall": 0.952495780081987,
+          "f1": 0.9169342670329245,
+          "fpr": 0.13461372091011334,
+          "confusion": [
+            [
+              10003,
+              1556
+            ],
+            [
+              591,
+              11850
+            ]
+          ]
+        },
+        "val": {
+          "precision": 0.8841059602649006,
+          "recall": 0.9443729903536977,
+          "f1": 0.9132462686567164,
+          "fpr": 0.13321799307958476,
+          "confusion": [
+            [
+              2505,
+              385
+            ],
+            [
+              173,
+              2937
+            ]
+          ]
+        }
+      },
+      "encoder_categories": [
+        [
+          "tcp",
+          "udp",
+          "unas",
+          "ospf",
+          "arp",
+          "sctp",
+          "any",
+          "gre",
+          "rsvp",
+          "ipv6",
+          "sun-nd",
+          "swipe",
+          "sep",
+          "mobile",
+          "pim",
+          "other"
+        ],
+        [
+          "-",
+          "http",
+          "dns",
+          "smtp",
+          "ftp-data",
+          "ftp",
+          "ssh",
+          "pop3",
+          "snmp",
+          "ssl",
+          "dhcp",
+          "irc",
+          "radius"
+        ],
+        [
+          "FIN",
+          "INT",
+          "CON",
+          "REQ",
+          "RST",
+          "other"
+        ]
+      ]
+    },
+    {
+      "C": 100.0,
+      "estimator_class": "LogisticRegression",
+      "estimator_params": {
+        "C": 100,
+        "class_weight": null,
+        "dual": false,
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "l1_ratio": 0.0,
+        "max_iter": 2000,
+        "n_jobs": null,
+        "penalty": "deprecated",
+        "random_state": null,
+        "solver": "lbfgs",
+        "tol": 0.0001,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "preprocessor_params": {
+        "n_jobs": null,
+        "remainder": "drop",
+        "sparse_threshold": 0.3,
+        "transformer_weights": null,
+        "transformers": [
+          [
+            "cat",
+            {
+              "class": "sklearn.pipeline.Pipeline",
+              "params": {
+                "memory": null,
+                "steps": [
+                  [
+                    "functiontransformer",
+                    {
+                      "class": "sklearn.preprocessing._function_transformer.FunctionTransformer",
+                      "params": {
+                        "accept_sparse": false,
+                        "check_inverse": true,
+                        "feature_names_out": "one-to-one",
+                        "func": "src.preprocessing.group_rare",
+                        "inv_kw_args": null,
+                        "inverse_func": null,
+                        "kw_args": null,
+                        "validate": false
+                      }
+                    }
+                  ],
+                  [
+                    "onehotencoder",
+                    {
+                      "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+                      "params": {
+                        "categories": [
+                          [
+                            "tcp",
+                            "udp",
+                            "unas",
+                            "ospf",
+                            "arp",
+                            "sctp",
+                            "any",
+                            "gre",
+                            "rsvp",
+                            "ipv6",
+                            "sun-nd",
+                            "swipe",
+                            "sep",
+                            "mobile",
+                            "pim",
+                            "other"
+                          ],
+                          [
+                            "-",
+                            "http",
+                            "dns",
+                            "smtp",
+                            "ftp-data",
+                            "ftp",
+                            "ssh",
+                            "pop3",
+                            "snmp",
+                            "ssl",
+                            "dhcp",
+                            "irc",
+                            "radius"
+                          ],
+                          [
+                            "FIN",
+                            "INT",
+                            "CON",
+                            "REQ",
+                            "RST",
+                            "other"
+                          ]
+                        ],
+                        "drop": null,
+                        "dtype": "numpy.float64",
+                        "feature_name_combiner": "concat",
+                        "handle_unknown": "ignore",
+                        "max_categories": null,
+                        "min_frequency": null,
+                        "sparse_output": false
+                      }
+                    }
+                  ]
+                ],
+                "transform_input": null,
+                "verbose": false
+              }
+            },
+            [
+              "proto",
+              "service",
+              "state"
+            ]
+          ],
+          [
+            "log",
+            {
+              "class": "sklearn.pipeline.Pipeline",
+              "params": {
+                "memory": null,
+                "steps": [
+                  [
+                    "functiontransformer",
+                    {
+                      "class": "sklearn.preprocessing._function_transformer.FunctionTransformer",
+                      "params": {
+                        "accept_sparse": false,
+                        "check_inverse": true,
+                        "feature_names_out": "one-to-one",
+                        "func": "numpy.log1p",
+                        "inv_kw_args": null,
+                        "inverse_func": null,
+                        "kw_args": null,
+                        "validate": false
+                      }
+                    }
+                  ],
+                  [
+                    "standardscaler",
+                    {
+                      "class": "sklearn.preprocessing._data.StandardScaler",
+                      "params": {
+                        "copy": true,
+                        "with_mean": true,
+                        "with_std": true
+                      }
+                    }
+                  ]
+                ],
+                "transform_input": null,
+                "verbose": false
+              }
+            },
+            [
+              "dur",
+              "spkts",
+              "dpkts",
+              "sbytes",
+              "dbytes",
+              "rate",
+              "sload",
+              "dload",
+              "sloss",
+              "dloss",
+              "sinpkt",
+              "dinpkt",
+              "sjit",
+              "djit",
+              "tcprtt",
+              "synack",
+              "ackdat",
+              "smean",
+              "dmean",
+              "trans_depth",
+              "response_body_len",
+              "ct_srv_src",
+              "ct_state_ttl",
+              "ct_dst_ltm",
+              "ct_src_dport_ltm",
+              "ct_dst_sport_ltm",
+              "ct_dst_src_ltm",
+              "ct_ftp_cmd",
+              "ct_flw_http_mthd",
+              "ct_src_ltm",
+              "ct_srv_dst"
+            ]
+          ],
+          [
+            "num",
+            {
+              "class": "sklearn.preprocessing._data.StandardScaler",
+              "params": {
+                "copy": true,
+                "with_mean": true,
+                "with_std": true
+              }
+            },
+            [
+              "sttl",
+              "dttl",
+              "swin",
+              "dwin",
+              "stcpb",
+              "dtcpb",
+              "is_sm_ips_ports"
+            ]
+          ]
+        ],
+        "verbose": false,
+        "verbose_feature_names_out": true
+      },
+      "feature_names": [
+        "cat__proto_tcp",
+        "cat__proto_udp",
+        "cat__proto_unas",
+        "cat__proto_ospf",
+        "cat__proto_arp",
+        "cat__proto_sctp",
+        "cat__proto_any",
+        "cat__proto_gre",
+        "cat__proto_rsvp",
+        "cat__proto_ipv6",
+        "cat__proto_sun-nd",
+        "cat__proto_swipe",
+        "cat__proto_sep",
+        "cat__proto_mobile",
+        "cat__proto_pim",
+        "cat__proto_other",
+        "cat__service_-",
+        "cat__service_http",
+        "cat__service_dns",
+        "cat__service_smtp",
+        "cat__service_ftp-data",
+        "cat__service_ftp",
+        "cat__service_ssh",
+        "cat__service_pop3",
+        "cat__service_snmp",
+        "cat__service_ssl",
+        "cat__service_dhcp",
+        "cat__service_irc",
+        "cat__service_radius",
+        "cat__state_FIN",
+        "cat__state_INT",
+        "cat__state_CON",
+        "cat__state_REQ",
+        "cat__state_RST",
+        "cat__state_other",
+        "log__dur",
+        "log__spkts",
+        "log__dpkts",
+        "log__sbytes",
+        "log__dbytes",
+        "log__rate",
+        "log__sload",
+        "log__dload",
+        "log__sloss",
+        "log__dloss",
+        "log__sinpkt",
+        "log__dinpkt",
+        "log__sjit",
+        "log__djit",
+        "log__tcprtt",
+        "log__synack",
+        "log__ackdat",
+        "log__smean",
+        "log__dmean",
+        "log__trans_depth",
+        "log__response_body_len",
+        "log__ct_srv_src",
+        "log__ct_state_ttl",
+        "log__ct_dst_ltm",
+        "log__ct_src_dport_ltm",
+        "log__ct_dst_sport_ltm",
+        "log__ct_dst_src_ltm",
+        "log__ct_ftp_cmd",
+        "log__ct_flw_http_mthd",
+        "log__ct_src_ltm",
+        "log__ct_srv_dst",
+        "num__sttl",
+        "num__dttl",
+        "num__swin",
+        "num__dwin",
+        "num__stcpb",
+        "num__dtcpb",
+        "num__is_sm_ips_ports"
+      ],
+      "scalers": {
+        "log": {
+          "mean_": [
+            0.4512485702902092,
+            2.507488314306908,
+            2.176068885001428,
+            6.99895411145375,
+            5.975736588638446,
+            6.085253277391506,
+            12.158491160331291,
+            8.811414294972616,
+            1.1941777583057596,
+            1.2048143063211127,
+            2.5243716064562163,
+            2.401080334589432,
+            5.19240860937724,
+            3.4476488442953768,
+            0.05790091562005151,
+            0.03045533009798955,
+            0.029641213226367712,
+            4.658150355037475,
+            3.9029232317128892,
+            0.11059028126233435,
+            0.7256571756129021,
+            1.5093076654985993,
+            0.53132987440253,
+            1.1861160915265334,
+            0.9055808022541724,
+            0.7867158240540499,
+            1.302513859245782,
+            0.013092450681040393,
+            0.11469255765607321,
+            1.3192787134704724,
+            1.4430475476635232
+          ],
+          "scale_": [
+            0.6284039845467242,
+            1.1470679600248903,
+            1.4580389908788336,
+            1.6191039590595813,
+            3.4562747253133668,
+            3.435916184401728,
+            3.823484167358887,
+            5.037211054661378,
+            1.0263237694040894,
+            1.231972010753423,
+            2.1912611391232364,
+            2.1524697921578566,
+            3.69572206799398,
+            2.812943180805459,
+            0.07862674650024196,
+            0.04540678093429394,
+            0.04208309482270341,
+            0.8159892363114288,
+            2.1363364560567515,
+            0.25979424005182766,
+            2.2762179587461517,
+            0.7231364305422584,
+            0.4473450633414797,
+            0.5870498697184617,
+            0.47611092701975144,
+            0.34411881438794273,
+            0.6872012932598353,
+            0.09468383910745576,
+            0.2746504938326506,
+            0.6487325446308182,
+            0.7246881334547169
+          ],
+          "var_": [
+            0.3948915677941996,
+            1.3157649049156632,
+            2.1258776989229675,
+            2.6214976302424104,
+            11.945834976839988,
+            11.80552002623373,
+            14.61903117804408,
+            25.373495209202787,
+            1.0533404796438186,
+            1.5177550352798324,
+            4.8016253798316635,
+            4.633126206152087,
+            13.658361603857703,
+            7.912649338439933,
+            0.006182165265213311,
+            0.0020617757548149597,
+            0.0017709868698566463,
+            0.6658384337761089,
+            4.56393345347712,
+            0.06749304716410665,
+            5.181168195718497,
+            0.5229262971773985,
+            0.20011760569599252,
+            0.34462754953646285,
+            0.22668161482760707,
+            0.1184177584157634,
+            0.47224561745799004,
+            0.008965029388126568,
+            0.07543289376251885,
+            0.4208539144631765,
+            0.5251728907700816
+          ],
+          "n_samples_seen_": 24000.0
+        },
+        "num": {
+          "mean_": [
+            143.15866666666668,
+            121.69204166666667,
+            180.21425,
+            178.829375,
+            1514024488.537375,
+            1511512456.3952916,
+            0.004875
+          ],
+          "scale_": [
+            107.71456412616118,
+            116.05155084414682,
+            116.08390649412819,
+            116.71137588988219,
+            1430741820.4057348,
+            1429883626.3596828,
+            0.06965080311812635
+          ],
+          "var_": [
+            11602.42732488889,
+            13467.962453331595,
+            13475.473346937497,
+            13621.545262109374,
+            2.047022156657916e+18,
+            2.044567184931517e+18,
+            0.004851234374999999
+          ],
+          "n_samples_seen_": 24000.0
+        }
+      },
+      "independent_scores": {
+        "train": {
+          "precision": 0.8840482573726541,
+          "recall": 0.9541837472871956,
+          "f1": 0.9177780354864896,
+          "fpr": 0.1347002335842201,
+          "confusion": [
+            [
+              10002,
+              1557
+            ],
+            [
+              570,
+              11871
+            ]
+          ]
+        },
+        "val": {
+          "precision": 0.8830935251798561,
+          "recall": 0.9472668810289389,
+          "f1": 0.9140552280484021,
+          "fpr": 0.13494809688581316,
+          "confusion": [
+            [
+              2500,
+              390
+            ],
+            [
+              164,
+              2946
+            ]
+          ]
+        }
+      },
+      "encoder_categories": [
+        [
+          "tcp",
+          "udp",
+          "unas",
+          "ospf",
+          "arp",
+          "sctp",
+          "any",
+          "gre",
+          "rsvp",
+          "ipv6",
+          "sun-nd",
+          "swipe",
+          "sep",
+          "mobile",
+          "pim",
+          "other"
+        ],
+        [
+          "-",
+          "http",
+          "dns",
+          "smtp",
+          "ftp-data",
+          "ftp",
+          "ssh",
+          "pop3",
+          "snmp",
+          "ssl",
+          "dhcp",
+          "irc",
+          "radius"
+        ],
+        [
+          "FIN",
+          "INT",
+          "CON",
+          "REQ",
+          "RST",
+          "other"
+        ]
+      ]
+    }
+  ],
+  "metric_tolerance": 1e-15,
+  "metric_averaging": "binary, attack label 1; FPR conditions on label 0",
+  "attack_type_recall": [
+    {
+      "type": "Analysis",
+      "rows": 89,
+      "caught": 86,
+      "missed": 3,
+      "recall": 0.966
+    },
+    {
+      "type": "Backdoor",
+      "rows": 85,
+      "caught": 84,
+      "missed": 1,
+      "recall": 0.988
+    },
+    {
+      "type": "DoS",
+      "rows": 212,
+      "caught": 207,
+      "missed": 5,
+      "recall": 0.976
+    },
+    {
+      "type": "Exploits",
+      "rows": 1105,
+      "caught": 1085,
+      "missed": 20,
+      "recall": 0.982
+    },
+    {
+      "type": "Fuzzers",
+      "rows": 899,
+      "caught": 770,
+      "missed": 129,
+      "recall": 0.857
+    },
+    {
+      "type": "Generic",
+      "rows": 233,
+      "caught": 232,
+      "missed": 1,
+      "recall": 0.996
+    },
+    {
+      "type": "Reconnaissance",
+      "rows": 419,
+      "caught": 414,
+      "missed": 5,
+      "recall": 0.988
+    },
+    {
+      "type": "Shellcode",
+      "rows": 61,
+      "caught": 61,
+      "missed": 0,
+      "recall": 1.0
+    },
+    {
+      "type": "Worms",
+      "rows": 7,
+      "caught": 7,
+      "missed": 0,
+      "recall": 1.0
+    }
+  ]
+}
